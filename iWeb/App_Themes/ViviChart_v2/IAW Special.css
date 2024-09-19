@@ -1,0 +1,50 @@
+/* Webfont: IAWSpecial-Regular */
+@font-face {
+    font-family: 'IAWSpecial';
+    src: url('Font/IAW Special.eot'); /* IE9 Compat Modes */
+    src: url('Font/IAW Special.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('Font/IAW Special.woff') format('woff'), /* Modern Browsers */
+         url('Font/IAW Special.ttf') format('truetype'); /* Safari, Android, iOS */
+             font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+.iaw-font {
+	font-family: IAWSpecial;
+}
+
+.iaw-new-row::before { content: "\E000"; }
+.iaw-new-column::before { content: "\E001"; }
+.iaw-text::before { content: "\E002"; }
+.iaw-zoom-fit::before { content: "\E003"; }
+.iaw-centre-top::before { content: "\E004"; }
+.iaw-note1::before { content: "\E005"; }
+.iaw-info1::before { content: "\E006"; }
+.iaw-info2::before { content: "\E007"; }
+.iaw-notepad::before { content: "\E008"; }
+.iaw-comment1::before { content: "\E009"; }
+.iaw-note2::before { content: "\E00A"; }
+.iaw-note3::before { content: "\E00B"; }
+.iaw-info3::before { content: "\E00C"; }
+.iaw-smile1::before { content: "\E00D"; }
+.iaw-smile2::before { content: "\E00E"; }
+.iaw-smile3::before { content: "\E00F"; }
+.iaw-add-note::before { content: "\E010"; }
+.iaw-filing-cabinet::before { content: "\E011"; }
+.iaw-media-previous::before { content: "\E012"; }
+.iaw-media-next::before { content: "\E013"; }
+.iaw-media-first::before { content: "\E014"; }
+.iaw-media-last::before { content: "\E015"; }
+.iaw-further-details::before { content: "\E016"; }
+.iaw-users::before { content: "\E017"; }
+.iaw-log-out::before { content: "\E018"; }
+.iaw-change-password::before { content: "\E019"; }
+.iaw-switch-off::before { content: "\E01A"; }
+.iaw-switch-on::before { content: "\E01B"; }
+.iaw-gear::before { content: "\E01C"; }
+.iaw-data-source::before { content: "\E01D"; }
+.iaw-data-view::before { content: "\E01E"; }
+.iaw-row::before { content: "\E01F"; }
+.iaw-column::before { content: "\E020"; }
+

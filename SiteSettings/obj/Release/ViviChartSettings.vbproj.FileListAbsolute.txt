@@ -1,0 +1,21 @@
+C:\Projects\ViviChart\SiteSettings\bin\Release\ViviChartSettings.exe.config
+C:\Projects\ViviChart\SiteSettings\bin\Release\ViviChartSettings.exe
+C:\Projects\ViviChart\SiteSettings\bin\Release\ViviChartSettings.pdb
+C:\Projects\ViviChart\SiteSettings\obj\Release\ViviChartSettings.vbproj.AssemblyReference.cache
+C:\Projects\ViviChart\SiteSettings\obj\Release\ViviChartSettings.vbproj.SuggestedBindingRedirects.cache
+C:\Projects\ViviChart\SiteSettings\obj\Release\ViviChartSettings.Form1.resources
+C:\Projects\ViviChart\SiteSettings\obj\Release\ViviChartSettings.Resources.resources
+C:\Projects\ViviChart\SiteSettings\obj\Release\ViviChartSettings.vbproj.GenerateResource.cache
+C:\Projects\ViviChart\SiteSettings\obj\Release\ViviChartSettings.vbproj.CoreCompileInputs.cache
+C:\Projects\ViviChart\SiteSettings\obj\Release\ViviChartSettings.exe
+C:\Projects\ViviChart\SiteSettings\obj\Release\ViviChartSettings.pdb
+C:\Projects\ViviChart - A\SiteSettings\bin\Release\ViviChartSettings.exe.config
+C:\Projects\ViviChart - A\SiteSettings\bin\Release\ViviChartSettings.exe
+C:\Projects\ViviChart - A\SiteSettings\bin\Release\ViviChartSettings.pdb
+C:\Projects\ViviChart - A\SiteSettings\obj\Release\ViviChartSettings.vbproj.AssemblyReference.cache
+C:\Projects\ViviChart - A\SiteSettings\obj\Release\ViviChartSettings.Form1.resources
+C:\Projects\ViviChart - A\SiteSettings\obj\Release\ViviChartSettings.Resources.resources
+C:\Projects\ViviChart - A\SiteSettings\obj\Release\ViviChartSettings.vbproj.GenerateResource.cache
+C:\Projects\ViviChart - A\SiteSettings\obj\Release\ViviChartSettings.vbproj.CoreCompileInputs.cache
+C:\Projects\ViviChart - A\SiteSettings\obj\Release\ViviChartSettings.exe
+C:\Projects\ViviChart - A\SiteSettings\obj\Release\ViviChartSettings.pdb

@@ -1,0 +1,281 @@
+﻿table.dataforms {
+	background-color: Transparent;
+	/* margin-left:auto; */
+	margin-right: auto;
+	padding-left: 21px;
+}
+
+table.dataforms tbody tr:last-child td:last-child {
+	padding-top: 10px;
+}
+
+table.dataforms tbody tr:last-child td:last-child label {
+	opacity: 1;
+	user-select: none;
+}
+
+.formFocus {
+	background-color: #E9E4EE;
+}
+
+tr.formrow {
+	/*background-color:#FFFFFF;*/
+	vertical-align: middle;
+}
+
+/* form label */
+td.formlabel {
+	background-color: transparent;
+	padding-right: 60px;
+	padding-left: 10px;
+	font-size: 0.96em;
+	color: black;
+	text-align: left;
+	white-space: nowrap;
+}
+
+/* form label readonly */
+td.formlabeldisplay {
+	padding-right: 10px;
+	padding-left: 10px;
+	color: black;
+	font-size: medium;
+	background-color: transparent;
+	text-align: left;
+	white-space: nowrap;
+}
+
+/*form field */
+td.formdata {
+	padding-right: 10px;
+	padding-left: 10px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	font-weight: normal;
+	color: black;
+	font-size: medium;
+	background-color: transparent;
+	/*width: 70%;*/
+	text-align: left;
+	white-space: nowrap;
+}
+
+/*form field required*/
+td.formdataR {
+	background: url(graphics/required.gif) no-repeat 0px center;
+	padding-right: 10px;
+	padding-left: 10px;
+	text-align: left;
+	color: black;
+	font-size: medium;
+	background-color: transparent;
+}
+
+/*form field readonly, this cell contains a div, which uses the div.formdisp style*/
+td.formdisp {
+	padding-right: 10px;
+	padding-left: 10px;
+	text-align: left;
+	background-color: transparent;
+}
+
+/* for date input control */
+.dateInput {
+	font-size: medium;
+	width: 110px !important;
+	margin-top: 1px;
+}
+
+
+/* for time input control */
+.timeInput {
+	font-size: medium;
+}
+
+/* editable form element */
+input.formcontrol {
+	font-size: medium;
+	color: black;
+	background-color: white;
+	min-width: 250px;
+	padding: 6px 8px;
+}
+
+textarea.formcontrol {
+	font-size: medium;
+	color: black;
+	background-color: white;
+	min-width: 250px;
+	height: 70px;
+}
+
+/* readonly form element
+    padding-top:2px;
+    padding-bottom:2px;
+*/
+div.formdisp {
+	font-size: medium;
+	color: #3F3E3E;
+	border-bottom: solid 1px #F1EFE2;
+	border-right: solid 1px #F1EFE2;
+	border-top: solid 1px #716F64;
+	border-left: solid 1px #716F64;
+	background-color: #d2d2d2;
+	min-width: 250px;
+	/*required for firefox*/
+	min-height: 12px;
+}
+
+/* to display __info */
+div.formdisp_msg {
+	padding: 6px 6px 6px 6px;
+	font-size: medium;
+	font-weight: bold;
+	text-align: left;
+	line-height: 16px;
+	background-color: #E8E7E7;
+	width: 238px;
+}
+
+
+/* style for validators */
+.customValidator {
+	padding: 2px 0px 2px 2px;
+	font-weight: normal;
+}
+
+/* required field description */
+td.formreq {
+	background: transparent url(graphics/required.gif) no-repeat 0px center;
+	padding-left: 10px;
+	text-align: left;
+	color: black;
+	font-size: medium;
+}
+
+/* for checkboxes */
+span.formcontrol {
+	background-color: Transparent;
+}
+
+/* drop downs */
+select.formcontrol {
+	font-size: medium;
+	color: black;
+	background-color: white;
+	min-width: 250px;
+}
+
+/* date control */
+.caltxtday {
+	background-color: white;
+	font-size: medium;
+	color: black;
+	width: 13px;
+}
+
+.caltxtmonth {
+	background-color: white;
+	font-size: medium;
+	color: black;
+	width: 13px;
+}
+
+.caltxtyear {
+	background-color: white;
+	font-size: medium;
+	color: black;
+	width: 26px;
+}
+
+/* end date control */
+
+/* style for the batch input screens */
+/* used by textbox field that are populated by the hidden dropdown */
+input.batchInputShow {
+	font-size: medium;
+	width: 200px;
+}
+
+input.batchInputHidden {
+	display: none;
+}
+
+input.batchValue {
+	font-size: medium;
+	text-align: right;
+}
+
+input.batchValueError {
+	background-color: Yellow;
+	font-size: medium;
+	text-align: right;
+}
+
+/* end style for the batch input screens */
+
+/* 
+CUSTOM ONS STYLES
+*/
+
+div.ONS_timesheet_comment textarea.formcontrol,
+div.ONS_exp_comment textarea.formcontrol {
+	font-size: medium;
+	color: black;
+	background-color: white;
+	width: 450px;
+	height: 220px;
+}
+
+
+.ONS_timesheet_error {
+	background-color: #FFCC00;
+}
+
+.ONS_timesheet_comment,
+.ONS_exp_comment {
+	border: solid 1px #666666;
+	background-color: #EEEEEE;
+	padding: 8px 6px 8px 6px;
+}
+
+.ONS_timesheet_document,
+.ONS_timesheet_document_active,
+.ONS_exp_document,
+.ONS_exp_document_active {
+	background-image: url(graphics/document_sprite.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	width: 16px;
+	height: 16px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.ONS_timesheet_document_active,
+.ONS_exp_document_active {
+	background-position: 0px -16px;
+}
+
+.ONS_watermark {
+	color: #000000;
+	width: 210px;
+	font-size: medium;
+	text-align: center;
+}
+
+.ONS_exp_limit {
+	background-color: #FFCC00;
+}
+
+.ONS_time_limit {
+	background-color: #FFCC00;
+}
+
+/*
+used by the datedrop down control
+stops a blank line appearing under the textbox after a date has been selected
+*/
+.ajax__calendar {
+	display: inline;
+}

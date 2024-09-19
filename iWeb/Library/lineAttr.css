@@ -1,0 +1,103 @@
+﻿
+.colorPickerClass {
+}
+
+/* Outer container for popup */
+.ft-container {
+/*    position: absolute;*/
+    background-color:transparent;
+    z-index:2000;
+}
+
+/* the open button to open the settings */
+.ft-edit {
+    font-size:12pt;
+    padding: 0px 4px 0px 4px;
+    color:#0000c0;
+}
+.ft-edit:hover {
+    opacity:0.5;
+    text-decoration:none;
+}
+
+.ft-color-display {
+    vertical-align:middle;
+    display:inline-block;
+    border:1px solid grey;
+    min-height:10px;
+    max-height:10px;
+    min-width:10px;
+    max-width:10px;
+    margin-right:5px;
+}
+
+/* set a 2px space to the right of all of the controls */
+.ft-font, .ft-font-size, .ft-color, .ft-toggle, .ft-choose, .ft-cancel, .ft-save {
+    vertical-align: middle;
+    margin-right:2px;
+}
+
+/* for these controls, add extra margin to the left to create a group separation */
+.ft-color, .ft-bold, .ft-align-left {
+    margin-left:5px;
+}
+.ft-cancel {
+    margin-left:10px;
+    color:#b00;
+}
+.ft-save {
+    margin-left:10px;
+    color:#0b0;
+}
+.ft-cancel:hover, .ft-save:hover {
+    filter: brightness(150%);
+}
+
+/* for the toggle types, give them a border even though you can't see it yet */
+.ft-choose {
+	border: 1px solid var(--input-border);
+    min-width:20px;
+    max-width:20px;
+    min-height:19px;
+    max-height:19px;
+    padding:1px;
+    text-align:center;
+    font-size:12pt;
+    background-color: var(--input-field-bg-color);
+    color:var(--input-field-color);
+}
+.ft-toggle {
+    display:inline-block;
+	border: 1px solid var(--input-border);
+    min-width:20px;
+    max-width:20px;
+    min-height:19px;
+    max-height:19px;
+    text-align:center;
+    padding:1px;
+    font-size:12pt;
+    font-weight:bold;
+    background-color: var(--input-field-bg-color);
+    color:var(--input-field-color);
+}
+
+/* hovering over the on-off buttons, if it's not already on, then show it's clickable*/
+.ft-toggle:hover {
+    background-color: var(--input-field-focus-bg-color) !important;
+    cursor:pointer;
+}
+
+/* hovering over the on-off buttons, if it's not already on, then show it's clickable*/
+.ft-choose:hover:not(.ft-set-on) {
+    background-color: var(--input-field-focus-bg-color) !important;
+    cursor:pointer;
+}
+
+/* when an switch item is on */
+.ft-set-on {
+    color:white;
+    background-color:#008;
+    border:1px solid black;
+}
+
+

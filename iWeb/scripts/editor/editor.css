@@ -1,0 +1,338 @@
+﻿:root {
+    --ed-height: 300px;
+}
+.ed-container {
+    width: 580px;
+    height: var(--ed-height);
+    border: 2px solid #eee;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.no-underline {
+    text-decoration: none;
+}
+.ed-header,
+.ed-lower-header {
+    width: auto;
+    height: 39px;
+    background-color: #fff;
+    border-bottom: none;
+    padding: 4px 0;
+    display: flex;
+    flex-shrink: 0;
+    z-index: 1;
+    border-bottom: 1px solid white;
+}
+
+.ed-lower-header {
+    margin-top: -47px;
+    height: 40px;
+    z-index: 0;
+    box-shadow: 0 2px 2px -2px rgba(34, 47, 62, .1), 0 8px 8px -4px rgba(34, 47, 62, .07);
+}
+
+.ed-container.lower-header-active .ed-header {
+    border-bottom-color: #eee;
+    transition: border-color 0s;
+}
+
+.ed-container.lower-header-active .ed-lower-header {
+    margin-top: 0px;
+}
+
+.ed-header-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0 10px;
+}
+
+.ed-header-group select {
+    width: 130px;
+    height: 28px;
+}
+
+.ed-toggle,
+.ed-clickable,
+.paste-conf-box > div:first-child button {
+    display: inline-block;
+    border: 1px solid var(--input-border);
+    min-width: 20px;
+    max-width: 20px;
+    min-height: 19px;
+    max-height: 19px;
+    text-align: center;
+    padding: 1px;
+    font-size: 12pt;
+    font-weight: bold;
+    background-color: var(--input-field-bg-color);
+    color: var(--input-field-color);
+    cursor: pointer;
+}
+
+.ed-toggle:hover,
+.paste-conf-box > div:first-child button:hover {
+    background-color: var(--input-field-focus-bg-color);
+}
+
+.ed-toggle.active,
+.ed-clickable:not(.disabled):active {
+    color: white;
+    background-color: #008;
+    border: 1px solid black;
+}
+
+.ed-toggle *,
+.ed-clickable * {
+    pointer-events: none;
+}
+
+.ed-toggle i,
+.ed-clickable i {
+    position: relative;
+    top: 1px;
+}
+
+.ed-header div.sp-dd,
+.ed-header div.sp-preview {
+    width: 20px;
+    height: 20px;
+}
+
+.ed-header div.sp-dd {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ed-header div.sp-dd i {
+    margin: unset;
+}
+
+.dd-toggle {
+    border: 1px solid var(--input-border);
+    font-size: 12pt;
+    font-weight: bold;
+    background-color: var(--input-field-bg-color);
+    color: var(--input-field-color);
+    display: flex;
+    min-height: 19px;
+    max-height: 19px;
+    position: relative;
+}
+
+.dd-toggle i {
+    display: flex;
+    align-items: center;
+}
+
+.dd-toggle i:first-child {
+    position: relative;
+    left: 0;
+    cursor: pointer;
+    width: 23px;
+    display: flex;
+    justify-content: center;
+}
+
+.dd-toggle i.active:first-child{
+    color: white;
+    background-color: #008;
+}
+
+.dd-toggle i.dd-toggle-arrow {
+    font-size: 8pt;
+    border-left: 1px solid var(--input-border);
+}
+
+.dd-toggle ul {
+    position: absolute;
+    list-style: none;
+    display: none;
+    flex-direction: row;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    top: 100%;
+    left: 22px;
+    border: 1px solid var(--input-border);
+}
+
+.dd-toggle ul li {
+    height: 48px;
+    cursor: pointer;
+}
+
+.dd-toggle ul li svg {
+    pointer-events: none;
+}
+
+.dd-toggle ul li:hover,
+.dd-toggle ul li.active { 
+    background-color: #eee;
+}
+
+.dd-toggle i.dd-toggle-arrow.active {
+    background-color: #eee;
+}
+
+.dd-toggle i.dd-toggle-arrow.active + ul {
+    display: flex;
+}
+
+.ed-toggle.more {
+    padding: 2px 8px;
+    font-size: large;
+}
+
+.dec-indent i {
+    transform: rotateY(180deg);
+}
+
+.ed-edit-area {
+    width: 100%;
+    height: calc(var(--ed-height) - 49px);
+    background-color: white;
+    transition: height 0.3s ease 0s;
+}
+
+.ed-container.lower-header-active .ed-edit-area {
+    height: calc(var(--ed-height) - 96px);
+}
+
+.text {
+    height: calc(100% - 73px);
+    border: 1px solid silver;
+    margin: 10px;
+    margin-bottom: 0;
+    padding: 0 1rem;
+    outline: 2px solid white;
+    overflow: auto;
+    cursor: text;
+    padding: 16px;
+    line-height: 22px;
+}
+
+.text.active {
+    outline-color: var(--input-border);
+}
+
+.text p {
+    margin: auto !important;
+    outline: none;
+}
+
+/*.text div {
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+}*/
+
+.resizer {
+    height: 20px;
+    margin: 10px;
+    margin-top: 0;
+    flex: 30px;
+    flex-grow: 0;
+    border: 1px solid silver;
+    border-top: none;
+    border-radius: 0 0 5px 5px;
+    position: relative;
+}
+
+.resizer svg {
+    position: absolute;
+    right: 2px;
+    bottom: 2px;
+    cursor: e-resize;
+}
+
+.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.text ul,
+.text ol {
+    pointer-events: none;
+    margin: 5px;
+}
+
+.text ul *,
+.text ol * {
+    pointer-events: auto;
+}
+
+.paste-conf-box {
+    display: flex;
+    flex-direction: column;
+    width: 480px;
+    border-radius: 10px;
+    background-color: #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.paste-conf-box[hidden] {
+    display: none;
+}
+
+.paste-conf-box > div:first-child {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 16px 0 16px;
+}
+
+.paste-conf-box > div:first-child p {
+    font-size: 20px;
+    margin: unset;
+}
+
+.paste-conf-box > div:first-child button {
+    display: flex;
+    padding: 4px;
+    max-width: unset;
+    max-height: unset;
+    border-radius: 6px;
+}
+
+.paste-conf-box > div:nth-child(2) {
+    padding: 0 16px;
+}
+
+.paste-conf-box > div:last-child {
+    display: flex;
+    justify-content: flex-end;
+    padding: 8px 16px;
+    gap: 8px;
+}
+
+.paste-conf-box > div:last-child button {
+    background-color: var(--link-bg-color);
+    display: inline-block;
+    cursor: pointer;
+    color: var(--link-color);
+    font-size: 0.85em;
+    font-weight: normal;
+    padding: 8px 20px;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 4px;
+    margin-left: 10px;
+    transition-duration: .3s;
+    position: relative;
+    border: none;
+}
+
+.paste-conf-box > div:last-child button:hover {
+    background-color: var(--link-bg-hover-color);
+    color: var(--link-hover-color);
+}

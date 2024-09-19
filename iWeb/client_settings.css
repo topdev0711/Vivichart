@@ -1,0 +1,270 @@
+.formlabel {
+    padding-right: 2px !important;
+}
+
+.formrow {
+    height: 30px !important;
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+}
+
+.tcGrdBrand {
+    border: 1px solid silver;
+    overflow-y: auto;
+}
+
+#divGrdBrand {
+    height: 100%;
+}
+
+#tcBranding {
+    min-width: 675px;
+    min-height: 400px;
+}
+
+.threeDotsLabel {
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 238px;
+}
+
+#bgImageLabel {
+    vertical-align: middle;
+    max-width: 278px;
+}
+
+.tblAdvancedBtn #cbAdvanced {
+    pointer-events: all;
+}
+
+#btnBackgroundSave {
+    display: none;
+}
+
+#popBackground fieldset {
+    height: 390px;
+}
+
+#btnGlobalSave,
+#btnGlobalCancel {
+    visibility: hidden;
+}
+
+.tblAdvancedBtn {
+    position: absolute;
+    bottom: 20px;
+    right: 30px;
+    pointer-events: none;
+}
+
+#pnlGrdBrand {
+    height: 375px;
+}
+
+.logoColourPreview {
+    position: relative;
+}
+
+.logoColourPreview > div {
+    visibility: hidden;
+}
+
+.logoColourPreview > span:first-child {
+    position: absolute;
+    top: -12px;
+    font-size: 0.8em;
+    font-style: italic;
+}
+
+#logoPreview {
+    position: unset;
+    transform: unset;
+    margin: 10px 0px;
+    border: 1px solid gray;
+    height: var(--logo-height);
+}
+
+.filterField {
+    outline: none;
+    padding: 6px 10px;
+    font-size: 0.9em;
+    position: relative;
+    top: -2px;
+}
+
+
+.gradient-controls > div {
+    margin-bottom: 10px;
+}
+
+.list-area {
+    display: flex;
+    gap: 10px;
+}
+
+.list-area > div:first-child {
+    height: 142px;
+    min-width: 225px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.gradient-color-list {
+    padding-left: 0px;
+    margin-top: 5px;
+}
+
+.gradient-color-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.gradient-color-list li input[type=range] {
+    width: 100px;
+}
+
+.gradient-color-list li span {
+    display: inline-block;
+}
+
+.gradient-color-list li span,
+.gradient-color-list input {
+    margin-right: 10px;
+}
+
+.gradient-color-list li span {
+    min-width: 39px;
+}
+
+.gradient-color-list li span:nth-child(3) {
+    display: inline-block;
+    width: 60px;
+    line-height: 26px;
+    border: 1px solid gray;
+    text-align: center;
+}
+
+.gradient-color-list button {
+    width: 27px;
+    height: 27px;
+}
+
+.gradient-color-list li:first-child button,
+.gradient-color-list li:nth-child(2) button {
+    display: none;
+}
+
+.angle-selector input {
+    width: calc(100% - 45px);
+}
+
+.bgImgPreview {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 12px;
+    margin-bottom: 0;
+    height: 143px;
+    border: 1px solid #999;
+    background: linear-gradient(45deg, rgba(255, 255, 255, 0.8) 25%, transparent 25%, transparent 75%, rgba(255, 255, 255, 0.8) 75%, rgba(255, 255, 255, 0.8)), linear-gradient(45deg, rgba(255, 255, 255, 0.8) 25%, transparent 25%, transparent 75%, rgba(255, 255, 255, 0.8) 75%, rgba(255, 255, 255, 0.8));
+    background-size: 20px 20px;
+    background-position: 0 0, 10px 10px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.bgImgPreview img {
+    max-width: 390px;
+    max-height: 100%;
+}
+
+.bgImgPreview.active {
+    background: unset;
+    background-color: white;
+}
+
+.trPopBackground {
+    position: absolute;
+    bottom: 5px;
+    width: calc(100% - 45px);
+    display: grid;
+}
+
+
+.drop-area {
+    position: relative;
+}
+
+.drop-area .drop-here {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -6px;
+    bottom: 0;
+    background-color: var(--content-area-bg-color);
+    z-index: 1;
+    border: 2px dashed gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    display: none;
+}
+
+.drop-area .drop-here span {
+    pointer-events: none;
+}
+
+#divBgGradient,
+#divBgImage {
+    font-size: 0.96em;
+    margin-top: 18px;
+}
+
+.gradient-preview {
+    width: 100%;
+    min-height: 130px;
+    background-color: white;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+
+.gradient-preview span {
+    color: rgba(0, 0, 0, 0.525);
+    background-color: white;
+    padding: 6px 15px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.gradient-controls {
+    border: 1px solid gray;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+}
+
+.swatch {
+    display:inline-block;
+    border:1px solid silver;
+    width:20px;
+    height:20px;
+    margin-right:5px;
+}
+
+td.ActionCell {
+    vertical-align: middle;
+}
+
+.bgImagePreview {
+    display: block;
+    max-width: 100px;
+}
+
+.bgGradientPreview {
+    display: block;
+    width: 45px;
+    height: 30px;
+}

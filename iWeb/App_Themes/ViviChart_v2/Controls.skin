@@ -1,0 +1,96 @@
+﻿
+          <%-- DynamicPopOutImageUrl="graphics/arrow-right.gif" --%>
+          <%--StaticPopOutImageUrl="graphics/arrow-down.gif" --%>
+
+ <asp:Menu runat="server" SkinId="MainMenu"      
+          MaximumDynamicDisplayLevels="5" 
+          StaticDisplayLevels="1" Orientation="Horizontal"     
+          StaticEnableDefaultPopOutImage="false"
+          StaticSubMenuIndent="0"
+          DynamicEnableDefaultPopOutImage="false"
+          DynamicVerticalOffset="0" DynamicHorizontalOffset="0">
+    <StaticMenuStyle CssClass="StaticMenuStyle" />    
+    <StaticMenuItemStyle Height="33px" CssClass="StaticMenuItemStyle" />
+    <StaticHoverStyle CssClass="StaticHoverStyle" />           
+    <DynamicHoverStyle CssClass="DynamicHoverStyle" />             
+    <DynamicMenuItemStyle CssClass="DynamicMenuItemStyle" />        
+    <DynamicMenuStyle CssClass="DynamicMenuStyle" />
+    <LevelMenuItemStyles>
+        <asp:MenuItemStyle BackColor="transparent" />
+        <asp:MenuItemStyle BackColor="#F6F5F5" ForeColor="#666666" />
+        <asp:MenuItemStyle BackColor="#F6F5F5" ForeColor="#666666" />
+        <asp:MenuItemStyle BackColor="#F6F5F5" ForeColor="#666666" />
+        <asp:MenuItemStyle BackColor="#F6F5F5" ForeColor="#666666" />
+        <asp:MenuItemStyle BackColor="#F6F5F5" ForeColor="#666666" />        
+    </LevelMenuItemStyles>       
+</asp:Menu>      
+
+<%-- ------------------------------------------------------------------------ --%>
+
+<asp:GridView runat="server"                
+              Width="98%"
+              BorderStyle="None" 
+              BorderWidth="0px"
+   		      BackColor="Transparent" 
+			  cellpadding="3"
+			  CellSpacing="2" 
+			  GridLines="None" 
+			  Font-Size="Small"
+			  CssClass="grid" 
+			  PagerSettings-FirstPageText= "First Page"
+			  PagerSettings-LastPageText = "Last Page"				
+			  PagerSettings-FirstPageImageUrl="graphics/previousPage.gif"
+			  PagerSettings-LastPageImageUrl="graphics/nextPage.gif">
+    <HeaderStyle CssClass="listheader" />
+    <AlternatingRowStyle CssClass="listaltrow" VerticalAlign="Top" />
+    <RowStyle  CssClass="listrow" VerticalAlign="Top"/>
+    <FooterStyle CssClass="listfooter" />
+    <PagerStyle CssClass="pagerStyle" />
+</asp:GridView>
+
+<Iaw:IAWGrid runat="server"                
+             Width="98%"
+             BorderStyle="None" 
+             BorderWidth="0px"
+         	 BackColor="Transparent" 
+			 cellpadding="3"
+			 CellSpacing="2" 
+			 GridLines="None" 
+			 Font-Size="Small" 
+			 CssClass="grids"
+			 PagerSettings-FirstPageText= "First Page"
+			 PagerSettings-LastPageText = "Last Page"				
+			 PagerSettings-FirstPageImageUrl="graphics/previousPage.gif"
+			 PagerSettings-LastPageImageUrl="graphics/nextPage.gif">			
+    <HeaderStyle CssClass="listheader" />
+    <AlternatingRowStyle CssClass="listaltrow" VerticalAlign="Top" />
+    <RowStyle  CssClass="listrow" VerticalAlign="Top"/>
+    <FooterStyle CssClass="listfooter" />
+    <PagerStyle CssClass="pagerStyle" />
+</Iaw:IAWGrid>
+
+<%-- ------------------------------------------------------------------------ --%>
+
+<asp:HyperLink SkinID="info" runat="server" CssClass="hlink" />
+<iaw:IAWHyperLink SkinID="empty" runat="server"  CssClass="" />    
+<iaw:IAWHyperLink SkinID="menu" runat="server" CssClass="hlink" /> 
+<iaw:IAWHyperLink SkinID="listRow" runat="server" CssClass="listLinkRow" /> 
+<iaw:IAWHyperLink SkinID="listAltRow" runat="server" CssClass="listLinkAltRow" />
+<Iaw:IAWHyperLinkButton runat="server" SkinID="button" CssClass="hlink" />
+
+<%-- ------------------------------------------------------------------------ --%>
+
+<iaw:IAWLabel runat="server" />   
+
+<%-- ------------------------------------------------------------------------ --%>
+
+<asp:RequiredFieldValidator runat="server" ForeColor="red" cssClass="customValidator" />
+<asp:CustomValidator runat="server" ForeColor="red" cssClass="customValidator" />
+<asp:RangeValidator runat="server" ForeColor="red" cssClass="customValidator" />       
+
+<iaw:IAWRequiredFieldValidator runat="server" ForeColor="red" cssClass="customValidator" />
+<iaw:IAWCustomValidator runat="server" ForeColor="red" cssClass="customValidator" />
+<iaw:IAWRangeValidator runat="server" ForeColor="red" cssClass="customValidator" />       
+
+<%-- ------------------------------------------------------------------------ --%>
+

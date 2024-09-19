@@ -1,0 +1,688 @@
+/*
+styles for the main table layout on the master page 
+Cream : F9D686  rgb(249,214,134)
+lightblue : 0399E3  rgb(3,153,227)
+darkblue : 0463B4  rgb(4,99,180)
+
+*/
+
+body {
+	background-color: var(--body-bg-color);
+	/*  background: url(graphics/background.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+*/
+	word-spacing: normal;
+	letter-spacing: normal;
+	font-weight: normal;
+	font-size: medium;
+	text-transform: none;
+	font-family: var(--body-font);
+}
+
+/* for text color */
+td.login_header,
+.login_label,
+body,
+fieldset label,
+td.formlabel,
+td.formlabeldisplay,
+.DynamicMenuItemStyle a,
+input.login_field {
+	color: var(--text-color);
+}
+
+.DynamicMenuItemStyle a {
+	color: var(--menu-item-color);
+}
+
+.noselect {
+	-webkit-touch-callout: none;
+	/* iOS Safari */
+	-webkit-user-select: none;
+	/* Safari */
+	-khtml-user-select: none;
+	/* Konqueror HTML */
+	-moz-user-select: none;
+	/* Old versions of Firefox */
+	-ms-user-select: none;
+	/* Internet Explorer/Edge */
+	user-select: none;
+	/* Non-prefixed version, currently supported by Chrome, Opera and Firefox */
+}
+
+.BannerDiv {
+	/*	width: 100%;*/
+	padding: 0px;
+	margin: 0px;
+}
+
+.BannerBar {
+	position:relative;
+	height: 60px;
+	padding: 0px;
+	margin: 0px;
+	background-color: var(--bannerbar-bg-color);
+	color: var(--bannerbar-color);
+}
+
+/* Company logo - ensure the size is correct for the image */
+.BannerLogo {
+	position: absolute;
+	z-index: 0;
+	left: 40px;
+	top: 50%;
+	transform: translateY(-50%);
+	width:var(--logo-width);
+	height:var(--logo-height);
+	background: var(--bannerbar-logo) no-repeat;
+	background-size: var(--logo-width) var(--logo-height);
+}
+
+.BannerLoginDetails {
+	position: absolute;
+	z-index: 0;
+	top: 11px;
+	right: 30px;
+	text-align: right;
+	background-color: var(--BannerLoginDetails-bg-color);
+	border: var(--BannerLoginDetails-border);
+	padding: 9px 6px;
+	-webkit-border-radius: 5px;
+	border-radius: 8px;
+}
+
+.BannerMenu {
+	height: 50px;
+	position: absolute;
+	z-index: 1000;
+	top: 9px;
+	left: 5px;
+}
+
+.MenuBar {
+	display: block;
+	position: relative;
+	z-index: 100;
+	color: white;
+	min-height: 33px;
+	height: 33px;
+	max-height: 33px;
+	vertical-align: middle;
+	padding-left: 5px;
+}
+
+.MBItem {
+	display: inline;
+	vertical-align: middle;
+}
+
+.MenuBarLeft {
+	display: inline;
+	/*    line-height: 33px;*/
+	height: 33px;
+	vertical-align: middle;
+	padding-right: 10px;
+}
+
+.MenuBarRight {
+	float: right;
+	line-height: 33px;
+	height: 33px;
+	vertical-align: middle;
+	padding-right: 10px;
+}
+
+div.ButtonBar {
+	/*	width: 100%;*/
+	text-align: center;
+	background-color: var(--div-ButtonBar-bg-color);
+	padding-bottom: 5px;
+	padding-top: 5px;
+	color: var(--div-ButtonBar-color);
+}
+
+table.buttonBar {
+	background-color: var(--table-ButtonBar-bg-color);
+	margin: auto;
+	height: 28px;
+}
+
+td.buttonBar {
+	padding-left: 3px;
+	padding-right: 3px;
+}
+
+.BannerMessage {
+	border: var(--BannerMessage-border);
+	padding: 5px 10px 5px 10px;
+	position: absolute;
+	top: 25px;
+	left: 400px;
+	z-index: 99;
+	font-size: medium;
+	background-color: var(--BannerMessage-bg-color);
+	visibility: visible;
+	font-family: var(--BannerMessage-font);
+	font-weight: bold;
+	color: var(--BannerMessage-color);
+}
+
+/* END styles for the Banner Bar Area */
+
+
+/* style for page content */
+.div_content {
+	text-align: center;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+
+table.content {
+	/*    border-collapse:collapse;    */
+	/* margin-left: auto;
+	margin-right: auto; */
+	width: 100%;
+}
+
+td.content {
+	vertical-align: top;
+	/*width:70%;*/
+}
+
+div.layout {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* END style for page content */
+
+
+/*
+AJAX updare progress 
+a div on the master page
+*/
+.ajaxProgressDiv {
+	position: fixed;
+	top: 40%;
+	left: 40%;
+	padding: 15px 0px 10px 0px;
+	text-align: center;
+	background: var(--ajaxProgressDiv-bg-image);
+	width: 270px;
+	height: 70px;
+	font-size: 12px;
+	font-weight: bold;
+	color: var(--ajaxProgressDiv-color);
+}
+
+.inline {
+	display: inline-block;
+}
+
+.nowrap {
+	white-space: nowrap !important;
+}
+
+.top {
+	vertical-align: top;
+}
+
+.middle {
+	vertical-align: middle;
+}
+
+.bottom {
+	vertical-align: bottom;
+}
+
+.left {
+	text-align: left !important;
+}
+
+.right {
+	text-align: right !important;
+}
+
+.center {
+	text-align: center !important;
+}
+
+.cur-pointer {
+	cursor: pointer;
+}
+
+.noClick {
+	pointer-events: none;
+	opacity: 0.50;
+}
+
+input[type="search"] {
+	-webkit-filter: grayscale(100%);
+	/* Safari 6.0 - 9.0 */
+	filter: grayscale(100%);
+}
+
+input {
+	font-family: inherit;
+}
+
+textarea,
+input[type=text],
+input[type=date],
+input[type=time],
+input[type=password],
+input[type=checkbox],
+input[type=search],
+select {
+	border: 1px solid var(--input-border);
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	/* outline: none !important; */
+	font-family: inherit;
+}
+
+input[type=text],
+input[type=search],
+input[type=password] {
+	background-color: var(--input-field-bg-color) !important;
+	color: var(--input-field-color);
+}
+
+input[type=text]:focus,
+input[type=search]:focus,
+input[type=password]:focus {
+	background-color: var(--input-field-focus-bg-color) !important;
+}
+
+/*.PopupPanel select,*/
+.PopupPanel input[type=date] {
+	padding: 5px;
+	width: 130px !important;
+}
+
+/*.PopupPanel select {
+	width: 140px !important;
+}*/
+
+textarea:focus,
+input[type=text]:focus,
+input[type=date]:focus,
+input[type=time]:focus,
+input[type=password]:focus,
+input[type=checkbox]:focus,
+select:focus {
+	outline: 1px solid var(--input-border);
+}
+
+select:hover focus {
+	outline: none !important;
+}
+
+.PanelClass {
+	position: relative;
+}
+
+.AreaPanel {
+	position: relative;
+	background-color: var(--AreaPanel-bg-color);
+	text-align: left;
+	padding: 7px;
+	border: var(--AreaPanel-border);
+	border-radius: 5px;
+}
+
+.divHelpClass {
+	position: absolute;
+	top: 0;
+	right: 15px;
+	/*    -webkit-box-shadow: 2px 2px 8px 0px #808080;
+    box-shadow: 2px 2px 8px 0px #808080;*/
+	padding: 0px 3px 0px 3px;
+}
+
+.staticHelpClass {
+	display: inline;
+	padding: 0px 0px 0px 3px;
+}
+
+.divHelpClass,
+.staticHelpClass {
+	color: var(--helpClass-color);
+	border: var(--helpClass-border);
+	border-radius: 10px !important;
+	background-color: var(--helpClass-bg-color);
+	font-family: var(--helpClass-font);
+	font-size: 18px;
+	font-weight: bold;
+	cursor: pointer;
+	z-index: 1000;
+}
+
+fieldset {
+	border: none;
+	border-radius: 20px;
+	text-align: left;
+	padding: 15px 20px 10px 20px;
+	background-color: var(--content-area-bg-color);
+	margin-top: 5px;
+/*	max-width: 700px; */
+	max-width: fit-content;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+	min-width: 250px;
+}
+
+.PopupPanel fieldset {
+	margin-top: 0;
+	top: 0;
+}
+
+legend {
+	background-color: var(--legend-bg-color);
+	border-radius: 20px !important;
+	/* border: 1px solid #5188bf; */
+	padding: 6px 10px;
+	font-weight: bold;
+	position: relative;
+	top: 0px;
+	left: 40px;
+	border: 3px solid var(--legend-border-color);
+}
+
+fieldset input[type=checkbox] {
+	width: 14px;
+	height: 14px;
+	cursor: pointer;
+	position: relative;
+	visibility: hidden;
+}
+
+input[type=checkbox]#ctl00_ContentPlaceHolder1_ChangePwd_cbPasswords {
+	position: relative;
+	top: -1px;
+}
+
+fieldset input[type=checkbox]::before {
+	position: absolute;
+	left: -3px;
+	top: -4px;
+	height: 24px;
+	width: 24px;
+	content: "";
+	background: var(--checkbox-blank-icon);
+	visibility: visible;
+	filter: var(--checkbox-color);
+}
+
+
+fieldset input[type=checkbox]:checked::before {
+	background: var(--checkbox-checked-icon);
+}
+
+fieldset label {
+	margin-right: 10px;
+	padding-left: 5px;
+	position: relative;
+	top: -1px;
+	cursor: pointer;
+	font-size: 0.95em;
+	user-select: none;
+}
+
+fieldset legend {
+	color: var(--legend-color) !important;
+}
+
+.ModalBackground {
+	background-color: var(--ModalBackground-bg-color);
+	filter: alpha(opacity=75);
+	opacity: 0.75;
+}
+
+.PopupPanel {
+	border-radius: 15px;
+	color: var(--PopupPanel-color);
+	font-size: medium;
+	padding: 10px;
+}
+.InfoPanel {
+	border: none;
+	border-radius: 20px;
+	text-align: left;
+	padding: 15px 20px 10px 20px;
+	background-color: var(--InfoPanel-bg-color);
+	margin-top: 5px;
+	min-width: 350px;
+	max-width: fit-content;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	box-shadow: var(--InfoPanel-shadow);
+}
+
+
+
+/* standard text and html element styles */
+SELECT {
+	font-size: medium;
+}
+
+/* END standard text and html element styles */
+
+/*********  Styles for IawMessageControl *****************/
+
+table.tblIawMessage {
+	margin-left: 0px !important;
+	margin-right: auto;
+	position: relative;
+}
+
+table.tblIawMessage .informationIcon,
+table.tblIawMessage .warningIcon {
+	position: absolute;
+	top: 0.08em;
+	width: 24px;
+	height: 24px;
+}
+
+/* error message that appears at the top of the screen, this contains a span element that uses span.errorMessage */
+td.errorMessage {
+	text-align: left;
+	border: var(--td-errorMessage-border);
+	font-size: medium;
+	color: var(--td-errorMessage-color);
+	background-color: var(--td-errorMessage-bg-color);
+	padding: 6px 10px 6px 10px;
+}
+
+td.infoMessage,
+td.warnMessage {
+	text-align: left;
+	font-size: medium;
+	padding: 6px 10px 6px 30px;
+}
+
+td.warnMessage {
+	color: var(--td-warn-message-color);
+}
+
+td.infoMessage ul {
+	padding-left: 17px;
+}
+
+td.infoMessage ul li {
+	font-size: 0.96em;
+}
+
+/* style for form errors */
+span.errorMessage {
+	color: var(--span-error-message-color);
+	background-color: Transparent;
+}
+
+span.warnMessage {
+	color: var(--span-warn-message-color);
+	background-color: Transparent;
+}
+
+span.infoMessage {
+	background-color: Transparent;
+}
+
+
+/* icon styles */
+td.errorIcon {
+	background-image: var(--td-error-icon);
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 25px;
+}
+
+td.informationIcon {
+	background-image: var(--td-info-icon);
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 25px;
+}
+
+td.warningIcon {
+	background-image: var(--td-warn-icon);
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 25px;
+}
+
+/*********  END IawMessageControl  *****************
+
+/* style for explanatory text that appears on pages */
+.ParaText {
+	background-color: var(--ParaText-bg-color);
+	font-weight: normal;
+	font-size: medium;
+	word-spacing: normal;
+	color: var(--ParaText-color);
+	font-family: var(--ParaText-font);
+	letter-spacing: normal;
+}
+
+.hidden {
+	display: none;
+}
+
+/* Ajax Tab Control */
+
+.iaw .ajax__tab {
+	background-image: none !important;
+	padding-bottom: 1px !important;
+	height: unset;
+	position: relative;
+	top: -6px;
+}
+
+.ajax__tab_xp .ajax__tab_header {
+	background-image: url() !important;
+}
+
+/* Set default border-radius to 0 for all tabs */
+/iaw .ajax__tab_header span.ajax__tab .ajax__tab_tab {
+    border-radius: 0;
+}
+
+/* Set top-left radius and for the first child or first-tab */
+.iaw .ajax__tab_header:not(.manual-tab) span.ajax__tab:first-child .ajax__tab_tab,
+.iaw .ajax__tab_header.manual-tab span.ajax__tab .ajax__tab_tab.first-tab {
+    border-left: var(--tab-border-left-right);
+    border-top-left-radius: 8px;
+}
+
+/* Set top-right radius for the last child or last-tab */
+.iaw .ajax__tab_header:not(.manual-tab) span.ajax__tab:last-child .ajax__tab_tab,
+.iaw .ajax__tab_header.manual-tab span.ajax__tab .ajax__tab_tab.last-tab {
+    border-top-right-radius: 8px;
+}
+
+.iaw .ajax__tab_active {
+	background-image: none !important;
+	height: unset;
+}
+
+.iaw .ajax__tab_inner {
+	padding-left: 0px !important;
+}
+
+.iaw .ajax__tab_active>.ajax__tab_outer>.ajax__tab_inner>.ajax__tab_tab {
+	background-color: var(--tab-hover-bg-color);
+	color: var(--tab-hover-color);
+}
+
+.iaw .ajax__tab:hover {
+	background-image: none !important;
+}
+
+.iaw .ajax__tab_header {
+	padding-right: 0px !important;
+}
+
+.iaw .ajax__tab_outer {
+	background-image: none !important;
+	margin-right: 0px !important;
+	padding-right: 0px !important;
+}
+
+.iaw .ajax__tab_inner {
+	background-image: none !important;
+}
+
+.iaw .ajax__tab_tab {
+	background-image: none !important;
+	border-top: var(--tab-border-top) !important;
+	border-right: var(--tab-border-left-right);
+	border-bottom: none;
+	background-color: var(--tab-bg-color);
+	color: var(--tab-color);
+	transition-duration: .2s;
+}
+
+.iaw a.ajax__tab_tab {
+	padding: 4px 10px !important;
+}
+
+.iaw .ajax__tab_tab:hover:not(.ajax__tab_disabled) {
+	background-color: var(--tab-hover-bg-color);
+	color: var(--tab-hover-color);
+}
+
+.ajax__tab_xp .ajax__tab_body {
+	background-color: transparent !important;
+	border-top: var(--tab-border-top) !important;
+}
+
+.drop-area {
+	position: relative;
+}
+
+.drop-area .drop-here {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background-color: var(--content-area-bg-color);
+	z-index: 1;
+	border: 2px dashed #ffffff73;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 2em;
+	display: none;
+}
+
+.drop-area .drop-here span {
+	pointer-events: none;
+}

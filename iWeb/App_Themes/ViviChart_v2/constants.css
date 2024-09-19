@@ -1,0 +1,13 @@
+﻿.inline { display: inline-block; }
+.nowrap { white-space: nowrap !important; }
+.bold { font-weight: bold; }
+.top { vertical-align: top; }
+.middle { vertical-align: middle; }
+.bottom { vertical-align: bottom; }
+.left { text-align: left !important; }
+.right { text-align: right !important; }
+.center { text-align: center !important; }
+.cur-pointer { cursor: pointer; }
+.noClick { pointer-events: none; opacity: 0.50; }
+.blinker { animation: blinker 1s linear infinite; }
+@keyframes blinker { 50% { opacity: 0; } }

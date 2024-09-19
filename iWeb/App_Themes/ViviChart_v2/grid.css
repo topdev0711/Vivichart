@@ -1,0 +1,148 @@
+﻿
+table {
+    -webkit-border-horizontal-spacing: 2px;
+    -webkit-border-vertical-spacing: 0px;
+}
+
+
+/* generic web list */
+table.grid,table.listform
+{
+    border-collapse:separate;
+}
+
+.listheader th, .listheader div {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: var(--listheader-bg-color);
+    color: var(--listheader-color);
+    padding-left:8px;
+    padding-right:8px;
+    z-index: 1;
+}
+
+/* header row style*/
+th.listheader, tr.listheader, div.listheader {
+    white-space: normal;
+    font-weight: normal;
+    font-size: medium;
+    color: var(--listheader-color);
+    text-align: center;
+    background-color: var(--listheader-bg-color);
+}
+th.listheader span, tr.listheader span
+{
+    white-space:nowrap; 			
+}
+/* list row style */
+tr.listrow, tr.listaltrow {
+    color: var(--listrow-color);
+    background-color: var(--listrow-bg-color);
+    vertical-align: middle;
+}
+/* alternating list row style */
+tr.listaltrow {
+    color: var(--listaltrow-color);
+    background-color: var(--listaltrow-bg-color);
+}
+
+/* cell style for each data cell */
+td.listdata,td.listdataalt
+{
+   vertical-align:top;
+   padding:1px 4px 1px 4px;
+   white-space:nowrap;
+}
+
+tr.selected_row td:not(.ActionCell) {
+    background-color:var(--selected-row-bg-color);
+    color:var(--selected-row-color);
+    vertical-align: middle;
+}
+
+tr[data-class="listrow"] td.ActionCell {
+    color: var(--listrow-color);
+    background-color: var(--listrow-bg-color);
+}
+
+tr[data-class="listaltrow"] td.ActionCell {
+    color: var(--listaltrow-color);
+    background-color: var(--listaltrow-bg-color);
+}
+
+/*.selected_row:hover {
+    background-color:var(--selected-row-bg-hover-color);
+    color:var(--selected-row-hover-color);
+}*/
+
+/* other list header styles */
+td.listheader
+{
+    white-space:nowrap; 
+	font-weight: normal;
+	font-size:medium;	
+	background-color: var(--td-listheader-bg-color);
+	color: var(--td-listheader-color);	
+	text-align:center;
+}
+
+tr.listheader
+{
+    background-color: var(--listheader-bg-color);
+    color: var(--listheader-color);	
+}
+/* end other list header styles */
+
+td.listfooter
+{
+    white-space:nowrap; 
+	font-weight: normal;
+	font-size:medium;	
+	background-color:var(--td-listfooter-bg-color);
+	color: var(--td-listfooter-color);	
+	text-align:center;
+}
+
+tr.listfooter
+{
+    background-color: var(--tr-listfooter-bg-color);
+	color: var(--tr-listfooter-color);		
+}
+
+/* end style for authorisations */
+
+tr.selected_row,
+tr.listaltrow,
+tr.listrow {
+	cursor: default;
+}
+
+tr th {
+	font-weight: normal;
+}
+
+/* Override the style for td elements with the ActionCell class even when the tr is hovered */
+
+.allow-hover tr.selected_row:hover td:not(.ActionCell),
+.allow-hover tr.listrow:hover td:not(.ActionCell),
+.allow-hover tr.listaltrow:hover td:not(.ActionCell) {
+	color: var(--selected-row-hover-color) !important;
+	font-weight: normal !important;
+    background-color:var(--selected-row-bg-hover-color);
+}
+
+/*.allow-hover tr.selected_row input,
+.allow-hover tr.listaltrow:hover input,
+.allow-hover tr.listrow:hover input {
+	filter: invert(1) !important;
+}*/
+
+.list-icon {
+    color:var(--list-icons);
+}
+
+/*.list-icon:hover {
+    color:var(--list-icons-hover);
+}
+*/

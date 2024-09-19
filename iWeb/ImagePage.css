@@ -1,0 +1,13 @@
+﻿body, .background, .div_content, table {
+    margin:0px !important;
+    padding:0px !important;
+    border-radius:0px !important;
+    -webkit-border-horizontal-spacing:0px;
+    -webkit-border-vertical-spacing:0px;
+}
+.background {
+    background-image: url('ImagePage.jpg'); /* Default background image */
+    background-size: cover; /* Cover the entire area */
+    background-position: center; /* Center the background image */
+    height: calc(100vh - 62px); /* Minimum height to cover the viewport height */
+}

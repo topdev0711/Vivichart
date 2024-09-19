@@ -1,0 +1,11 @@
+﻿/* This StyleSheet contains custom styles for this project */
+
+.qtip-green {
+   background-color:#effcfe;
+   border-color: Black;
+   color:#yellow;
+   }
+   
+.qtip-green .qtip-titlebar{
+background-color: #ADD8E6;
+}

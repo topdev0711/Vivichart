@@ -1,0 +1,66 @@
+/* form builder */
+
+a.tabLink
+{
+    color:var(--tabLink-color);
+}
+
+.formcontrol {
+	font-size: medium;
+	color: var(--formcontrol-color);
+	background-color: var(--formcontrol-bg-color);
+}
+
+/* form builder */
+.popUp
+{
+	background-color: var(--popUp-bg-color);	
+	border: var(--popUp-border);	
+}
+
+.menuItem
+{
+	border: var(--menuItem-border);
+	font-weight: normal;
+	font-size:medium;
+	color: var(--menuItem-color);
+	background-color:var(--menuItem-bg-color);
+	height:23px;
+	width:85px;
+	vertical-align:bottom;
+	padding:4px;	
+}
+
+td.formCell
+{
+	background-color: var(--formCell-bg-color);
+	color: var(--formCell-color);
+	font-size:medium;
+	padding:3px 8px 3px 8px;	
+	vertical-align:middle;
+	height:20px;
+	
+}
+
+/* menu tree view control */
+.node
+{
+    color: var(--menu-node-color);    
+}
+
+.selectedNode
+{
+    color: var(--menu-selectedNode-color);
+    background-color: var(--menu-selectedNode-bg-color);
+    font-size:medium;
+    font-weight:bold;
+}
+
+/* end menu viewer */
+
+.error
+{
+    color:var(--menu-error);
+}
+
+

@@ -1,0 +1,2376 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <Import Project="..\packages\SixLabors.ImageSharp.3.1.5\build\SixLabors.ImageSharp.props" Condition="Exists('..\packages\SixLabors.ImageSharp.3.1.5\build\SixLabors.ImageSharp.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{25F3C71D-B340-42A9-B3FB-00FD5D73BDF6}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>
+    </RootNamespace>
+    <AssemblyName>ViviChart</AssemblyName>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>Current</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <TargetFrameworkProfile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <CodeAnalysisRules>-Microsoft.Design#CA1012;-Microsoft.Design#CA2210;-Microsoft.Design#CA1040;-Microsoft.Design#CA1005;-Microsoft.Design#CA1020;-Microsoft.Design#CA1021;-Microsoft.Design#CA1010;-Microsoft.Design#CA1011;-Microsoft.Design#CA1009;-Microsoft.Design#CA1050;-Microsoft.Design#CA1026;-Microsoft.Design#CA1019;-Microsoft.Design#CA1031;-Microsoft.Design#CA1047;-Microsoft.Design#CA1000;-Microsoft.Design#CA1048;-Microsoft.Design#CA1051;-Microsoft.Design#CA1002;-Microsoft.Design#CA1061;-Microsoft.Design#CA1006;-Microsoft.Design#CA1046;-Microsoft.Design#CA1045;-Microsoft.Design#CA1065;-Microsoft.Design#CA1038;-Microsoft.Design#CA1008;-Microsoft.Design#CA1028;-Microsoft.Design#CA1064;-Microsoft.Design#CA1004;-Microsoft.Design#CA1035;-Microsoft.Design#CA1063;-Microsoft.Design#CA1032;-Microsoft.Design#CA1023;-Microsoft.Design#CA1033;-Microsoft.Design#CA1039;-Microsoft.Design#CA1016;-Microsoft.Design#CA1014;-Microsoft.Design#CA1017;-Microsoft.Design#CA1018;-Microsoft.Design#CA1027;-Microsoft.Design#CA1059;-Microsoft.Design#CA1060;-Microsoft.Design#CA1034;-Microsoft.Design#CA1013;-Microsoft.Design#CA1036;-Microsoft.Design#CA1044;-Microsoft.Design#CA1041;-Microsoft.Design#CA1025;-Microsoft.Design#CA1052;-Microsoft.Design#CA1053;-Microsoft.Design#CA1057;-Microsoft.Design#CA1058;-Microsoft.Design#CA1001;-Microsoft.Design#CA1049;-Microsoft.Design#CA1054;-Microsoft.Design#CA1056;-Microsoft.Design#CA1055;-Microsoft.Design#CA1030;-Microsoft.Design#CA1003;-Microsoft.Design#CA1007;-Microsoft.Design#CA1043;-Microsoft.Design#CA1024;-Microsoft.Globalization#CA1301;-Microsoft.Globalization#CA1302;-Microsoft.Globalization#CA1308;-Microsoft.Globalization#CA1306;-Microsoft.Globalization#CA1304;-Microsoft.Globalization#CA1305;-Microsoft.Globalization#CA2101;-Microsoft.Globalization#CA1300;-Microsoft.Globalization#CA1307;-Microsoft.Globalization#CA1309;-Microsoft.Interoperability#CA1403;-Microsoft.Interoperability#CA1406;-Microsoft.Interoperability#CA1413;-Microsoft.Interoperability#CA1402;-Microsoft.Interoperability#CA1407;-Microsoft.Interoperability#CA1404;-Microsoft.Interoperability#CA1410;-Microsoft.Interoperability#CA1411;-Microsoft.Interoperability#CA1405;-Microsoft.Interoperability#CA1409;-Microsoft.Interoperability#CA1415;-Microsoft.Interoperability#CA1408;-Microsoft.Interoperability#CA1414;-Microsoft.Interoperability#CA1412;-Microsoft.Interoperability#CA1400;-Microsoft.Interoperability#CA1401;-Microsoft.Maintainability#CA1506;-Microsoft.Maintainability#CA1502;-Microsoft.Maintainability#CA1501;-Microsoft.Maintainability#CA1505;-Microsoft.Maintainability#CA1504;-Microsoft.Maintainability#CA1500;-Microsoft.Mobility#CA1600;-Microsoft.Mobility#CA1601;-Microsoft.Naming#CA1702;-Microsoft.Naming#CA1700;-Microsoft.Naming#CA1712;-Microsoft.Naming#CA1713;-Microsoft.Naming#CA1714;-Microsoft.Naming#CA1709;-Microsoft.Naming#CA1704;-Microsoft.Naming#CA1708;-Microsoft.Naming#CA1715;-Microsoft.Naming#CA1710;-Microsoft.Naming#CA1720;-Microsoft.Naming#CA1707;-Microsoft.Naming#CA1722;-Microsoft.Naming#CA1711;-Microsoft.Naming#CA1716;-Microsoft.Naming#CA1717;-Microsoft.Naming#CA1725;-Microsoft.Naming#CA1719;-Microsoft.Naming#CA1721;-Microsoft.Naming#CA1701;-Microsoft.Naming#CA1703;-Microsoft.Naming#CA1724;-Microsoft.Naming#CA1726;-Microsoft.Performance#CA1809;-Microsoft.Performance#CA1811;-Microsoft.Performance#CA1812;-Microsoft.Performance#CA1813;-Microsoft.Performance#CA1823;-Microsoft.Performance#CA1800;-Microsoft.Performance#CA1805;-Microsoft.Performance#CA1810;-Microsoft.Performance#CA1824;-Microsoft.Performance#CA1822;-Microsoft.Performance#CA1815;-Microsoft.Performance#CA1814;-Microsoft.Performance#CA1819;-Microsoft.Performance#CA1821;-Microsoft.Performance#CA1804;-Microsoft.Performance#CA1820;-Microsoft.Performance#CA1802;-Microsoft.Portability#CA1903;-Microsoft.Portability#CA1901;-Microsoft.Portability#CA1900;-Microsoft.Reliability#CA2001;-Microsoft.Reliability#CA2002;-Microsoft.Reliability#CA2003;-Microsoft.Reliability#CA2004;-Microsoft.Reliability#CA2006;-Microsoft.Security#CA2116;-Microsoft.Security#CA2117;-Microsoft.Security#CA2105;-Microsoft.Security#CA2115;-Microsoft.Security#CA2102;-Microsoft.Security#CA2104;-Microsoft.Security#CA2122;-Microsoft.Security#CA2114;-Microsoft.Security#CA2123;-Microsoft.Security#CA2111;-Microsoft.Security#CA2108;-Microsoft.Security#CA2107;-Microsoft.Security#CA2103;-Microsoft.Security#CA2118;-Microsoft.Security#CA2109;-Microsoft.Security#CA2119;-Microsoft.Security#CA2106;-Microsoft.Security#CA2112;-Microsoft.Security#CA2120;-Microsoft.Security#CA2121;-Microsoft.Security#CA2126;-Microsoft.Security#CA2124;-Microsoft.Security#CA2127;-Microsoft.Security#CA2128;-Microsoft.Security#CA2129;-Microsoft.Usage#CA2243;-Microsoft.Usage#CA2236;-Microsoft.Usage#CA1816;-Microsoft.Usage#CA2227;-Microsoft.Usage#CA2213;-Microsoft.Usage#CA2216;-Microsoft.Usage#CA2214;-Microsoft.Usage#CA2222;-Microsoft.Usage#CA1806;-Microsoft.Usage#CA2217;-Microsoft.Usage#CA2212;-Microsoft.Usage#CA2219;-Microsoft.Usage#CA2201;-Microsoft.Usage#CA2228;-Microsoft.Usage#CA2221;-Microsoft.Usage#CA2220;-Microsoft.Usage#CA2240;-Microsoft.Usage#CA2229;-Microsoft.Usage#CA2238;-Microsoft.Usage#CA2207;-Microsoft.Usage#CA2208;-Microsoft.Usage#CA2235;-Microsoft.Usage#CA2237;-Microsoft.Usage#CA2232;-Microsoft.Usage#CA2223;-Microsoft.Usage#CA2211;-Microsoft.Usage#CA2233;-Microsoft.Usage#CA2225;-Microsoft.Usage#CA2226;-Microsoft.Usage#CA2231;-Microsoft.Usage#CA2224;-Microsoft.Usage#CA2218;-Microsoft.Usage#CA2234;-Microsoft.Usage#CA2239;-Microsoft.Usage#CA2200;-Microsoft.Usage#CA1801;-Microsoft.Usage#CA2242;-Microsoft.Usage#CA2205;-Microsoft.Usage#CA2230</CodeAnalysisRules>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>Full</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>false</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <CodeAnalysisRules>-Microsoft.Design#CA1012;-Microsoft.Design#CA2210;-Microsoft.Design#CA1040;-Microsoft.Design#CA1005;-Microsoft.Design#CA1020;-Microsoft.Design#CA1021;-Microsoft.Design#CA1010;-Microsoft.Design#CA1011;-Microsoft.Design#CA1009;-Microsoft.Design#CA1050;-Microsoft.Design#CA1026;-Microsoft.Design#CA1019;-Microsoft.Design#CA1031;-Microsoft.Design#CA1047;-Microsoft.Design#CA1000;-Microsoft.Design#CA1048;-Microsoft.Design#CA1051;-Microsoft.Design#CA1002;-Microsoft.Design#CA1061;-Microsoft.Design#CA1006;-Microsoft.Design#CA1046;-Microsoft.Design#CA1045;-Microsoft.Design#CA1065;-Microsoft.Design#CA1038;-Microsoft.Design#CA1008;-Microsoft.Design#CA1028;-Microsoft.Design#CA1064;-Microsoft.Design#CA1004;-Microsoft.Design#CA1035;-Microsoft.Design#CA1063;-Microsoft.Design#CA1032;-Microsoft.Design#CA1023;-Microsoft.Design#CA1033;-Microsoft.Design#CA1039;-Microsoft.Design#CA1016;-Microsoft.Design#CA1014;-Microsoft.Design#CA1017;-Microsoft.Design#CA1018;-Microsoft.Design#CA1027;-Microsoft.Design#CA1059;-Microsoft.Design#CA1060;-Microsoft.Design#CA1034;-Microsoft.Design#CA1013;-Microsoft.Design#CA1036;-Microsoft.Design#CA1044;-Microsoft.Design#CA1041;-Microsoft.Design#CA1025;-Microsoft.Design#CA1052;-Microsoft.Design#CA1053;-Microsoft.Design#CA1057;-Microsoft.Design#CA1058;-Microsoft.Design#CA1001;-Microsoft.Design#CA1049;-Microsoft.Design#CA1054;-Microsoft.Design#CA1056;-Microsoft.Design#CA1055;-Microsoft.Design#CA1030;-Microsoft.Design#CA1003;-Microsoft.Design#CA1007;-Microsoft.Design#CA1043;-Microsoft.Design#CA1024;-Microsoft.Globalization#CA1301;-Microsoft.Globalization#CA1302;-Microsoft.Globalization#CA1308;-Microsoft.Globalization#CA1306;-Microsoft.Globalization#CA1304;-Microsoft.Globalization#CA1305;-Microsoft.Globalization#CA2101;-Microsoft.Globalization#CA1300;-Microsoft.Globalization#CA1307;-Microsoft.Globalization#CA1309;-Microsoft.Interoperability#CA1403;-Microsoft.Interoperability#CA1406;-Microsoft.Interoperability#CA1413;-Microsoft.Interoperability#CA1402;-Microsoft.Interoperability#CA1407;-Microsoft.Interoperability#CA1404;-Microsoft.Interoperability#CA1410;-Microsoft.Interoperability#CA1411;-Microsoft.Interoperability#CA1405;-Microsoft.Interoperability#CA1409;-Microsoft.Interoperability#CA1415;-Microsoft.Interoperability#CA1408;-Microsoft.Interoperability#CA1414;-Microsoft.Interoperability#CA1412;-Microsoft.Interoperability#CA1400;-Microsoft.Interoperability#CA1401;-Microsoft.Maintainability#CA1506;-Microsoft.Maintainability#CA1502;-Microsoft.Maintainability#CA1501;-Microsoft.Maintainability#CA1505;-Microsoft.Maintainability#CA1504;-Microsoft.Maintainability#CA1500;-Microsoft.Mobility#CA1600;-Microsoft.Mobility#CA1601;-Microsoft.Naming#CA1702;-Microsoft.Naming#CA1700;-Microsoft.Naming#CA1712;-Microsoft.Naming#CA1713;-Microsoft.Naming#CA1714;-Microsoft.Naming#CA1709;-Microsoft.Naming#CA1704;-Microsoft.Naming#CA1708;-Microsoft.Naming#CA1715;-Microsoft.Naming#CA1710;-Microsoft.Naming#CA1720;-Microsoft.Naming#CA1707;-Microsoft.Naming#CA1722;-Microsoft.Naming#CA1711;-Microsoft.Naming#CA1716;-Microsoft.Naming#CA1717;-Microsoft.Naming#CA1725;-Microsoft.Naming#CA1719;-Microsoft.Naming#CA1721;-Microsoft.Naming#CA1701;-Microsoft.Naming#CA1703;-Microsoft.Naming#CA1724;-Microsoft.Naming#CA1726;-Microsoft.Performance#CA1809;-Microsoft.Performance#CA1811;-Microsoft.Performance#CA1812;-Microsoft.Performance#CA1813;-Microsoft.Performance#CA1823;-Microsoft.Performance#CA1800;-Microsoft.Performance#CA1805;-Microsoft.Performance#CA1810;-Microsoft.Performance#CA1824;-Microsoft.Performance#CA1822;-Microsoft.Performance#CA1815;-Microsoft.Performance#CA1814;-Microsoft.Performance#CA1819;-Microsoft.Performance#CA1821;-Microsoft.Performance#CA1804;-Microsoft.Performance#CA1820;-Microsoft.Performance#CA1802;-Microsoft.Portability#CA1903;-Microsoft.Portability#CA1901;-Microsoft.Portability#CA1900;-Microsoft.Reliability#CA2001;-Microsoft.Reliability#CA2002;-Microsoft.Reliability#CA2003;-Microsoft.Reliability#CA2004;-Microsoft.Reliability#CA2006;-Microsoft.Security#CA2116;-Microsoft.Security#CA2117;-Microsoft.Security#CA2105;-Microsoft.Security#CA2115;-Microsoft.Security#CA2102;-Microsoft.Security#CA2104;-Microsoft.Security#CA2122;-Microsoft.Security#CA2114;-Microsoft.Security#CA2123;-Microsoft.Security#CA2111;-Microsoft.Security#CA2108;-Microsoft.Security#CA2107;-Microsoft.Security#CA2103;-Microsoft.Security#CA2118;-Microsoft.Security#CA2109;-Microsoft.Security#CA2119;-Microsoft.Security#CA2106;-Microsoft.Security#CA2112;-Microsoft.Security#CA2120;-Microsoft.Security#CA2121;-Microsoft.Security#CA2126;-Microsoft.Security#CA2124;-Microsoft.Security#CA2127;-Microsoft.Security#CA2128;-Microsoft.Security#CA2129;-Microsoft.Usage#CA2243;-Microsoft.Usage#CA2236;-Microsoft.Usage#CA1816;-Microsoft.Usage#CA2227;-Microsoft.Usage#CA2213;-Microsoft.Usage#CA2216;-Microsoft.Usage#CA2214;-Microsoft.Usage#CA2222;-Microsoft.Usage#CA1806;-Microsoft.Usage#CA2217;-Microsoft.Usage#CA2212;-Microsoft.Usage#CA2219;-Microsoft.Usage#CA2201;-Microsoft.Usage#CA2228;-Microsoft.Usage#CA2221;-Microsoft.Usage#CA2220;-Microsoft.Usage#CA2240;-Microsoft.Usage#CA2229;-Microsoft.Usage#CA2238;-Microsoft.Usage#CA2207;-Microsoft.Usage#CA2208;-Microsoft.Usage#CA2235;-Microsoft.Usage#CA2237;-Microsoft.Usage#CA2232;-Microsoft.Usage#CA2223;-Microsoft.Usage#CA2211;-Microsoft.Usage#CA2233;-Microsoft.Usage#CA2225;-Microsoft.Usage#CA2226;-Microsoft.Usage#CA2231;-Microsoft.Usage#CA2224;-Microsoft.Usage#CA2218;-Microsoft.Usage#CA2234;-Microsoft.Usage#CA2239;-Microsoft.Usage#CA2200;-Microsoft.Usage#CA1801;-Microsoft.Usage#CA2242;-Microsoft.Usage#CA2205;-Microsoft.Usage#CA2230</CodeAnalysisRules>
+    <DebugSymbols>true</DebugSymbols>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release_precompile_aspx|AnyCPU' ">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.vb</CodeAnalysisModuleSuppressionsFile>
+    <CodeAnalysisRules>-Microsoft.Design#CA1012;-Microsoft.Design#CA2210;-Microsoft.Design#CA1040;-Microsoft.Design#CA1005;-Microsoft.Design#CA1020;-Microsoft.Design#CA1021;-Microsoft.Design#CA1010;-Microsoft.Design#CA1011;-Microsoft.Design#CA1009;-Microsoft.Design#CA1050;-Microsoft.Design#CA1026;-Microsoft.Design#CA1019;-Microsoft.Design#CA1031;-Microsoft.Design#CA1047;-Microsoft.Design#CA1000;-Microsoft.Design#CA1048;-Microsoft.Design#CA1051;-Microsoft.Design#CA1002;-Microsoft.Design#CA1061;-Microsoft.Design#CA1006;-Microsoft.Design#CA1046;-Microsoft.Design#CA1045;-Microsoft.Design#CA1065;-Microsoft.Design#CA1038;-Microsoft.Design#CA1008;-Microsoft.Design#CA1028;-Microsoft.Design#CA1064;-Microsoft.Design#CA1004;-Microsoft.Design#CA1035;-Microsoft.Design#CA1063;-Microsoft.Design#CA1032;-Microsoft.Design#CA1023;-Microsoft.Design#CA1033;-Microsoft.Design#CA1039;-Microsoft.Design#CA1016;-Microsoft.Design#CA1014;-Microsoft.Design#CA1017;-Microsoft.Design#CA1018;-Microsoft.Design#CA1027;-Microsoft.Design#CA1059;-Microsoft.Design#CA1060;-Microsoft.Design#CA1034;-Microsoft.Design#CA1013;-Microsoft.Design#CA1036;-Microsoft.Design#CA1044;-Microsoft.Design#CA1041;-Microsoft.Design#CA1025;-Microsoft.Design#CA1052;-Microsoft.Design#CA1053;-Microsoft.Design#CA1057;-Microsoft.Design#CA1058;-Microsoft.Design#CA1001;-Microsoft.Design#CA1049;-Microsoft.Design#CA1054;-Microsoft.Design#CA1056;-Microsoft.Design#CA1055;-Microsoft.Design#CA1030;-Microsoft.Design#CA1003;-Microsoft.Design#CA1007;-Microsoft.Design#CA1043;-Microsoft.Design#CA1024;-Microsoft.Globalization#CA1301;-Microsoft.Globalization#CA1302;-Microsoft.Globalization#CA1308;-Microsoft.Globalization#CA1306;-Microsoft.Globalization#CA1304;-Microsoft.Globalization#CA1305;-Microsoft.Globalization#CA2101;-Microsoft.Globalization#CA1300;-Microsoft.Globalization#CA1307;-Microsoft.Globalization#CA1309;-Microsoft.Interoperability#CA1403;-Microsoft.Interoperability#CA1406;-Microsoft.Interoperability#CA1413;-Microsoft.Interoperability#CA1402;-Microsoft.Interoperability#CA1407;-Microsoft.Interoperability#CA1404;-Microsoft.Interoperability#CA1410;-Microsoft.Interoperability#CA1411;-Microsoft.Interoperability#CA1405;-Microsoft.Interoperability#CA1409;-Microsoft.Interoperability#CA1415;-Microsoft.Interoperability#CA1408;-Microsoft.Interoperability#CA1414;-Microsoft.Interoperability#CA1412;-Microsoft.Interoperability#CA1400;-Microsoft.Interoperability#CA1401;-Microsoft.Maintainability#CA1506;-Microsoft.Maintainability#CA1502;-Microsoft.Maintainability#CA1501;-Microsoft.Maintainability#CA1505;-Microsoft.Maintainability#CA1504;-Microsoft.Maintainability#CA1500;-Microsoft.Mobility#CA1600;-Microsoft.Mobility#CA1601;-Microsoft.Naming#CA1702;-Microsoft.Naming#CA1700;-Microsoft.Naming#CA1712;-Microsoft.Naming#CA1713;-Microsoft.Naming#CA1714;-Microsoft.Naming#CA1709;-Microsoft.Naming#CA1704;-Microsoft.Naming#CA1708;-Microsoft.Naming#CA1715;-Microsoft.Naming#CA1710;-Microsoft.Naming#CA1720;-Microsoft.Naming#CA1707;-Microsoft.Naming#CA1722;-Microsoft.Naming#CA1711;-Microsoft.Naming#CA1716;-Microsoft.Naming#CA1717;-Microsoft.Naming#CA1725;-Microsoft.Naming#CA1719;-Microsoft.Naming#CA1721;-Microsoft.Naming#CA1701;-Microsoft.Naming#CA1703;-Microsoft.Naming#CA1724;-Microsoft.Naming#CA1726;-Microsoft.Performance#CA1809;-Microsoft.Performance#CA1811;-Microsoft.Performance#CA1812;-Microsoft.Performance#CA1813;-Microsoft.Performance#CA1823;-Microsoft.Performance#CA1800;-Microsoft.Performance#CA1805;-Microsoft.Performance#CA1810;-Microsoft.Performance#CA1824;-Microsoft.Performance#CA1822;-Microsoft.Performance#CA1815;-Microsoft.Performance#CA1814;-Microsoft.Performance#CA1819;-Microsoft.Performance#CA1821;-Microsoft.Performance#CA1804;-Microsoft.Performance#CA1820;-Microsoft.Performance#CA1802;-Microsoft.Portability#CA1903;-Microsoft.Portability#CA1901;-Microsoft.Portability#CA1900;-Microsoft.Reliability#CA2001;-Microsoft.Reliability#CA2002;-Microsoft.Reliability#CA2003;-Microsoft.Reliability#CA2004;-Microsoft.Reliability#CA2006;-Microsoft.Security#CA2116;-Microsoft.Security#CA2117;-Microsoft.Security#CA2105;-Microsoft.Security#CA2115;-Microsoft.Security#CA2102;-Microsoft.Security#CA2104;-Microsoft.Security#CA2122;-Microsoft.Security#CA2114;-Microsoft.Security#CA2123;-Microsoft.Security#CA2111;-Microsoft.Security#CA2108;-Microsoft.Security#CA2107;-Microsoft.Security#CA2103;-Microsoft.Security#CA2118;-Microsoft.Security#CA2109;-Microsoft.Security#CA2119;-Microsoft.Security#CA2106;-Microsoft.Security#CA2112;-Microsoft.Security#CA2120;-Microsoft.Security#CA2121;-Microsoft.Security#CA2126;-Microsoft.Security#CA2124;-Microsoft.Security#CA2127;-Microsoft.Security#CA2128;-Microsoft.Security#CA2129;-Microsoft.Usage#CA2243;-Microsoft.Usage#CA2236;-Microsoft.Usage#CA1816;-Microsoft.Usage#CA2227;-Microsoft.Usage#CA2213;-Microsoft.Usage#CA2216;-Microsoft.Usage#CA2214;-Microsoft.Usage#CA2222;-Microsoft.Usage#CA1806;-Microsoft.Usage#CA2217;-Microsoft.Usage#CA2212;-Microsoft.Usage#CA2219;-Microsoft.Usage#CA2201;-Microsoft.Usage#CA2228;-Microsoft.Usage#CA2221;-Microsoft.Usage#CA2220;-Microsoft.Usage#CA2240;-Microsoft.Usage#CA2229;-Microsoft.Usage#CA2238;-Microsoft.Usage#CA2207;-Microsoft.Usage#CA2208;-Microsoft.Usage#CA2235;-Microsoft.Usage#CA2237;-Microsoft.Usage#CA2232;-Microsoft.Usage#CA2223;-Microsoft.Usage#CA2211;-Microsoft.Usage#CA2233;-Microsoft.Usage#CA2225;-Microsoft.Usage#CA2226;-Microsoft.Usage#CA2231;-Microsoft.Usage#CA2224;-Microsoft.Usage#CA2218;-Microsoft.Usage#CA2234;-Microsoft.Usage#CA2239;-Microsoft.Usage#CA2200;-Microsoft.Usage#CA1801;-Microsoft.Usage#CA2242;-Microsoft.Usage#CA2205;-Microsoft.Usage#CA2230</CodeAnalysisRules>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug_precompile_aspx|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.vb</CodeAnalysisModuleSuppressionsFile>
+    <CodeAnalysisRules>-Microsoft.Design#CA1012;-Microsoft.Design#CA2210;-Microsoft.Design#CA1040;-Microsoft.Design#CA1005;-Microsoft.Design#CA1020;-Microsoft.Design#CA1021;-Microsoft.Design#CA1010;-Microsoft.Design#CA1011;-Microsoft.Design#CA1009;-Microsoft.Design#CA1050;-Microsoft.Design#CA1026;-Microsoft.Design#CA1019;-Microsoft.Design#CA1031;-Microsoft.Design#CA1047;-Microsoft.Design#CA1000;-Microsoft.Design#CA1048;-Microsoft.Design#CA1051;-Microsoft.Design#CA1002;-Microsoft.Design#CA1061;-Microsoft.Design#CA1006;-Microsoft.Design#CA1046;-Microsoft.Design#CA1045;-Microsoft.Design#CA1065;-Microsoft.Design#CA1038;-Microsoft.Design#CA1008;-Microsoft.Design#CA1028;-Microsoft.Design#CA1064;-Microsoft.Design#CA1004;-Microsoft.Design#CA1035;-Microsoft.Design#CA1063;-Microsoft.Design#CA1032;-Microsoft.Design#CA1023;-Microsoft.Design#CA1033;-Microsoft.Design#CA1039;-Microsoft.Design#CA1016;-Microsoft.Design#CA1014;-Microsoft.Design#CA1017;-Microsoft.Design#CA1018;-Microsoft.Design#CA1027;-Microsoft.Design#CA1059;-Microsoft.Design#CA1060;-Microsoft.Design#CA1034;-Microsoft.Design#CA1013;-Microsoft.Design#CA1036;-Microsoft.Design#CA1044;-Microsoft.Design#CA1041;-Microsoft.Design#CA1025;-Microsoft.Design#CA1052;-Microsoft.Design#CA1053;-Microsoft.Design#CA1057;-Microsoft.Design#CA1058;-Microsoft.Design#CA1001;-Microsoft.Design#CA1049;-Microsoft.Design#CA1054;-Microsoft.Design#CA1056;-Microsoft.Design#CA1055;-Microsoft.Design#CA1030;-Microsoft.Design#CA1003;-Microsoft.Design#CA1007;-Microsoft.Design#CA1043;-Microsoft.Design#CA1024;-Microsoft.Globalization#CA1301;-Microsoft.Globalization#CA1302;-Microsoft.Globalization#CA1308;-Microsoft.Globalization#CA1306;-Microsoft.Globalization#CA1304;-Microsoft.Globalization#CA1305;-Microsoft.Globalization#CA2101;-Microsoft.Globalization#CA1300;-Microsoft.Globalization#CA1307;-Microsoft.Globalization#CA1309;-Microsoft.Interoperability#CA1403;-Microsoft.Interoperability#CA1406;-Microsoft.Interoperability#CA1413;-Microsoft.Interoperability#CA1402;-Microsoft.Interoperability#CA1407;-Microsoft.Interoperability#CA1404;-Microsoft.Interoperability#CA1410;-Microsoft.Interoperability#CA1411;-Microsoft.Interoperability#CA1405;-Microsoft.Interoperability#CA1409;-Microsoft.Interoperability#CA1415;-Microsoft.Interoperability#CA1408;-Microsoft.Interoperability#CA1414;-Microsoft.Interoperability#CA1412;-Microsoft.Interoperability#CA1400;-Microsoft.Interoperability#CA1401;-Microsoft.Maintainability#CA1506;-Microsoft.Maintainability#CA1502;-Microsoft.Maintainability#CA1501;-Microsoft.Maintainability#CA1505;-Microsoft.Maintainability#CA1504;-Microsoft.Maintainability#CA1500;-Microsoft.Mobility#CA1600;-Microsoft.Mobility#CA1601;-Microsoft.Naming#CA1702;-Microsoft.Naming#CA1700;-Microsoft.Naming#CA1712;-Microsoft.Naming#CA1713;-Microsoft.Naming#CA1714;-Microsoft.Naming#CA1709;-Microsoft.Naming#CA1704;-Microsoft.Naming#CA1708;-Microsoft.Naming#CA1715;-Microsoft.Naming#CA1710;-Microsoft.Naming#CA1720;-Microsoft.Naming#CA1707;-Microsoft.Naming#CA1722;-Microsoft.Naming#CA1711;-Microsoft.Naming#CA1716;-Microsoft.Naming#CA1717;-Microsoft.Naming#CA1725;-Microsoft.Naming#CA1719;-Microsoft.Naming#CA1721;-Microsoft.Naming#CA1701;-Microsoft.Naming#CA1703;-Microsoft.Naming#CA1724;-Microsoft.Naming#CA1726;-Microsoft.Performance#CA1809;-Microsoft.Performance#CA1811;-Microsoft.Performance#CA1812;-Microsoft.Performance#CA1813;-Microsoft.Performance#CA1823;-Microsoft.Performance#CA1800;-Microsoft.Performance#CA1805;-Microsoft.Performance#CA1810;-Microsoft.Performance#CA1824;-Microsoft.Performance#CA1822;-Microsoft.Performance#CA1815;-Microsoft.Performance#CA1814;-Microsoft.Performance#CA1819;-Microsoft.Performance#CA1821;-Microsoft.Performance#CA1804;-Microsoft.Performance#CA1820;-Microsoft.Performance#CA1802;-Microsoft.Portability#CA1903;-Microsoft.Portability#CA1901;-Microsoft.Portability#CA1900;-Microsoft.Reliability#CA2001;-Microsoft.Reliability#CA2002;-Microsoft.Reliability#CA2003;-Microsoft.Reliability#CA2004;-Microsoft.Reliability#CA2006;-Microsoft.Security#CA2116;-Microsoft.Security#CA2117;-Microsoft.Security#CA2105;-Microsoft.Security#CA2115;-Microsoft.Security#CA2102;-Microsoft.Security#CA2104;-Microsoft.Security#CA2122;-Microsoft.Security#CA2114;-Microsoft.Security#CA2123;-Microsoft.Security#CA2111;-Microsoft.Security#CA2108;-Microsoft.Security#CA2107;-Microsoft.Security#CA2103;-Microsoft.Security#CA2118;-Microsoft.Security#CA2109;-Microsoft.Security#CA2119;-Microsoft.Security#CA2106;-Microsoft.Security#CA2112;-Microsoft.Security#CA2120;-Microsoft.Security#CA2121;-Microsoft.Security#CA2126;-Microsoft.Security#CA2124;-Microsoft.Security#CA2127;-Microsoft.Security#CA2128;-Microsoft.Security#CA2129;-Microsoft.Usage#CA2243;-Microsoft.Usage#CA2236;-Microsoft.Usage#CA1816;-Microsoft.Usage#CA2227;-Microsoft.Usage#CA2213;-Microsoft.Usage#CA2216;-Microsoft.Usage#CA2214;-Microsoft.Usage#CA2222;-Microsoft.Usage#CA1806;-Microsoft.Usage#CA2217;-Microsoft.Usage#CA2212;-Microsoft.Usage#CA2219;-Microsoft.Usage#CA2201;-Microsoft.Usage#CA2228;-Microsoft.Usage#CA2221;-Microsoft.Usage#CA2220;-Microsoft.Usage#CA2240;-Microsoft.Usage#CA2229;-Microsoft.Usage#CA2238;-Microsoft.Usage#CA2207;-Microsoft.Usage#CA2208;-Microsoft.Usage#CA2235;-Microsoft.Usage#CA2237;-Microsoft.Usage#CA2232;-Microsoft.Usage#CA2223;-Microsoft.Usage#CA2211;-Microsoft.Usage#CA2233;-Microsoft.Usage#CA2225;-Microsoft.Usage#CA2226;-Microsoft.Usage#CA2231;-Microsoft.Usage#CA2224;-Microsoft.Usage#CA2218;-Microsoft.Usage#CA2234;-Microsoft.Usage#CA2239;-Microsoft.Usage#CA2200;-Microsoft.Usage#CA1801;-Microsoft.Usage#CA2242;-Microsoft.Usage#CA2205;-Microsoft.Usage#CA2230</CodeAnalysisRules>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <!--
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Recruitment_release|AnyCPU' ">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>iWeb.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.vb</CodeAnalysisModuleSuppressionsFile>
+  </PropertyGroup>
+-->
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=20.1.0.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <HintPath>..\packages\AjaxControlToolkit.20.1.0\lib\net40\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="AjaxControlToolkit.HtmlEditor.Sanitizer, Version=20.1.0.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <HintPath>..\packages\AjaxControlToolkit.HtmlEditor.Sanitizer.20.1.0\lib\net40\AjaxControlToolkit.HtmlEditor.Sanitizer.dll</HintPath>
+    </Reference>
+    <Reference Include="AntiXssLibrary, Version=4.3.0.0, Culture=neutral, PublicKeyToken=d127efab8a9c114f, processorArchitecture=MSIL">
+      <HintPath>..\packages\AntiXSS.4.3.0\lib\net40\AntiXssLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="BouncyCastle.Crypto, Version=1.9.0.0, Culture=neutral, PublicKeyToken=0e99375e54769942, processorArchitecture=MSIL">
+      <HintPath>..\packages\Portable.BouncyCastle.1.9.0\lib\net40\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="BouncyCastle.Cryptography, Version=2.0.0.0, Culture=neutral, PublicKeyToken=072edcf4a5328938, processorArchitecture=MSIL">
+      <HintPath>..\packages\BouncyCastle.Cryptography.2.4.0\lib\net461\BouncyCastle.Cryptography.dll</HintPath>
+    </Reference>
+    <Reference Include="Enums.NET, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7ea1c1650d506225, processorArchitecture=MSIL">
+      <HintPath>..\packages\Enums.NET.5.0.0\lib\net461\Enums.NET.dll</HintPath>
+    </Reference>
+    <Reference Include="ExtendedNumerics.BigDecimal, Version=2025.1003.0.225, Culture=neutral, PublicKeyToken=65f1315a45ad8949, processorArchitecture=MSIL">
+      <HintPath>..\packages\ExtendedNumerics.BigDecimal.2025.1003.0.225\lib\net48\ExtendedNumerics.BigDecimal.dll</HintPath>
+    </Reference>
+    <Reference Include="HtmlAgilityPack, Version=1.11.64.0, Culture=neutral, PublicKeyToken=bd319b19eaf3b43a, processorArchitecture=MSIL">
+      <HintPath>..\packages\HtmlAgilityPack.1.11.64\lib\Net45\HtmlAgilityPack.dll</HintPath>
+    </Reference>
+    <Reference Include="HtmlSanitizationLibrary, Version=4.3.0.0, Culture=neutral, PublicKeyToken=d127efab8a9c114f, processorArchitecture=MSIL">
+      <HintPath>..\packages\AntiXSS.4.3.0\lib\net40\HtmlSanitizationLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=1.4.2.13, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpZipLib.1.4.2\lib\netstandard2.0\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="MailKit, Version=4.7.0.0, Culture=neutral, PublicKeyToken=4e064fe7c44a8f1b, processorArchitecture=MSIL">
+      <HintPath>..\packages\MailKit.4.7.1.1\lib\net48\MailKit.dll</HintPath>
+    </Reference>
+    <Reference Include="MathNet.Numerics, Version=5.0.0.0, Culture=neutral, PublicKeyToken=cd8b63ad3d691a37, processorArchitecture=MSIL">
+      <HintPath>..\packages\MathNet.Numerics.Signed.5.0.0\lib\net48\MathNet.Numerics.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=8.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.8.0.0\lib\net462\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.IO.RecyclableMemoryStream, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.IO.RecyclableMemoryStream.3.0.1\lib\netstandard2.0\Microsoft.IO.RecyclableMemoryStream.dll</HintPath>
+    </Reference>
+    <Reference Include="MimeKit, Version=4.7.0.0, Culture=neutral, PublicKeyToken=bede1c8a46c66814, processorArchitecture=MSIL">
+      <HintPath>..\packages\MimeKit.4.7.1\lib\net48\MimeKit.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.Core, Version=2.7.1.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\NPOI.2.7.1\lib\net472\NPOI.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OOXML, Version=2.7.1.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\NPOI.2.7.1\lib\net472\NPOI.OOXML.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OpenXml4Net, Version=2.7.1.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\NPOI.2.7.1\lib\net472\NPOI.OpenXml4Net.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OpenXmlFormats, Version=2.7.1.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\NPOI.2.7.1\lib\net472\NPOI.OpenXmlFormats.dll</HintPath>
+    </Reference>
+    <Reference Include="RestSharp, Version=112.0.0.0, Culture=neutral, PublicKeyToken=598062e77f915f75, processorArchitecture=MSIL">
+      <HintPath>..\packages\RestSharp.112.0.0\lib\net48\RestSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="SixLabors.Fonts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=d998eea7b14cab13, processorArchitecture=MSIL">
+      <HintPath>..\packages\SixLabors.Fonts.1.0.1\lib\netstandard2.0\SixLabors.Fonts.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Formats.Asn1, Version=8.0.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Formats.Asn1.8.0.1\lib\net462\System.Formats.Asn1.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Memory, Version=4.0.1.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.5\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.6.0.0\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Security.AccessControl, Version=6.0.0.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.AccessControl.6.0.1\lib\net461\System.Security.AccessControl.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Pkcs, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.Pkcs.8.0.0\lib\net462\System.Security.Cryptography.Pkcs.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Xml, Version=8.0.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.Xml.8.0.1\lib\net462\System.Security.Cryptography.Xml.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Principal.Windows, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Principal.Windows.5.0.0\lib\net461\System.Security.Principal.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Text.Encoding.CodePages, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Encoding.CodePages.8.0.0\lib\net462\System.Text.Encoding.CodePages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encodings.Web, Version=8.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Encodings.Web.8.0.0\lib\net462\System.Text.Encodings.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Json, Version=8.0.0.4, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Json.8.0.4\lib\net462\System.Text.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DataVisualization" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Extensions.Design" />
+    <Reference Include="System.Web.RegularExpressions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="WooCommerce.NET, Version=0.8.6.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\WooCommerceNET.0.8.6\lib\netstandard2.0\WooCommerce.NET.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="change_pwd.aspx.designer.vb">
+      <DependentUpon>change_pwd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="change_pwd.aspx.vb">
+      <DependentUpon>change_pwd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="client_details.aspx.designer.vb">
+      <DependentUpon>client_details.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="client_details.aspx.vb">
+      <DependentUpon>client_details.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="clients.aspx.designer.vb">
+      <DependentUpon>clients.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="clients.aspx.vb">
+      <DependentUpon>clients.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Code\controls\grid\IAWCheckBoxField.vb" />
+    <Compile Include="Code\WooAction.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="client_images.aspx.designer.vb">
+      <DependentUpon>client_images.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="client_images.aspx.vb">
+      <DependentUpon>client_images.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Chart\Diagram.aspx.designer.vb">
+      <DependentUpon>Diagram.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Chart\Diagram.aspx.vb">
+      <DependentUpon>Diagram.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Chart\ChartFunctions.vb" />
+    <Compile Include="client_settings.aspx.designer.vb">
+      <DependentUpon>client_settings.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="client_settings.aspx.vb">
+      <DependentUpon>client_settings.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="client_users.aspx.designer.vb">
+      <DependentUpon>client_users.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="client_users.aspx.vb">
+      <DependentUpon>client_users.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Code\BuildViewValues.vb" />
+    <Compile Include="Code\controls\grid\IAWBoundField.vb" />
+    <Compile Include="Code\controls\IAWCustomValidator.vb" />
+    <Compile Include="Code\controls\IAWDropDownList.vb" />
+    <Compile Include="Code\controls\IAWImage.vb" />
+    <Compile Include="Code\controls\IAWImageButton.vb" />
+    <Compile Include="Code\controls\IAWPanel.vb" />
+    <Compile Include="Code\controls\IAWRadioButton.vb" />
+    <Compile Include="Code\controls\iawRadioButtonList.vb" />
+    <Compile Include="Code\controls\IAWRangeValidator.vb" />
+    <Compile Include="Code\controls\IAWRequiredFieldValidator.vb" />
+    <Compile Include="Code\controls\iawSVG.vb" />
+    <Compile Include="Code\controls\IAWSwitch.vb" />
+    <Compile Include="Code\controls\IAWTabPanel.vb" />
+    <Compile Include="Code\controls\IAWTextbox.vb" />
+    <Compile Include="Code\DatasourceFilter.vb" />
+    <Compile Include="Code\http handlers\WooHook.vb" />
+    <Compile Include="Code\saw\SawDiag.vb" />
+    <Compile Include="Code\WooComm.vb" />
+    <Compile Include="datasources.aspx.designer.vb">
+      <DependentUpon>datasources.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="datasources.aspx.vb">
+      <DependentUpon>datasources.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="dataviews.aspx.designer.vb">
+      <DependentUpon>dataviews.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="dataviews.aspx.vb">
+      <DependentUpon>dataviews.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="data_source_display.aspx.designer.vb">
+      <DependentUpon>data_source_display.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="data_source_display.aspx.vb">
+      <DependentUpon>data_source_display.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="DefChartAttrib.vb" />
+    <Compile Include="DefChartBranding.vb" />
+    <Compile Include="ImagePage.aspx.designer.vb">
+      <DependentUpon>ImagePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ImagePage.aspx.vb">
+      <DependentUpon>ImagePage.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Import\excelFunctions.vb" />
+    <Compile Include="Import\ParseCSV.vb" />
+    <Compile Include="Import\ParseExcel.vb" />
+    <Compile Include="Import\ParseJSON.vb" />
+    <Compile Include="Import\ParseXML.vb" />
+    <Compile Include="Import\ProcessImport.vb" />
+    <Compile Include="ModelList.aspx.designer.vb">
+      <DependentUpon>ModelList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ModelList.aspx.vb">
+      <DependentUpon>ModelList.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Code\controls\dataitem.vb" />
+    <Compile Include="Code\controls\IAWWebListColumn.vb" />
+    <Compile Include="Code\Objects and DAL\org chart\StructItem.vb" />
+    <Compile Include="Code\Objects and DAL\org chart\TNode.vb" />
+    <Compile Include="Code\controls\grid\column templates\xColumn.vb" />
+    <Compile Include="Code\controls\IAWListBox.vb" />
+    <Compile Include="Code\controls\IAWLogin.vb" />
+    <Compile Include="Code\db providers\IawDB.vb" />
+    <Compile Include="Code\event args\CrudEventArgs.vb" />
+    <Compile Include="Code\event args\ValidateEventArgs.vb" />
+    <Compile Include="Code\http handlers\HttpHandler_Logout.vb" />
+    <Compile Include="Code\Objects and DAL\Encryption\Cryptography.vb" />
+    <Compile Include="Code\Objects and DAL\Encryption\HexEncoding.vb" />
+    <Compile Include="Code\saw\CommonMethods.vb" />
+    <Compile Include="Code\saw\ExtensionMethods.vb" />
+    <Compile Include="Code\saw\SawPassword.vb" />
+    <Compile Include="Code\utilities\CodeTrace.vb" />
+    <Compile Include="Code\utilities\GenericFunctions.vb" />
+    <Compile Include="Downloader.ashx.vb">
+      <DependentUpon>Downloader.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="general\DL.ashx.vb">
+      <DependentUpon>DL.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="general\not_licensed.aspx.designer.vb">
+      <DependentUpon>not_licensed.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="general\not_licensed.aspx.vb">
+      <DependentUpon>not_licensed.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="general\sso.aspx.designer.vb">
+      <DependentUpon>sso.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="general\sso.aspx.vb">
+      <DependentUpon>sso.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Translations.aspx.designer.vb">
+      <DependentUpon>Translations.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Translations.aspx.vb">
+      <DependentUpon>Translations.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\AjaxProgress.ascx.designer.vb">
+      <DependentUpon>AjaxProgress.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\AjaxProgress.ascx.vb">
+      <DependentUpon>AjaxProgress.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ApplicationError.aspx.designer.vb">
+      <DependentUpon>ApplicationError.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ApplicationError.aspx.vb">
+      <DependentUpon>ApplicationError.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Code\Attribute classes\WebTypeAttribute.vb" />
+    <Compile Include="Code\controls\IAWCheckBoxListValidator.vb" />
+    <Compile Include="Code\controls\PageParameter.vb" />
+    <Compile Include="Code\utilities\Licence.vb" />
+    <Compile Include="UserControls\ChangePassword.ascx.designer.vb">
+      <DependentUpon>ChangePassword.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ChangePassword.ascx.vb">
+      <DependentUpon>ChangePassword.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Code\Attribute classes\ButtonBarRequiredAttribute.vb" />
+    <Compile Include="Code\Attribute classes\DirtyPageHandlingAttribute.vb" />
+    <Compile Include="Code\Attribute classes\DisableEnterKeyAttribute.vb" />
+    <Compile Include="Code\Attribute classes\DisableFormFocusAttribute.vb" />
+    <Compile Include="Code\Attribute classes\LoginStatusRequiredAttribute.vb" />
+    <Compile Include="Code\Attribute classes\MasterPageRequiredAttribute.vb" />
+    <Compile Include="Code\Attribute classes\MenuRequiredAttribute.vb" />
+    <Compile Include="Code\Attribute classes\ProcessRequiredAttribute.vb" />
+    <Compile Include="Code\controls\ButtonBar.vb" />
+    <Compile Include="Code\config\SiteSettings.vb" />
+    <Compile Include="Code\config\SiteSettingsConfigHandler.vb" />
+    <Compile Include="Code\consts,enums\constants.vb" />
+    <Compile Include="Code\consts,enums\enums.vb" />
+    <Compile Include="Code\consts,enums\stub_classes.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Code\controls\DesignTime\DesignerIAWHyperLink.vb" />
+    <Compile Include="Code\controls\DesignTime\DesignerIAWLabel.vb" />
+    <Compile Include="Code\controls\Div.vb" />
+    <Compile Include="Code\controls\IAWCheckBox.vb" />
+    <Compile Include="Code\controls\IAWHyperLink.vb" />
+    <Compile Include="Code\controls\IAWHyperLinkButton.vb" />
+    <Compile Include="Code\controls\IAWLabel.vb" />
+    <Compile Include="Code\controls\IAWMailLink.vb" />
+    <Compile Include="Code\controls\IawMessage.vb" />
+    <Compile Include="Code\controls\ToolTip.vb" />
+    <Compile Include="Code\controls\DateDropDown.vb" />
+    <Compile Include="Code\controls\calendar screens\DayCell.vb" />
+    <Compile Include="Code\db providers\IAWDBException.vb" />
+    <Compile Include="Code\db providers\IAWDBProvider.vb" />
+    <Compile Include="Code\db providers\IAWDBSqlProvider.vb" />
+    <Compile Include="Code\Objects and DAL\puptext\Puptext.vb" />
+    <Compile Include="Code\roles,processes,context\EditRights.vb" />
+    <Compile Include="Code\controls\calendar screens\EmpViewRow.vb" />
+    <Compile Include="Code\event args\formBuilderEventArgs.vb" />
+    <Compile Include="Code\event args\PageEventArgs.vb" />
+    <Compile Include="Code\controls\grid\GridColumn.vb" />
+    <Compile Include="Code\controls\grid\column templates\IAWBoundColumn.vb" />
+    <Compile Include="Code\controls\grid\column templates\IAWButtonColumn.vb" />
+    <Compile Include="Code\controls\grid\column templates\IAWCheckBoxColumn.vb" />
+    <Compile Include="Code\controls\grid\column templates\IAWCheckBoxTemplate.vb" />
+    <Compile Include="Code\controls\grid\column templates\IAWGridBoundColumn.vb" />
+    <Compile Include="Code\controls\grid\column templates\IAWGridCheckBoxColumn.vb" />
+    <Compile Include="Code\controls\grid\column templates\IAWGridDateColumn.vb" />
+    <Compile Include="Code\controls\grid\column templates\IAWStyleTemplate.vb" />
+    <Compile Include="Code\controls\grid\column templates\IAWTextColumn.vb" />
+    <Compile Include="Code\controls\grid\IAWGrid.vb" />
+    <Compile Include="Code\http modules\AuthenticationModule.vb" />
+    <Compile Include="Code\http modules\AuthorisationModule.vb" />
+    <Compile Include="Code\http modules\PageModule.vb" />
+    <Compile Include="Code\menu\IAWMembershipProvider.vb" />
+    <Compile Include="Code\menu\IAWSiteMapNode.vb" />
+    <Compile Include="Code\menu\IAWSiteMapProvider.vb" />
+    <Compile Include="Code\controls\calendar screens\MonthViewCell.vb" />
+    <Compile Include="Code\Objects and DAL\errorlog\WebErrorLog.vb" />
+    <Compile Include="Code\Objects and DAL\errorlog\WebErrorLog_DAL.vb" />
+    <Compile Include="Code\Objects and DAL\WebMsgLog.vb" />
+    <Compile Include="Code\Objects and DAL\WebMsgLog_DAL.vb" />
+    <Compile Include="Code\controls\grid\PickerColumn.vb" />
+    <Compile Include="Code\roles,processes,context\ctx.vb" />
+    <Compile Include="Code\roles,processes,context\IawPrincipal.vb" />
+    <Compile Include="Code\roles,processes,context\IAWProcess.vb" />
+    <Compile Include="Code\roles,processes,context\role.vb" />
+    <Compile Include="Code\saw\SawAuth.vb" />
+    <Compile Include="Code\saw\SAWCHART.VB" />
+    <Compile Include="Code\saw\SawDB.vb" />
+    <Compile Include="Code\saw\SawDBConnList.vb" />
+    <Compile Include="Code\saw\SawEMessage.vb" />
+    <Compile Include="Code\saw\SawLang.vb" />
+    <Compile Include="Code\saw\SawRegex.vb" />
+    <Compile Include="Code\saw\SawUtil.vb" />
+    <Compile Include="Code\roles,processes,context\StartPage.vb" />
+    <Compile Include="Code\utilities\dataExporter.vb" />
+    <Compile Include="Code\utilities\fileDownload.vb" />
+    <Compile Include="Code\Objects and DAL\errorlog\LogException.vb" />
+    <Compile Include="Code\utilities\mailer.vb" />
+    <Compile Include="Code\utilities\SqlBeautify.vb" />
+    <Compile Include="Code\roles,processes,context\Version.vb" />
+    <Compile Include="Code\viewstate\SqlViewStateProvider.vb" />
+    <Compile Include="Code\viewstate\ViewStateConfiguration.vb" />
+    <Compile Include="Code\viewstate\ViewStateConfigurationHandler.vb" />
+    <Compile Include="Code\viewstate\ViewStateManager.vb" />
+    <Compile Include="Code\viewstate\ViewStateProviderBase.vb" />
+    <Compile Include="Code\controls\calendar screens\YearCell.vb" />
+    <Compile Include="UserControls\combi.ascx.designer.vb">
+      <DependentUpon>combi.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\combi.ascx.vb">
+      <DependentUpon>combi.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.vb">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.vb">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="errorlog\errorReport.aspx.designer.vb">
+      <DependentUpon>errorReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="errorlog\errorReport.aspx.vb">
+      <DependentUpon>errorReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="general\access_denied.aspx.designer.vb">
+      <DependentUpon>access_denied.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="general\access_denied.aspx.vb">
+      <DependentUpon>access_denied.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="general\wrong_version.aspx.designer.vb">
+      <DependentUpon>wrong_version.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="general\wrong_version.aspx.vb">
+      <DependentUpon>wrong_version.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\header_js.ascx.designer.vb">
+      <DependentUpon>header_js.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\header_js.ascx.vb">
+      <DependentUpon>header_js.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IngenWebMaster.master.designer.vb">
+      <DependentUpon>IngenWebMaster.master</DependentUpon>
+    </Compile>
+    <Compile Include="IngenWebMaster.master.vb">
+      <DependentUpon>IngenWebMaster.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="UserControls\Paging.ascx.designer.vb">
+      <DependentUpon>Paging.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Paging.ascx.vb">
+      <DependentUpon>Paging.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RecoverPassword.aspx.designer.vb">
+      <DependentUpon>RecoverPassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RecoverPassword.aspx.vb">
+      <DependentUpon>RecoverPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="secure\Login.aspx.designer.vb">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="secure\Login.aspx.vb">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\timerjs.ascx.designer.vb">
+      <DependentUpon>timerjs.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\timerjs.ascx.vb">
+      <DependentUpon>timerjs.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="webmsg.aspx.designer.vb">
+      <DependentUpon>webmsg.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="webmsg.aspx.vb">
+      <DependentUpon>webmsg.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\wuc_help.ascx.designer.vb">
+      <DependentUpon>wuc_help.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\wuc_help.ascx.vb">
+      <DependentUpon>wuc_help.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\wuc_hyperlink.ascx.designer.vb">
+      <DependentUpon>wuc_hyperlink.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\wuc_hyperlink.ascx.vb">
+      <DependentUpon>wuc_hyperlink.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\wuc_text.ascx.designer.vb">
+      <DependentUpon>wuc_text.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\wuc_text.ascx.vb">
+      <DependentUpon>wuc_text.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\wuc_tree.ascx.designer.vb">
+      <DependentUpon>wuc_tree.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\wuc_tree.ascx.vb">
+      <DependentUpon>wuc_tree.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WooHook.ashx.vb">
+      <DependentUpon>WooHook.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="WooTest.aspx.designer.vb">
+      <DependentUpon>WooTest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WooTest.aspx.vb">
+      <DependentUpon>WooTest.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="antixssmodule.config" />
+    <Content Include="App_Themes\ViviChart_v2\form.css" />
+    <Content Include="App_Themes\ViviChart_v2\graphics\about.gif" />
+    <Content Include="App_Themes\ViviChart_v2\graphics\about_disabled.gif" />
+    <Content Include="App_Themes\ViviChart_v2\graphics\Address.gif" />
+    <Content Include="App_Themes\ViviChart_v2\graphics\ajax-progress-bg.png" />
+    <Content Include="App_Themes\ViviChart_v2\graphics\alert_red.gif" />
+    <Content Include="App_Themes\ViviChart_v2\graphics\alert_yellow.gif" />
+    <Content Include="App_Themes\ViviChart_v2\graphics\arrow-down.gif" />
+    <Content Include="App_Themes\ViviChart_v2\graphics\arrow-right.gif" />
+    <Content Include="App_Themes\ViviChart_v2\graphics\Background.png" />
+    <Content Include="App_Themes\ViviChart_v2\graphics\calendar.gif" />
+    <Content Include="App_Themes\ViviChart_v2\graphics\change_role.png" />
+    <Content Include="App_Themes\ViviChart_v2\graphics\cut.gif" />
+    <Content Include="App_Themes\ViviChart_v2\graphics\document_sprite.png" />
+    <Content Include="App_Themes\ViviChart_v2\graphics\drilldown.gif" />
+    <Content Include="App_Themes\ViviChart_v2\graphics\exit.png" />
+    <Content Include="App_Themes\ViviChart_v2\graphics\info-med.png" />
+    <Content Include="App_Themes\ViviChart_v2\graphics\login.gif" />
+    <Content Include="App_Themes\ViviChart_v2\graphics\page_first.png" />
+    <Content Include="App_Themes\ViviChart_v2\graphics\page_last.png" />
+    <Content Include="App_Themes\ViviChart_v2\graphics\page_next.png" />
+    <Content Include="App_Themes\ViviChart_v2\graphics\page_previous.png" />
+    <Content Include="App_Themes\ViviChart_v2\graphics\partday.gif" />
+    <Content Include="App_Themes\ViviChart_v2\graphics\required.gif" />
+    <Content Include="App_Themes\ViviChart_v2\graphics\search.gif" />
+    <Content Include="App_Themes\ViviChart_v2\graphics\stop-med.png" />
+    <Content Include="App_Themes\ViviChart_v2\graphics\tick.gif" />
+    <Content Include="App_Themes\ViviChart_v2\graphics\tooltip_help.gif" />
+    <Content Include="App_Themes\ViviChart_v2\graphics\tooltip_help_disabled.gif" />
+    <Content Include="App_Themes\ViviChart_v2\graphics\tooltip_warning.gif" />
+    <Content Include="App_Themes\ViviChart_v2\graphics\tooltip_warning_disabled.gif" />
+    <Content Include="App_Themes\ViviChart_v2\graphics\vivichart.png" />
+    <Content Include="App_Themes\ViviChart_v2\graphics\wait.gif" />
+    <Content Include="App_Themes\ViviChart_v2\graphics\warn-med.png" />
+    <Content Include="App_Themes\ViviChart_v2\grid.css" />
+    <Content Include="App_Themes\ViviChart_v2\htmlLink.css" />
+    <Content Include="App_Themes\ViviChart_v2\IAW Special.css" />
+    <Content Include="App_Themes\ViviChart_v2\login.css" />
+    <Content Include="App_Themes\ViviChart_v2\main.css" />
+    <Content Include="App_Themes\ViviChart_v2\master.css" />
+    <Content Include="App_Themes\ViviChart_v2\menu.css" />
+    <Content Include="App_Themes\ViviChart_v2\constants.css" />
+    <Content Include="App_Themes\ViviChart_v2\theme-file.css" />
+    <Content Include="browserHelp\ApplyingChangesToNodes.html" />
+    <Content Include="browserHelp\Branding.html" />
+    <Content Include="browserHelp\ChangePassword.html" />
+    <Content Include="browserHelp\Controls.html" />
+    <Content Include="browserHelp\DataSource.html" />
+    <Content Include="browserHelp\DataView.html" />
+    <Content Include="browserHelp\DefaultSettingsDescription.html" />
+    <Content Include="browserHelp\DefaultSettingsForm.html" />
+    <Content Include="browserHelp\DeletingANode.html" />
+    <Content Include="browserHelp\DisplayedText.html" />
+    <Content Include="browserHelp\eMailInstructions.html" />
+    <Content Include="browserHelp\ER_IM005.html" />
+    <Content Include="browserHelp\ER_IM006.html" />
+    <Content Include="browserHelp\ER_IM007.html" />
+    <Content Include="browserHelp\ER_IM012.html" />
+    <Content Include="browserHelp\ER_IM013.html" />
+    <Content Include="browserHelp\ER_IM017.html" />
+    <Content Include="browserHelp\ER_IM018.html" />
+    <Content Include="browserHelp\ER_IM019.html" />
+    <Content Include="browserHelp\ER_IM021.html" />
+    <Content Include="browserHelp\ER_IM022.html" />
+    <Content Include="browserHelp\ER_IM029.html" />
+    <Content Include="browserHelp\ER_IM030.html" />
+    <Content Include="browserHelp\ER_IM032.html" />
+    <Content Include="browserHelp\ER_IM034.html" />
+    <Content Include="browserHelp\ER_IM037.html" />
+    <Content Include="browserHelp\ER_IM040.html" />
+    <Content Include="browserHelp\ER_IM041.html" />
+    <Content Include="browserHelp\Filters.html" />
+    <Content Include="browserHelp\Fonts.html" />
+    <Content Include="browserHelp\ftsindex.js" />
+    <Content Include="browserHelp\GettingStarted.html" />
+    <Content Include="browserHelp\glossary.html" />
+    <Content Include="browserHelp\images\AnimatedGIFs\ApplyToAllNodes.gif" />
+    <Content Include="browserHelp\images\AnimatedGIFs\ApplyToAllNodes_thumb.gif" />
+    <Content Include="browserHelp\images\AnimatedGIFs\ApplyToThisNodeAndBelow.gif" />
+    <Content Include="browserHelp\images\AnimatedGIFs\ApplyToThisNodeAndBelow_thumb.gif" />
+    <Content Include="browserHelp\images\AnimatedGIFs\AtThisLevel.gif" />
+    <Content Include="browserHelp\images\AnimatedGIFs\AtThisLevelAndBelow.gif" />
+    <Content Include="browserHelp\images\AnimatedGIFs\AtThisLevel_thumb.gif" />
+    <Content Include="browserHelp\images\AnimatedGIFs\ClosedExpandedNode.gif" />
+    <Content Include="browserHelp\images\AnimatedGIFs\DeleteNode.gif" />
+    <Content Include="browserHelp\images\AnimatedGIFs\DragAndDropOntoChart.gif" />
+    <Content Include="browserHelp\images\AnimatedGIFs\DragAndDropOntoChart_thumb.gif" />
+    <Content Include="browserHelp\images\AnimatedGIFs\Excel.gif" />
+    <Content Include="browserHelp\images\AnimatedGIFs\Excel_thumb.gif" />
+    <Content Include="browserHelp\images\AnimatedGIFs\MakeVacant.gif" />
+    <Content Include="browserHelp\images\AnimatedGIFs\multilingual.gif" />
+    <Content Include="browserHelp\images\AnimatedGIFs\MySiblings.gif" />
+    <Content Include="browserHelp\images\AnimatedGIFs\MySiblingsAndBelow.gif" />
+    <Content Include="browserHelp\images\AnimatedGIFs\MySiblingsAndBelow_thumb.gif" />
+    <Content Include="browserHelp\images\AnimatedGIFs\MySiblings_thumb.gif" />
+    <Content Include="browserHelp\images\AnimatedGIFs\ShadowEffect.gif" />
+    <Content Include="browserHelp\images\Data_Node.png" />
+    <Content Include="browserHelp\images\Fields.png" />
+    <Content Include="browserHelp\images\FilterExample1.png" />
+    <Content Include="browserHelp\images\FilterExample2.png" />
+    <Content Include="browserHelp\images\Group_Node.png" />
+    <Content Include="browserHelp\images\Icons\align-center-solid.png" />
+    <Content Include="browserHelp\images\Icons\align-left-solid.png" />
+    <Content Include="browserHelp\images\Icons\align-right-solid.png" />
+    <Content Include="browserHelp\images\Icons\Icon Bluesmall.png" />
+    <Content Include="browserHelp\images\Icons\icon_bold.png" />
+    <Content Include="browserHelp\images\Icons\icon_change_size.png" />
+    <Content Include="browserHelp\images\Icons\Icon_Cursor-Move.512.png" />
+    <Content Include="browserHelp\images\Icons\icon_information.png" />
+    <Content Include="browserHelp\images\Icons\icon_magnifier.png" />
+    <Content Include="browserHelp\images\Icons\icon_pdf.png" />
+    <Content Include="browserHelp\images\Icons\icon_prior_next.png" />
+    <Content Include="browserHelp\images\Icons\icon_remove_highlight.png" />
+    <Content Include="browserHelp\images\Icons\icon_search.png" />
+    <Content Include="browserHelp\images\Icons\italic-solid.png" />
+    <Content Include="browserHelp\images\Icons\underline-solid.png" />
+    <Content Include="browserHelp\images\output-onlinepngtools.png" />
+    <Content Include="browserHelp\images\ParentChildNode-removebg-preview.png" />
+    <Content Include="browserHelp\images\Siblings.png" />
+    <Content Include="browserHelp\images\Vacant_Node.png" />
+    <Content Include="browserHelp\images\vivichart %281%29.png" />
+    <Content Include="browserHelp\IN_IM001.html" />
+    <Content Include="browserHelp\MultiLingualSupport.html" />
+    <Content Include="browserHelp\Notes.html" />
+    <Content Include="browserHelp\Overview.html" />
+    <Content Include="browserHelp\Passwords.html" />
+    <Content Include="browserHelp\PopulatingAChart.html" />
+    <Content Include="browserHelp\PreparingDataToImport.html" />
+    <Content Include="browserHelp\stylesheets\customstyles.css" />
+    <Content Include="browserHelp\template\packages\core-topics\css\topics.css" />
+    <Content Include="browserHelp\template\packages\core-topics\images\glyphicons-halflings.png" />
+    <Content Include="browserHelp\template\packages\core-topics\images\i-caution.png" />
+    <Content Include="browserHelp\template\packages\core-topics\images\i-collapse.png" />
+    <Content Include="browserHelp\template\packages\core-topics\images\i-content-collapsed.png" />
+    <Content Include="browserHelp\template\packages\core-topics\images\i-content-expanded.png" />
+    <Content Include="browserHelp\template\packages\core-topics\images\i-copy-code.png" />
+    <Content Include="browserHelp\template\packages\core-topics\images\i-dropdown.png" />
+    <Content Include="browserHelp\template\packages\core-topics\images\i-expand.png" />
+    <Content Include="browserHelp\template\packages\core-topics\images\i-is-new.png" />
+    <Content Include="browserHelp\template\packages\core-topics\images\i-note.png" />
+    <Content Include="browserHelp\template\packages\core-topics\images\i-tip.png" />
+    <Content Include="browserHelp\template\packages\core-topics\script\debug\topics.js" />
+    <Content Include="browserHelp\template\packages\core-topics\script\topics.min.js" />
+    <Content Include="browserHelp\template\packages\core-topics\topics.mobile.css" />
+    <Content Include="browserHelp\template\packages\core-topics\topics.mshv1.css" />
+    <Content Include="browserHelp\template\packages\core-topics\topics.mshv2.css" />
+    <Content Include="browserHelp\template\packages\core-topics\topics.tablet.css" />
+    <Content Include="browserHelp\template\packages\core-web\css\bootstrap.css" />
+    <Content Include="browserHelp\template\packages\core-web\css\index.css" />
+    <Content Include="browserHelp\template\packages\core-web\css\index.responsive.css" />
+    <Content Include="browserHelp\template\packages\core-web\css\nav.css" />
+    <Content Include="browserHelp\template\packages\core-web\css\nav.responsive.css" />
+    <Content Include="browserHelp\template\packages\core-web\css\search.css" />
+    <Content Include="browserHelp\template\packages\core-web\css\search.responsive.css" />
+    <Content Include="browserHelp\template\packages\core-web\css\toc.css" />
+    <Content Include="browserHelp\template\packages\core-web\css\top.css" />
+    <Content Include="browserHelp\template\packages\core-web\css\top.responsive.css" />
+    <Content Include="browserHelp\template\packages\core-web\images\glyphicons-halflings.png" />
+    <Content Include="browserHelp\template\packages\core-web\images\header-index.png" />
+    <Content Include="browserHelp\template\packages\core-web\images\header-search.png" />
+    <Content Include="browserHelp\template\packages\core-web\images\header-toc.png" />
+    <Content Include="browserHelp\template\packages\core-web\images\icons.png" />
+    <Content Include="browserHelp\template\packages\core-web\script\debug\navigation.js" />
+    <Content Include="browserHelp\template\packages\core-web\script\navigation.min.js" />
+    <Content Include="browserHelp\template\packages\jquery-mobile\css\debug\jquery.mobile-1.4.5.css" />
+    <Content Include="browserHelp\template\packages\jquery-mobile\css\images\ajax-loader.gif" />
+    <Content Include="browserHelp\template\packages\jquery-mobile\css\images\icons-png\arrow-l-white.png" />
+    <Content Include="browserHelp\template\packages\jquery-mobile\css\images\icons-png\carat-r-white.png" />
+    <Content Include="browserHelp\template\packages\jquery-mobile\css\jquery.mobile-1.4.5.min.css" />
+    <Content Include="browserHelp\template\packages\jquery-mobile\script\debug\jquery.mobile-1.4.5.js" />
+    <Content Include="browserHelp\template\packages\jquery-mobile\script\jquery.mobile-1.4.5.min.js" />
+    <Content Include="browserHelp\template\packages\jquery-ui\css\chm.mshc\jquery-ui-1.8.18.custom.css" />
+    <Content Include="browserHelp\template\packages\jquery-ui\css\default\jquery-ui.min.css" />
+    <Content Include="browserHelp\template\packages\jquery-ui\script\chm.mshc\debug\jquery-ui-1.8.18.custom.js" />
+    <Content Include="browserHelp\template\packages\jquery-ui\script\chm.mshc\jquery-ui-1.8.18.custom.min.js" />
+    <Content Include="browserHelp\template\packages\jquery-ui\script\default\debug\jquery-ui.js" />
+    <Content Include="browserHelp\template\packages\jquery-ui\script\default\jquery-ui.min.js" />
+    <Content Include="browserHelp\template\packages\jquery\script\chm.mshc\debug\jquery-1.7.2.js" />
+    <Content Include="browserHelp\template\packages\jquery\script\chm.mshc\jquery-1.7.2.min.js" />
+    <Content Include="browserHelp\template\packages\jquery\script\default\debug\jquery.js" />
+    <Content Include="browserHelp\template\packages\jquery\script\default\jquery.min.js" />
+    <Content Include="browserHelp\template\packages\plugins-topics\css\chm.mshc\jquery-plugins.css" />
+    <Content Include="browserHelp\template\packages\plugins-topics\css\default\jquery-plugins.css" />
+    <Content Include="browserHelp\template\packages\plugins-topics\images\i-loading.png" />
+    <Content Include="browserHelp\template\packages\plugins-topics\images\i-slimbox-closelabel.png" />
+    <Content Include="browserHelp\template\packages\plugins-topics\images\i-slimbox-nextlabel.png" />
+    <Content Include="browserHelp\template\packages\plugins-topics\images\i-slimbox-prevlabel.png" />
+    <Content Include="browserHelp\template\packages\plugins-topics\images\uiTabsArrow.png" />
+    <Content Include="browserHelp\template\packages\plugins-topics\script\chm.mshc\debug\jquery-plugins.js" />
+    <Content Include="browserHelp\template\packages\plugins-topics\script\chm.mshc\jquery-plugins.min.js" />
+    <Content Include="browserHelp\template\packages\plugins-topics\script\default\debug\jquery-plugins.js" />
+    <Content Include="browserHelp\template\packages\plugins-topics\script\default\jquery-plugins.min.js" />
+    <Content Include="browserHelp\template\packages\plugins-web\css\jquery.layout.css" />
+    <Content Include="browserHelp\template\packages\plugins-web\script\default\debug\jquery-plugins.js" />
+    <Content Include="browserHelp\template\packages\plugins-web\script\default\jquery-plugins.min.js" />
+    <Content Include="browserHelp\test.html" />
+    <Content Include="browserHelp\UserMainetainance.html" />
+    <Content Include="browserHelp\Users.html" />
+    <Content Include="browserHelp\ViewingAChart.html" />
+    <Content Include="browserHelp\webframe.html" />
+    <Content Include="browserHelp\webframedesktop.html" />
+    <Content Include="browserHelp\webframemobile.html" />
+    <Content Include="browserHelp\webframetablet.html" />
+    <Content Include="browserHelp\webindex.html" />
+    <Content Include="browserHelp\webnav.html" />
+    <Content Include="browserHelp\websearch.html" />
+    <Content Include="browserHelp\webtoc.html" />
+    <Content Include="build\ReleaseCustomErrors.config" />
+    <Content Include="change_pwd.aspx" />
+    <Content Include="Chart\blob-stream.js" />
+    <Content Include="Chart\Diagram.aspx" />
+    <Content Include="Chart\ChartService.asmx" />
+    <Content Include="Chart\DownloadPdf.js" />
+    <Content Include="Chart\go_238.js" />
+    <Content Include="Chart\diagram.js" />
+    <Content Include="Chart\Icons\align-center-solid.svg" />
+    <Content Include="Chart\Icons\bahai-solid.svg" />
+    <Content Include="Chart\Icons\bridge-solid.svg" />
+    <Content Include="Chart\Icons\broom-solid.svg" />
+    <Content Include="Chart\Icons\bucket-solid.svg" />
+    <Content Include="Chart\Icons\bugs-solid.svg" />
+    <Content Include="Chart\Icons\calendar-check-regular.svg" />
+    <Content Include="Chart\Icons\calendar-minus-regular.svg" />
+    <Content Include="Chart\Icons\calendar-plus-regular.svg" />
+    <Content Include="Chart\Icons\calendar-regular.svg" />
+    <Content Include="Chart\Icons\candy-cane-solid.svg" />
+    <Content Include="Chart\Icons\carrot-solid.svg" />
+    <Content Include="Chart\Icons\certificate-solid.svg" />
+    <Content Include="Chart\Icons\circle-regular.svg" />
+    <Content Include="Chart\Icons\clipboard-regular.svg" />
+    <Content Include="Chart\Icons\clock-regular.svg" />
+    <Content Include="Chart\Icons\cloud-bolt-solid.svg" />
+    <Content Include="Chart\Icons\cloud-showers-heavy-solid.svg" />
+    <Content Include="Chart\Icons\comment-dollar-solid.svg" />
+    <Content Include="Chart\Icons\comment-dots-regular.svg" />
+    <Content Include="Chart\Icons\comment-regular.svg" />
+    <Content Include="Chart\Icons\comments-regular.svg" />
+    <Content Include="Chart\Icons\crown-solid.svg" />
+    <Content Include="Chart\Icons\dice-solid.svg" />
+    <Content Include="Chart\Icons\ellipsis-vertical-solid.svg" />
+    <Content Include="Chart\Icons\eye-regular.svg" />
+    <Content Include="Chart\Icons\face-smile-regular.svg" />
+    <Content Include="Chart\Icons\file-lines-regular.svg" />
+    <Content Include="Chart\Icons\file-regular.svg" />
+    <Content Include="Chart\Icons\flag-checkered-solid.svg" />
+    <Content Include="Chart\Icons\flag-regular.svg" />
+    <Content Include="Chart\Icons\folder-regular.svg" />
+    <Content Include="Chart\Icons\hammer-solid.svg" />
+    <Content Include="Chart\Icons\handshake-regular.svg" />
+    <Content Include="Chart\Icons\info-solid.svg" />
+    <Content Include="Chart\Icons\lightbulb-regular.svg" />
+    <Content Include="Chart\Icons\lightbulb-solid.svg" />
+    <Content Include="Chart\Icons\map-regular.svg" />
+    <Content Include="Chart\Icons\map-solid.svg" />
+    <Content Include="Chart\Icons\message-regular.svg" />
+    <Content Include="Chart\Icons\note-sticky-regular.svg" />
+    <Content Include="Chart\Icons\paperclip-solid.svg" />
+    <Content Include="Chart\Icons\question-solid.svg" />
+    <Content Include="Chart\Icons\shield-solid.svg" />
+    <Content Include="Chart\Icons\square-check-regular.svg" />
+    <Content Include="Chart\Icons\square-regular.svg" />
+    <Content Include="Chart\Icons\square-xmark-solid.svg" />
+    <Content Include="Chart\Icons\sun-regular.svg" />
+    <Content Include="Chart\Icons\taxi-solid.svg" />
+    <Content Include="Chart\Icons\thumbs-down-regular.svg" />
+    <Content Include="Chart\Icons\thumbs-up-regular.svg" />
+    <Content Include="Chart\Icons\trophy-solid.svg" />
+    <Content Include="Chart\Icons\user-regular.svg" />
+    <Content Include="Chart\Icons\user-secret-solid.svg" />
+    <Content Include="Chart\Icons\wrench-solid.svg" />
+    <Content Include="client_details.aspx" />
+    <Content Include="clients.aspx" />
+    <Content Include="client_images.aspx" />
+    <Content Include="client_images.css" />
+    <Content Include="client_images.js" />
+    <Content Include="client_settings.aspx" />
+    <Content Include="client_settings.css" />
+    <Content Include="client_settings.js" />
+    <Content Include="contextHelp\%27LT_A0172.html" />
+    <Content Include="contextHelp\ApplyingChangesToNodes.html" />
+    <Content Include="contextHelp\Can contain up to {0} digits.html" />
+    <Content Include="contextHelp\Can contain up to {0} lowercase letters.html" />
+    <Content Include="contextHelp\Can contain up to {0} of the following characters.html" />
+    <Content Include="contextHelp\Can contain up to {0} uppercase letters.html" />
+    <Content Include="contextHelp\ER_IM000.html" />
+    <Content Include="contextHelp\ER_IM001.html" />
+    <Content Include="contextHelp\ER_IM002.html" />
+    <Content Include="contextHelp\ER_IM003.html" />
+    <Content Include="contextHelp\ER_IM005.html" />
+    <Content Include="contextHelp\ER_IM006.html" />
+    <Content Include="contextHelp\ER_IM007.html" />
+    <Content Include="contextHelp\ER_IM012.html" />
+    <Content Include="contextHelp\ER_IM013.html" />
+    <Content Include="contextHelp\ER_IM017.html" />
+    <Content Include="contextHelp\ER_IM018.html" />
+    <Content Include="contextHelp\ER_IM019.html" />
+    <Content Include="contextHelp\ER_IM021.html" />
+    <Content Include="contextHelp\ER_IM022.html" />
+    <Content Include="contextHelp\ER_IM028.html" />
+    <Content Include="contextHelp\ER_IM029.html" />
+    <Content Include="contextHelp\ER_IM030.html" />
+    <Content Include="contextHelp\ER_IM032.html" />
+    <Content Include="contextHelp\ER_IM034.html" />
+    <Content Include="contextHelp\ER_IM037.html" />
+    <Content Include="contextHelp\ER_IM040.html" />
+    <Content Include="contextHelp\ER_IM041.html" />
+    <Content Include="contextHelp\ER_IM042.html" />
+    <Content Include="contextHelp\ftsindex.js" />
+    <Content Include="contextHelp\glossary.html" />
+    <Content Include="contextHelp\images\Add Icon.png" />
+    <Content Include="contextHelp\images\Advanced.png" />
+    <Content Include="contextHelp\images\Amend.png" />
+    <Content Include="contextHelp\images\ApplyButton.png" />
+    <Content Include="contextHelp\images\Assistant.png" />
+    <Content Include="contextHelp\images\Back to Chart List Icon.png" />
+    <Content Include="contextHelp\images\Background Colour Icon.png" />
+    <Content Include="contextHelp\images\Background Gradient Dialog.png" />
+    <Content Include="contextHelp\images\BackgroundColourIcon.png" />
+    <Content Include="contextHelp\images\BackToListIcon.png" />
+    <Content Include="contextHelp\images\Banner Body Content.png" />
+    <Content Include="contextHelp\images\Banner.png" />
+    <Content Include="contextHelp\images\Border.gif" />
+    <Content Include="contextHelp\images\BorderColourIcon.png" />
+    <Content Include="contextHelp\images\button example.png" />
+    <Content Include="contextHelp\images\Buttons %28Hover%29.png" />
+    <Content Include="contextHelp\images\CancelButton.png" />
+    <Content Include="contextHelp\images\CanNotDeleteIcon.png" />
+    <Content Include="contextHelp\images\Case.png" />
+    <Content Include="contextHelp\images\Centre&amp;Zoom.gif" />
+    <Content Include="contextHelp\images\Centre&amp;Zoom_thumb.gif" />
+    <Content Include="contextHelp\images\CentreAndZoom.gif" />
+    <Content Include="contextHelp\images\Change Password Form.png" />
+    <Content Include="contextHelp\images\Chart Buttons.png" />
+    <Content Include="contextHelp\images\Chart Example.png" />
+    <Content Include="contextHelp\images\Chart Menu Options.png" />
+    <Content Include="contextHelp\images\ChartHeaderText.png" />
+    <Content Include="contextHelp\images\ChartMenuOptions.png" />
+    <Content Include="contextHelp\images\ChartSettings.png" />
+    <Content Include="contextHelp\images\ChartsList.gif" />
+    <Content Include="contextHelp\images\Checkbox.gif" />
+    <Content Include="contextHelp\images\Circular Cropping.png" />
+    <Content Include="contextHelp\images\ClearSearchIcon.png" />
+    <Content Include="contextHelp\images\ClosedExpandedNode.gif" />
+    <Content Include="contextHelp\images\Co-Parent Node.png" />
+    <Content Include="contextHelp\images\Colour Icon.png" />
+    <Content Include="contextHelp\images\Colour Icons.png" />
+    <Content Include="contextHelp\images\ColourIcons.gif" />
+    <Content Include="contextHelp\images\ColourSelector.png" />
+    <Content Include="contextHelp\images\Data_Node.png" />
+    <Content Include="contextHelp\images\DeleteIcon.png" />
+    <Content Include="contextHelp\images\Dialog1.png" />
+    <Content Include="contextHelp\images\Dialog2.png" />
+    <Content Include="contextHelp\images\Display.gif" />
+    <Content Include="contextHelp\images\DisplayedText.png" />
+    <Content Include="contextHelp\images\Drop Down List.gif" />
+    <Content Include="contextHelp\images\Drop Down Option1.png" />
+    <Content Include="contextHelp\images\Drop Down Option2.png" />
+    <Content Include="contextHelp\images\EarlierLaterChart.gif" />
+    <Content Include="contextHelp\images\Earliest Latest Chart.gif" />
+    <Content Include="contextHelp\images\earliestlatest.gif" />
+    <Content Include="contextHelp\images\Fields.png" />
+    <Content Include="contextHelp\images\Flip Horizontally.gif" />
+    <Content Include="contextHelp\images\FLip Vertically.gif" />
+    <Content Include="contextHelp\images\font.png" />
+    <Content Include="contextHelp\images\General.png" />
+    <Content Include="contextHelp\images\Gradient Linear.png" />
+    <Content Include="contextHelp\images\Gradient Radial.png" />
+    <Content Include="contextHelp\images\GroupDetails.png" />
+    <Content Include="contextHelp\images\Group_Node.png" />
+    <Content Include="contextHelp\images\Help Icon.png" />
+    <Content Include="contextHelp\images\HideFonts.png" />
+    <Content Include="contextHelp\images\HideShowPane.gif" />
+    <Content Include="contextHelp\images\HideShowPane_thumb.gif" />
+    <Content Include="contextHelp\images\Hover here to show the spaces.png" />
+    <Content Include="contextHelp\images\IconBorderCircle.png" />
+    <Content Include="contextHelp\images\IconBorderSquare.png" />
+    <Content Include="contextHelp\images\iconsabovechart.png" />
+    <Content Include="contextHelp\images\Image Characters.png" />
+    <Content Include="contextHelp\images\Image Positions.png" />
+    <Content Include="contextHelp\images\Image Shape.gif" />
+    <Content Include="contextHelp\images\Input Fields.png" />
+    <Content Include="contextHelp\images\Level.png" />
+    <Content Include="contextHelp\images\LineAttributesIcon.png" />
+    <Content Include="contextHelp\images\List Alt Row.png" />
+    <Content Include="contextHelp\images\List Examples.png" />
+    <Content Include="contextHelp\images\List Icons.png" />
+    <Content Include="contextHelp\images\List.png" />
+    <Content Include="contextHelp\images\MagnifierEffec.png" />
+    <Content Include="contextHelp\images\MagnifierEffect.png" />
+    <Content Include="contextHelp\images\MagnifierIcon.png" />
+    <Content Include="contextHelp\images\Main Menu Options.png" />
+    <Content Include="contextHelp\images\Menu Button.png" />
+    <Content Include="contextHelp\images\MenuOptions.png" />
+    <Content Include="contextHelp\images\MoveLeftRight.gif" />
+    <Content Include="contextHelp\images\MoveLeftRight_thumb.gif" />
+    <Content Include="contextHelp\images\Node Details.png" />
+    <Content Include="contextHelp\images\NodeMenuOptions.gif" />
+    <Content Include="contextHelp\images\NodeMenuOptions.png" />
+    <Content Include="contextHelp\images\Nodes Acrosss 2.png" />
+    <Content Include="contextHelp\images\Nodes Acrosss 3.png" />
+    <Content Include="contextHelp\images\Note Details.png" />
+    <Content Include="contextHelp\images\noteicon.png" />
+    <Content Include="contextHelp\images\Orientation.gif" />
+    <Content Include="contextHelp\images\ParentChildNode.png" />
+    <Content Include="contextHelp\images\PDFIcon.png" />
+    <Content Include="contextHelp\images\queryicon.png" />
+    <Content Include="contextHelp\images\Relationship Line Styles.png" />
+    <Content Include="contextHelp\images\Required.png" />
+    <Content Include="contextHelp\images\Rotate Left.gif" />
+    <Content Include="contextHelp\images\Rotate Right.gif" />
+    <Content Include="contextHelp\images\SaveIcon.png" />
+    <Content Include="contextHelp\images\Selected Colour 1.png" />
+    <Content Include="contextHelp\images\Selected Colour.png" />
+    <Content Include="contextHelp\images\Selection List.png" />
+    <Content Include="contextHelp\images\SelectionList.png" />
+    <Content Include="contextHelp\images\SelectionListSearched.png" />
+    <Content Include="contextHelp\images\Shadow.png" />
+    <Content Include="contextHelp\images\ShowChartIcon.png" />
+    <Content Include="contextHelp\images\ShowFonts.png" />
+    <Content Include="contextHelp\images\ShowHidePassword.gif" />
+    <Content Include="contextHelp\images\Siblings.png" />
+    <Content Include="contextHelp\images\Slider Bar.png" />
+    <Content Include="contextHelp\images\Square Cropping.png" />
+    <Content Include="contextHelp\images\Tab Folders.gif" />
+    <Content Include="contextHelp\images\TabFolder.gif" />
+    <Content Include="contextHelp\images\Text Background Colour Icon.png" />
+    <Content Include="contextHelp\images\Text Background Colour.png" />
+    <Content Include="contextHelp\images\Translate Text.png" />
+    <Content Include="contextHelp\images\translatorslist.png" />
+    <Content Include="contextHelp\images\Transparent.png" />
+    <Content Include="contextHelp\images\UploadImageIcon.png" />
+    <Content Include="contextHelp\images\Vacant_Node.png" />
+    <Content Include="contextHelp\images\Valid Date Formats.png" />
+    <Content Include="contextHelp\images\ViewIcon.png" />
+    <Content Include="contextHelp\images\vivichart %281%29.png" />
+    <Content Include="contextHelp\InMitigation.html" />
+    <Content Include="contextHelp\Introduction.html" />
+    <Content Include="contextHelp\IN_IM001.html" />
+    <Content Include="contextHelp\IN_IM002.html" />
+    <Content Include="contextHelp\IN_IM003.html" />
+    <Content Include="contextHelp\IN_IM009.html" />
+    <Content Include="contextHelp\IN_IM010.html" />
+    <Content Include="contextHelp\IN_IM011.html" />
+    <Content Include="contextHelp\IN_IM012.html" />
+    <Content Include="contextHelp\LT_A0001.html" />
+    <Content Include="contextHelp\LT_A0002.html" />
+    <Content Include="contextHelp\LT_A0003.html" />
+    <Content Include="contextHelp\LT_A0004.html" />
+    <Content Include="contextHelp\LT_A0005.html" />
+    <Content Include="contextHelp\LT_A0007.html" />
+    <Content Include="contextHelp\LT_A0008.html" />
+    <Content Include="contextHelp\LT_A0009.html" />
+    <Content Include="contextHelp\LT_A0010.html" />
+    <Content Include="contextHelp\LT_A0011.html" />
+    <Content Include="contextHelp\LT_A0012.html" />
+    <Content Include="contextHelp\LT_A0013.html" />
+    <Content Include="contextHelp\LT_A0014.html" />
+    <Content Include="contextHelp\LT_A0015.html" />
+    <Content Include="contextHelp\LT_A0016.html" />
+    <Content Include="contextHelp\LT_A0017.html" />
+    <Content Include="contextHelp\LT_A0018.html" />
+    <Content Include="contextHelp\LT_A0019.html" />
+    <Content Include="contextHelp\LT_A0020.html" />
+    <Content Include="contextHelp\LT_A0021.html" />
+    <Content Include="contextHelp\LT_A0022.html" />
+    <Content Include="contextHelp\LT_A0023.html" />
+    <Content Include="contextHelp\LT_A0024.html" />
+    <Content Include="contextHelp\LT_A0025.html" />
+    <Content Include="contextHelp\LT_A0026.html" />
+    <Content Include="contextHelp\LT_A0027.html" />
+    <Content Include="contextHelp\LT_A0028.html" />
+    <Content Include="contextHelp\LT_A0029.html" />
+    <Content Include="contextHelp\LT_A0030.html" />
+    <Content Include="contextHelp\LT_A0031.html" />
+    <Content Include="contextHelp\LT_A0032.html" />
+    <Content Include="contextHelp\LT_A0033.html" />
+    <Content Include="contextHelp\LT_A0034.html" />
+    <Content Include="contextHelp\LT_A0035.html" />
+    <Content Include="contextHelp\LT_A0036.html" />
+    <Content Include="contextHelp\LT_A0037.html" />
+    <Content Include="contextHelp\LT_A0038.html" />
+    <Content Include="contextHelp\LT_A0039.html" />
+    <Content Include="contextHelp\LT_A0040.html" />
+    <Content Include="contextHelp\LT_A0041.html" />
+    <Content Include="contextHelp\LT_A0042.html" />
+    <Content Include="contextHelp\LT_A0043.html" />
+    <Content Include="contextHelp\LT_A0044.html" />
+    <Content Include="contextHelp\LT_A0045.html" />
+    <Content Include="contextHelp\LT_A0046.html" />
+    <Content Include="contextHelp\LT_A0047.html" />
+    <Content Include="contextHelp\LT_A0048.html" />
+    <Content Include="contextHelp\LT_A0049.html" />
+    <Content Include="contextHelp\LT_A0050.html" />
+    <Content Include="contextHelp\LT_A0051.html" />
+    <Content Include="contextHelp\LT_A0052.html" />
+    <Content Include="contextHelp\LT_A0053.html" />
+    <Content Include="contextHelp\LT_A0054.html" />
+    <Content Include="contextHelp\LT_A0055.html" />
+    <Content Include="contextHelp\LT_A0056.html" />
+    <Content Include="contextHelp\LT_A0057.html" />
+    <Content Include="contextHelp\LT_A0058.html" />
+    <Content Include="contextHelp\LT_A0059.html" />
+    <Content Include="contextHelp\LT_A0060.html" />
+    <Content Include="contextHelp\LT_A0061.html" />
+    <Content Include="contextHelp\LT_A0062.html" />
+    <Content Include="contextHelp\LT_A0063.html" />
+    <Content Include="contextHelp\LT_A0064.html" />
+    <Content Include="contextHelp\LT_A0065.html" />
+    <Content Include="contextHelp\LT_A0066.html" />
+    <Content Include="contextHelp\LT_A0067.html" />
+    <Content Include="contextHelp\LT_A0068.html" />
+    <Content Include="contextHelp\LT_A0069.html" />
+    <Content Include="contextHelp\LT_A0070.html" />
+    <Content Include="contextHelp\LT_A0071.html" />
+    <Content Include="contextHelp\LT_A0072.html" />
+    <Content Include="contextHelp\LT_A0073.html" />
+    <Content Include="contextHelp\LT_A0074.html" />
+    <Content Include="contextHelp\LT_A0075.html" />
+    <Content Include="contextHelp\LT_A0076.html" />
+    <Content Include="contextHelp\LT_A0077.html" />
+    <Content Include="contextHelp\LT_A0078.html" />
+    <Content Include="contextHelp\LT_A0079.html" />
+    <Content Include="contextHelp\LT_A0080.html" />
+    <Content Include="contextHelp\LT_A0081.html" />
+    <Content Include="contextHelp\LT_A0082.html" />
+    <Content Include="contextHelp\LT_A0083.html" />
+    <Content Include="contextHelp\LT_A0084.html" />
+    <Content Include="contextHelp\LT_A0085.html" />
+    <Content Include="contextHelp\LT_A0086.html" />
+    <Content Include="contextHelp\LT_A0087.html" />
+    <Content Include="contextHelp\LT_A0088.html" />
+    <Content Include="contextHelp\LT_A0089.html" />
+    <Content Include="contextHelp\LT_A0090.html" />
+    <Content Include="contextHelp\LT_A0091.html" />
+    <Content Include="contextHelp\LT_A0092.html" />
+    <Content Include="contextHelp\LT_A0093.html" />
+    <Content Include="contextHelp\LT_A0094.html" />
+    <Content Include="contextHelp\LT_A0095.html" />
+    <Content Include="contextHelp\LT_A0097.html" />
+    <Content Include="contextHelp\LT_A0101.html" />
+    <Content Include="contextHelp\LT_A0102.html" />
+    <Content Include="contextHelp\LT_A0103.html" />
+    <Content Include="contextHelp\LT_A0104.html" />
+    <Content Include="contextHelp\LT_A0105.html" />
+    <Content Include="contextHelp\LT_A0106.html" />
+    <Content Include="contextHelp\LT_A0107.html" />
+    <Content Include="contextHelp\LT_A0108.html" />
+    <Content Include="contextHelp\LT_A0109.html" />
+    <Content Include="contextHelp\LT_A0111.html" />
+    <Content Include="contextHelp\LT_A0115.html" />
+    <Content Include="contextHelp\LT_A0116.html" />
+    <Content Include="contextHelp\LT_A0117.html" />
+    <Content Include="contextHelp\LT_A0118.html" />
+    <Content Include="contextHelp\LT_A0119.html" />
+    <Content Include="contextHelp\LT_A0120.html" />
+    <Content Include="contextHelp\LT_A0121.html" />
+    <Content Include="contextHelp\LT_A0122.html" />
+    <Content Include="contextHelp\LT_A0123.html" />
+    <Content Include="contextHelp\LT_A0124.html" />
+    <Content Include="contextHelp\LT_A0125.html" />
+    <Content Include="contextHelp\LT_A0126.html" />
+    <Content Include="contextHelp\LT_A0127.html" />
+    <Content Include="contextHelp\LT_A0129.html" />
+    <Content Include="contextHelp\LT_A0130.html" />
+    <Content Include="contextHelp\LT_A0131.html" />
+    <Content Include="contextHelp\LT_A0132.html" />
+    <Content Include="contextHelp\LT_A0146.html" />
+    <Content Include="contextHelp\LT_A0147.html" />
+    <Content Include="contextHelp\LT_A0148.html" />
+    <Content Include="contextHelp\LT_A0149.html" />
+    <Content Include="contextHelp\LT_A0151.html" />
+    <Content Include="contextHelp\LT_A0152.html" />
+    <Content Include="contextHelp\LT_A0153.html" />
+    <Content Include="contextHelp\LT_A0154.html" />
+    <Content Include="contextHelp\LT_A0157.html" />
+    <Content Include="contextHelp\LT_A0158.html" />
+    <Content Include="contextHelp\LT_A0159.html" />
+    <Content Include="contextHelp\LT_A0160.html" />
+    <Content Include="contextHelp\LT_A0161.html" />
+    <Content Include="contextHelp\LT_A0162.html" />
+    <Content Include="contextHelp\LT_A0163.html" />
+    <Content Include="contextHelp\LT_A0164.html" />
+    <Content Include="contextHelp\LT_A0165.html" />
+    <Content Include="contextHelp\LT_A0166.html" />
+    <Content Include="contextHelp\LT_A0167.html" />
+    <Content Include="contextHelp\LT_A0168.html" />
+    <Content Include="contextHelp\LT_A0169.html" />
+    <Content Include="contextHelp\LT_A0170.html" />
+    <Content Include="contextHelp\LT_A0171.html" />
+    <Content Include="contextHelp\LT_A0172.html" />
+    <Content Include="contextHelp\LT_A0173.html" />
+    <Content Include="contextHelp\LT_A0174.html" />
+    <Content Include="contextHelp\LT_A0175.html" />
+    <Content Include="contextHelp\LT_A0176.html" />
+    <Content Include="contextHelp\LT_A0177.html" />
+    <Content Include="contextHelp\LT_A0178.html" />
+    <Content Include="contextHelp\LT_A0179.html" />
+    <Content Include="contextHelp\LT_A0180.html" />
+    <Content Include="contextHelp\LT_A0181.html" />
+    <Content Include="contextHelp\LT_A0182.html" />
+    <Content Include="contextHelp\LT_A0183.html" />
+    <Content Include="contextHelp\LT_A0184.html" />
+    <Content Include="contextHelp\LT_M0002.html" />
+    <Content Include="contextHelp\LT_M0003.html" />
+    <Content Include="contextHelp\LT_M0008.html" />
+    <Content Include="contextHelp\LT_M0009.html" />
+    <Content Include="contextHelp\LT_M0010.html" />
+    <Content Include="contextHelp\LT_M0011.html" />
+    <Content Include="contextHelp\LT_M0012.html" />
+    <Content Include="contextHelp\LT_M0013.html" />
+    <Content Include="contextHelp\LT_M0014.html" />
+    <Content Include="contextHelp\LT_M0015.html" />
+    <Content Include="contextHelp\LT_M0016.html" />
+    <Content Include="contextHelp\LT_M0017.html" />
+    <Content Include="contextHelp\LT_M0018.html" />
+    <Content Include="contextHelp\LT_M0019.html" />
+    <Content Include="contextHelp\LT_M0021.html" />
+    <Content Include="contextHelp\LT_M0022.html" />
+    <Content Include="contextHelp\LT_M0023.html" />
+    <Content Include="contextHelp\LT_M0024.html" />
+    <Content Include="contextHelp\LT_M0025.html" />
+    <Content Include="contextHelp\LT_M0026.html" />
+    <Content Include="contextHelp\LT_M0027.html" />
+    <Content Include="contextHelp\LT_M0028.html" />
+    <Content Include="contextHelp\LT_M0029.html" />
+    <Content Include="contextHelp\LT_S0002.html" />
+    <Content Include="contextHelp\LT_S0004.html" />
+    <Content Include="contextHelp\LT_S0005.html" />
+    <Content Include="contextHelp\LT_S0006.html" />
+    <Content Include="contextHelp\LT_S0007.html" />
+    <Content Include="contextHelp\LT_S0008.html" />
+    <Content Include="contextHelp\LT_S0009.html" />
+    <Content Include="contextHelp\LT_S0010.html" />
+    <Content Include="contextHelp\LT_S0011.html" />
+    <Content Include="contextHelp\LT_S0012.html" />
+    <Content Include="contextHelp\LT_S0013.html" />
+    <Content Include="contextHelp\LT_S0014.html" />
+    <Content Include="contextHelp\LT_S0015.html" />
+    <Content Include="contextHelp\LT_S0016.html" />
+    <Content Include="contextHelp\LT_S0017.html" />
+    <Content Include="contextHelp\LT_S0018.html" />
+    <Content Include="contextHelp\LT_S0019.html" />
+    <Content Include="contextHelp\LT_S0020.html" />
+    <Content Include="contextHelp\LT_S0021.html" />
+    <Content Include="contextHelp\LT_S0022.html" />
+    <Content Include="contextHelp\LT_S0023.html" />
+    <Content Include="contextHelp\LT_S0024.html" />
+    <Content Include="contextHelp\LT_S0025.html" />
+    <Content Include="contextHelp\LT_S0026.html" />
+    <Content Include="contextHelp\LT_S0027.html" />
+    <Content Include="contextHelp\LT_S0028.html" />
+    <Content Include="contextHelp\LT_S0029.html" />
+    <Content Include="contextHelp\LT_S0030.html" />
+    <Content Include="contextHelp\LT_S0031.html" />
+    <Content Include="contextHelp\LT_S0032.html" />
+    <Content Include="contextHelp\LT_S0033.html" />
+    <Content Include="contextHelp\LT_S0034.html" />
+    <Content Include="contextHelp\LT_S0035.html" />
+    <Content Include="contextHelp\LT_S0036.html" />
+    <Content Include="contextHelp\LT_S0037.html" />
+    <Content Include="contextHelp\LT_S0038.html" />
+    <Content Include="contextHelp\LT_S0039.html" />
+    <Content Include="contextHelp\LT_S0040.html" />
+    <Content Include="contextHelp\LT_S0041.html" />
+    <Content Include="contextHelp\LT_S0042.html" />
+    <Content Include="contextHelp\LT_S0043.html" />
+    <Content Include="contextHelp\LT_S0044.html" />
+    <Content Include="contextHelp\LT_S0045.html" />
+    <Content Include="contextHelp\LT_S0046.html" />
+    <Content Include="contextHelp\LT_S0047.html" />
+    <Content Include="contextHelp\LT_S0048.html" />
+    <Content Include="contextHelp\LT_S0049.html" />
+    <Content Include="contextHelp\LT_S0050.html" />
+    <Content Include="contextHelp\LT_S0051.html" />
+    <Content Include="contextHelp\LT_S0052.html" />
+    <Content Include="contextHelp\LT_S0053.html" />
+    <Content Include="contextHelp\LT_S0054.html" />
+    <Content Include="contextHelp\LT_S0055.html" />
+    <Content Include="contextHelp\LT_S0056.html" />
+    <Content Include="contextHelp\LT_S0057.html" />
+    <Content Include="contextHelp\LT_S0058.html" />
+    <Content Include="contextHelp\LT_S0059.html" />
+    <Content Include="contextHelp\LT_S0060.html" />
+    <Content Include="contextHelp\LT_S0061.html" />
+    <Content Include="contextHelp\LT_S0062.html" />
+    <Content Include="contextHelp\LT_S0063.html" />
+    <Content Include="contextHelp\LT_S0064.html" />
+    <Content Include="contextHelp\LT_S0065.html" />
+    <Content Include="contextHelp\LT_S0066.html" />
+    <Content Include="contextHelp\LT_S0067.html" />
+    <Content Include="contextHelp\LT_S0068.html" />
+    <Content Include="contextHelp\LT_S0069.html" />
+    <Content Include="contextHelp\LT_S0070.html" />
+    <Content Include="contextHelp\LT_S0071.html" />
+    <Content Include="contextHelp\LT_S0072.html" />
+    <Content Include="contextHelp\LT_S0073.html" />
+    <Content Include="contextHelp\LT_S0074.html" />
+    <Content Include="contextHelp\LT_S0075.html" />
+    <Content Include="contextHelp\LT_S0076.html" />
+    <Content Include="contextHelp\LT_S0077.html" />
+    <Content Include="contextHelp\LT_S0078.html" />
+    <Content Include="contextHelp\LT_S0079.html" />
+    <Content Include="contextHelp\LT_S0080.html" />
+    <Content Include="contextHelp\LT_S0081.html" />
+    <Content Include="contextHelp\LT_S0082.html" />
+    <Content Include="contextHelp\LT_S0083.html" />
+    <Content Include="contextHelp\LT_S0084.html" />
+    <Content Include="contextHelp\LT_S0085.html" />
+    <Content Include="contextHelp\LT_S0086.html" />
+    <Content Include="contextHelp\LT_S0087.html" />
+    <Content Include="contextHelp\LT_S0088.html" />
+    <Content Include="contextHelp\LT_S0089.html" />
+    <Content Include="contextHelp\LT_S0090.html" />
+    <Content Include="contextHelp\LT_S0091.html" />
+    <Content Include="contextHelp\LT_S0092.html" />
+    <Content Include="contextHelp\LT_S0093.html" />
+    <Content Include="contextHelp\LT_S0094.html" />
+    <Content Include="contextHelp\LT_S0095.html" />
+    <Content Include="contextHelp\LT_S0096.html" />
+    <Content Include="contextHelp\LT_S0097.html" />
+    <Content Include="contextHelp\LT_S0098.html" />
+    <Content Include="contextHelp\LT_S0099.html" />
+    <Content Include="contextHelp\LT_S0100.html" />
+    <Content Include="contextHelp\LT_S0101.html" />
+    <Content Include="contextHelp\LT_S0102.html" />
+    <Content Include="contextHelp\LT_S0103.html" />
+    <Content Include="contextHelp\LT_S0104.html" />
+    <Content Include="contextHelp\LT_S0105.html" />
+    <Content Include="contextHelp\LT_S0106.html" />
+    <Content Include="contextHelp\LT_S0107.html" />
+    <Content Include="contextHelp\LT_S0108.html" />
+    <Content Include="contextHelp\LT_S0109.html" />
+    <Content Include="contextHelp\LT_S0110.html" />
+    <Content Include="contextHelp\LT_S0111.html" />
+    <Content Include="contextHelp\LT_S0112.html" />
+    <Content Include="contextHelp\LT_S0113.html" />
+    <Content Include="contextHelp\LT_S0114.html" />
+    <Content Include="contextHelp\LT_S0115.html" />
+    <Content Include="contextHelp\LT_S0116.html" />
+    <Content Include="contextHelp\LT_S0117.html" />
+    <Content Include="contextHelp\LT_S0118.html" />
+    <Content Include="contextHelp\LT_S0119.html" />
+    <Content Include="contextHelp\LT_S0120.html" />
+    <Content Include="contextHelp\LT_S0121.html" />
+    <Content Include="contextHelp\LT_S0122.html" />
+    <Content Include="contextHelp\LT_S0123.html" />
+    <Content Include="contextHelp\LT_S0124.html" />
+    <Content Include="contextHelp\LT_S0125.html" />
+    <Content Include="contextHelp\LT_S0126.html" />
+    <Content Include="contextHelp\LT_S0127.html" />
+    <Content Include="contextHelp\LT_S0128.html" />
+    <Content Include="contextHelp\LT_S0129.html" />
+    <Content Include="contextHelp\LT_S0130.html" />
+    <Content Include="contextHelp\LT_S0131.html" />
+    <Content Include="contextHelp\LT_S0132.html" />
+    <Content Include="contextHelp\LT_S0133.html" />
+    <Content Include="contextHelp\LT_S0134.html" />
+    <Content Include="contextHelp\LT_S0135.html" />
+    <Content Include="contextHelp\LT_S0136.html" />
+    <Content Include="contextHelp\LT_S0137.html" />
+    <Content Include="contextHelp\LT_S0138.html" />
+    <Content Include="contextHelp\LT_S0139.html" />
+    <Content Include="contextHelp\LT_S0140.html" />
+    <Content Include="contextHelp\LT_S0141.html" />
+    <Content Include="contextHelp\LT_S0142.html" />
+    <Content Include="contextHelp\LT_S0143.html" />
+    <Content Include="contextHelp\LT_S0144.html" />
+    <Content Include="contextHelp\LT_S0145.html" />
+    <Content Include="contextHelp\LT_S0146.html" />
+    <Content Include="contextHelp\LT_S0147.html" />
+    <Content Include="contextHelp\LT_S0148.html" />
+    <Content Include="contextHelp\LT_S0149.html" />
+    <Content Include="contextHelp\LT_S0150.html" />
+    <Content Include="contextHelp\LT_S0151.html" />
+    <Content Include="contextHelp\LT_S0152.html" />
+    <Content Include="contextHelp\LT_S0153.html" />
+    <Content Include="contextHelp\LT_S0154.html" />
+    <Content Include="contextHelp\LT_S0155.html" />
+    <Content Include="contextHelp\LT_S0156.html" />
+    <Content Include="contextHelp\LT_S0157.html" />
+    <Content Include="contextHelp\LT_S0158.html" />
+    <Content Include="contextHelp\LT_S0159.html" />
+    <Content Include="contextHelp\LT_S0160.html" />
+    <Content Include="contextHelp\LT_S0161.html" />
+    <Content Include="contextHelp\LT_S0162.html" />
+    <Content Include="contextHelp\LT_S0163.html" />
+    <Content Include="contextHelp\LT_S0164.html" />
+    <Content Include="contextHelp\LT_S0165.html" />
+    <Content Include="contextHelp\LT_S0166.html" />
+    <Content Include="contextHelp\LT_S0167.html" />
+    <Content Include="contextHelp\LT_S0168.html" />
+    <Content Include="contextHelp\LT_S0169.html" />
+    <Content Include="contextHelp\LT_S0170.html" />
+    <Content Include="contextHelp\LT_S0171.html" />
+    <Content Include="contextHelp\LT_S0172.html" />
+    <Content Include="contextHelp\LT_S0173.html" />
+    <Content Include="contextHelp\LT_S0174.html" />
+    <Content Include="contextHelp\LT_S0175.html" />
+    <Content Include="contextHelp\LT_S0176.html" />
+    <Content Include="contextHelp\LT_S0177.html" />
+    <Content Include="contextHelp\LT_S0178.html" />
+    <Content Include="contextHelp\LT_S0179.html" />
+    <Content Include="contextHelp\LT_S0180.html" />
+    <Content Include="contextHelp\LT_S0181.html" />
+    <Content Include="contextHelp\LT_S0182.html" />
+    <Content Include="contextHelp\LT_S0183.html" />
+    <Content Include="contextHelp\LT_S0184.html" />
+    <Content Include="contextHelp\LT_S0185.html" />
+    <Content Include="contextHelp\LT_S0186.html" />
+    <Content Include="contextHelp\LT_S0188.html" />
+    <Content Include="contextHelp\LT_S0189.html" />
+    <Content Include="contextHelp\LT_S0190.html" />
+    <Content Include="contextHelp\LT_S0191.html" />
+    <Content Include="contextHelp\LT_S0192.html" />
+    <Content Include="contextHelp\LT_S0193.html" />
+    <Content Include="contextHelp\LT_S0194.html" />
+    <Content Include="contextHelp\LT_S0195.html" />
+    <Content Include="contextHelp\LT_S0196.html" />
+    <Content Include="contextHelp\LT_S0197.html" />
+    <Content Include="contextHelp\LT_S0198.html" />
+    <Content Include="contextHelp\LT_S0199.html" />
+    <Content Include="contextHelp\LT_S0200.html" />
+    <Content Include="contextHelp\LT_S0201.html" />
+    <Content Include="contextHelp\LT_S0202.html" />
+    <Content Include="contextHelp\LT_S0203.html" />
+    <Content Include="contextHelp\LT_S0204.html" />
+    <Content Include="contextHelp\LT_S0205.html" />
+    <Content Include="contextHelp\LT_S0206.html" />
+    <Content Include="contextHelp\LT_S0207.html" />
+    <Content Include="contextHelp\LT_S0208.html" />
+    <Content Include="contextHelp\LT_S0209.html" />
+    <Content Include="contextHelp\LT_S0210.html" />
+    <Content Include="contextHelp\LT_S0211.html" />
+    <Content Include="contextHelp\LT_S0212.html" />
+    <Content Include="contextHelp\LT_S0213.html" />
+    <Content Include="contextHelp\LT_S0218.html" />
+    <Content Include="contextHelp\LT_S0221.html" />
+    <Content Include="contextHelp\LT_S0222.html" />
+    <Content Include="contextHelp\LT_S0223.html" />
+    <Content Include="contextHelp\LT_S0224.html" />
+    <Content Include="contextHelp\LT_S0225.html" />
+    <Content Include="contextHelp\LT_S0226.html" />
+    <Content Include="contextHelp\LT_S0227.html" />
+    <Content Include="contextHelp\LT_S0228.html" />
+    <Content Include="contextHelp\LT_S0229.html" />
+    <Content Include="contextHelp\LT_S0230.html" />
+    <Content Include="contextHelp\LT_S0231.html" />
+    <Content Include="contextHelp\LT_S0232.html" />
+    <Content Include="contextHelp\LT_S0233.html" />
+    <Content Include="contextHelp\LT_S0234.html" />
+    <Content Include="contextHelp\LT_S0235.html" />
+    <Content Include="contextHelp\LT_S0236.html" />
+    <Content Include="contextHelp\LT_S0237.html" />
+    <Content Include="contextHelp\LT_S0238.html" />
+    <Content Include="contextHelp\LT_S0239.html" />
+    <Content Include="contextHelp\LT_S0240.html" />
+    <Content Include="contextHelp\LT_S0241.html" />
+    <Content Include="contextHelp\LT_S0242.html" />
+    <Content Include="contextHelp\LT_S0243.html" />
+    <Content Include="contextHelp\LT_S0244.html" />
+    <Content Include="contextHelp\LT_S0245.html" />
+    <Content Include="contextHelp\LT_S0246.html" />
+    <Content Include="contextHelp\LT_S0247.html" />
+    <Content Include="contextHelp\LT_S0248.html" />
+    <Content Include="contextHelp\LT_S0249.html" />
+    <Content Include="contextHelp\LT_S0250.html" />
+    <Content Include="contextHelp\LT_S0251.html" />
+    <Content Include="contextHelp\LT_S0252.html" />
+    <Content Include="contextHelp\LT_S0253.html" />
+    <Content Include="contextHelp\LT_S0255.html" />
+    <Content Include="contextHelp\LT_S0256.html" />
+    <Content Include="contextHelp\LT_S0257.html" />
+    <Content Include="contextHelp\LT_S0259.html" />
+    <Content Include="contextHelp\LT_S0260.html" />
+    <Content Include="contextHelp\LT_S0261.html" />
+    <Content Include="contextHelp\LT_S0262.html" />
+    <Content Include="contextHelp\LT_S0263.html" />
+    <Content Include="contextHelp\LT_S0264.html" />
+    <Content Include="contextHelp\LT_S0265.html" />
+    <Content Include="contextHelp\LT_S0266.html" />
+    <Content Include="contextHelp\LT_S0267.html" />
+    <Content Include="contextHelp\LT_S0268.html" />
+    <Content Include="contextHelp\LT_S0269.html" />
+    <Content Include="contextHelp\LT_S0270.html" />
+    <Content Include="contextHelp\LT_S0271.html" />
+    <Content Include="contextHelp\LT_S0272.html" />
+    <Content Include="contextHelp\LT_S0273.html" />
+    <Content Include="contextHelp\LT_S0274.html" />
+    <Content Include="contextHelp\LT_S0278.html" />
+    <Content Include="contextHelp\LT_S0279.html" />
+    <Content Include="contextHelp\LT_S0280.html" />
+    <Content Include="contextHelp\LT_S0281.html" />
+    <Content Include="contextHelp\LT_S0282.html" />
+    <Content Include="contextHelp\LT_S0283.html" />
+    <Content Include="contextHelp\LT_S0284.html" />
+    <Content Include="contextHelp\LT_S0285.html" />
+    <Content Include="contextHelp\LT_S0286.html" />
+    <Content Include="contextHelp\LT_S0287.html" />
+    <Content Include="contextHelp\LT_S0288.html" />
+    <Content Include="contextHelp\LT_S0300.html" />
+    <Content Include="contextHelp\LT_S0303.html" />
+    <Content Include="contextHelp\LT_S0304.html" />
+    <Content Include="contextHelp\LT_S0305.html" />
+    <Content Include="contextHelp\LT_S0306.html" />
+    <Content Include="contextHelp\LT_S0307.html" />
+    <Content Include="contextHelp\LT_S0308.html" />
+    <Content Include="contextHelp\LT_S0311.html" />
+    <Content Include="contextHelp\LT_S0315.html" />
+    <Content Include="contextHelp\LT_S0320.html" />
+    <Content Include="contextHelp\LT_S0321.html" />
+    <Content Include="contextHelp\LT_S0322.html" />
+    <Content Include="contextHelp\LT_S0323.html" />
+    <Content Include="contextHelp\LT_S0324.html" />
+    <Content Include="contextHelp\LT_S0325.html" />
+    <Content Include="contextHelp\LT_S0326.html" />
+    <Content Include="contextHelp\LT_S0327.html" />
+    <Content Include="contextHelp\LT_S0328.html" />
+    <Content Include="contextHelp\LT_S0329.html" />
+    <Content Include="contextHelp\LT_S0330.html" />
+    <Content Include="contextHelp\LT_S0331.html" />
+    <Content Include="contextHelp\LT_S0332.html" />
+    <Content Include="contextHelp\LT_S0334.html" />
+    <Content Include="contextHelp\LT_S0335.html" />
+    <Content Include="contextHelp\LT_S0336.html" />
+    <Content Include="contextHelp\LT_S0337.html" />
+    <Content Include="contextHelp\LT_S0338.html" />
+    <Content Include="contextHelp\LT_S0356.html" />
+    <Content Include="contextHelp\LT_S0357.html" />
+    <Content Include="contextHelp\LT_S0359.html" />
+    <Content Include="contextHelp\LT_S0360.html" />
+    <Content Include="contextHelp\LT_S0373.html" />
+    <Content Include="contextHelp\LT_S0383.html" />
+    <Content Include="contextHelp\LT_S0384.html" />
+    <Content Include="contextHelp\LT_S0385.html" />
+    <Content Include="contextHelp\Must be between {0} and {1} characters in length.html" />
+    <Content Include="contextHelp\Must contain at least {0} digits.html" />
+    <Content Include="contextHelp\Must contain at least {0} lowercase letters.html" />
+    <Content Include="contextHelp\Must contain at least {0} of the following characters.html" />
+    <Content Include="contextHelp\Must contain at least {0} uppercase letters.html" />
+    <Content Include="contextHelp\Must contain between {0} and {1} digits.html" />
+    <Content Include="contextHelp\Must contain between {0} and {1} lowercase letters.html" />
+    <Content Include="contextHelp\Must contain between {0} and {1} of the following characters.html" />
+    <Content Include="contextHelp\Must contain between {0} and {1} uppercase letters.html" />
+    <Content Include="contextHelp\NewTopic.html" />
+    <Content Include="contextHelp\S0001.html" />
+    <Content Include="contextHelp\S0002.html" />
+    <Content Include="contextHelp\S0003.html" />
+    <Content Include="contextHelp\S0004.html" />
+    <Content Include="contextHelp\S0005.html" />
+    <Content Include="contextHelp\stylesheets\customstyles.css" />
+    <Content Include="contextHelp\template\packages\core-topics\css\topics.css" />
+    <Content Include="contextHelp\template\packages\core-topics\images\glyphicons-halflings.png" />
+    <Content Include="contextHelp\template\packages\core-topics\images\i-caution.png" />
+    <Content Include="contextHelp\template\packages\core-topics\images\i-collapse.png" />
+    <Content Include="contextHelp\template\packages\core-topics\images\i-content-collapsed.png" />
+    <Content Include="contextHelp\template\packages\core-topics\images\i-content-expanded.png" />
+    <Content Include="contextHelp\template\packages\core-topics\images\i-copy-code.png" />
+    <Content Include="contextHelp\template\packages\core-topics\images\i-dropdown.png" />
+    <Content Include="contextHelp\template\packages\core-topics\images\i-expand.png" />
+    <Content Include="contextHelp\template\packages\core-topics\images\i-is-new.png" />
+    <Content Include="contextHelp\template\packages\core-topics\images\i-note.png" />
+    <Content Include="contextHelp\template\packages\core-topics\images\i-tip.png" />
+    <Content Include="contextHelp\template\packages\core-topics\script\debug\topics.js" />
+    <Content Include="contextHelp\template\packages\core-topics\script\topics.min.js" />
+    <Content Include="contextHelp\template\packages\core-topics\topics.mobile.css" />
+    <Content Include="contextHelp\template\packages\core-topics\topics.mshv1.css" />
+    <Content Include="contextHelp\template\packages\core-topics\topics.mshv2.css" />
+    <Content Include="contextHelp\template\packages\core-topics\topics.tablet.css" />
+    <Content Include="contextHelp\template\packages\core-web\css\bootstrap.css" />
+    <Content Include="contextHelp\template\packages\core-web\css\index.css" />
+    <Content Include="contextHelp\template\packages\core-web\css\index.responsive.css" />
+    <Content Include="contextHelp\template\packages\core-web\css\nav.css" />
+    <Content Include="contextHelp\template\packages\core-web\css\nav.responsive.css" />
+    <Content Include="contextHelp\template\packages\core-web\css\search.css" />
+    <Content Include="contextHelp\template\packages\core-web\css\search.responsive.css" />
+    <Content Include="contextHelp\template\packages\core-web\css\toc.css" />
+    <Content Include="contextHelp\template\packages\core-web\css\top.css" />
+    <Content Include="contextHelp\template\packages\core-web\css\top.responsive.css" />
+    <Content Include="contextHelp\template\packages\core-web\images\glyphicons-halflings.png" />
+    <Content Include="contextHelp\template\packages\core-web\images\header-index.png" />
+    <Content Include="contextHelp\template\packages\core-web\images\header-search.png" />
+    <Content Include="contextHelp\template\packages\core-web\images\header-toc.png" />
+    <Content Include="contextHelp\template\packages\core-web\images\icons.png" />
+    <Content Include="contextHelp\template\packages\core-web\script\debug\navigation.js" />
+    <Content Include="contextHelp\template\packages\core-web\script\navigation.min.js" />
+    <Content Include="contextHelp\template\packages\jquery-mobile\css\debug\jquery.mobile-1.4.5.css" />
+    <Content Include="contextHelp\template\packages\jquery-mobile\css\images\ajax-loader.gif" />
+    <Content Include="contextHelp\template\packages\jquery-mobile\css\images\icons-png\arrow-l-white.png" />
+    <Content Include="contextHelp\template\packages\jquery-mobile\css\images\icons-png\carat-r-white.png" />
+    <Content Include="contextHelp\template\packages\jquery-mobile\css\jquery.mobile-1.4.5.min.css" />
+    <Content Include="contextHelp\template\packages\jquery-mobile\script\debug\jquery.mobile-1.4.5.js" />
+    <Content Include="contextHelp\template\packages\jquery-mobile\script\jquery.mobile-1.4.5.min.js" />
+    <Content Include="contextHelp\template\packages\jquery-ui\css\chm.mshc\jquery-ui-1.8.18.custom.css" />
+    <Content Include="contextHelp\template\packages\jquery-ui\css\default\jquery-ui.min.css" />
+    <Content Include="contextHelp\template\packages\jquery-ui\script\chm.mshc\debug\jquery-ui-1.8.18.custom.js" />
+    <Content Include="contextHelp\template\packages\jquery-ui\script\chm.mshc\jquery-ui-1.8.18.custom.min.js" />
+    <Content Include="contextHelp\template\packages\jquery-ui\script\default\debug\jquery-ui.js" />
+    <Content Include="contextHelp\template\packages\jquery-ui\script\default\jquery-ui.min.js" />
+    <Content Include="contextHelp\template\packages\jquery\script\chm.mshc\debug\jquery-1.7.2.js" />
+    <Content Include="contextHelp\template\packages\jquery\script\chm.mshc\jquery-1.7.2.min.js" />
+    <Content Include="contextHelp\template\packages\jquery\script\default\debug\jquery.js" />
+    <Content Include="contextHelp\template\packages\jquery\script\default\jquery.min.js" />
+    <Content Include="contextHelp\template\packages\plugins-topics\css\chm.mshc\jquery-plugins.css" />
+    <Content Include="contextHelp\template\packages\plugins-topics\css\default\jquery-plugins.css" />
+    <Content Include="contextHelp\template\packages\plugins-topics\images\i-loading.png" />
+    <Content Include="contextHelp\template\packages\plugins-topics\images\i-slimbox-closelabel.png" />
+    <Content Include="contextHelp\template\packages\plugins-topics\images\i-slimbox-nextlabel.png" />
+    <Content Include="contextHelp\template\packages\plugins-topics\images\i-slimbox-prevlabel.png" />
+    <Content Include="contextHelp\template\packages\plugins-topics\images\uiTabsArrow.png" />
+    <Content Include="contextHelp\template\packages\plugins-topics\script\chm.mshc\debug\jquery-plugins.js" />
+    <Content Include="contextHelp\template\packages\plugins-topics\script\chm.mshc\jquery-plugins.min.js" />
+    <Content Include="contextHelp\template\packages\plugins-topics\script\default\debug\jquery-plugins.js" />
+    <Content Include="contextHelp\template\packages\plugins-topics\script\default\jquery-plugins.min.js" />
+    <Content Include="contextHelp\template\packages\plugins-web\css\jquery.layout.css" />
+    <Content Include="contextHelp\template\packages\plugins-web\script\default\debug\jquery-plugins.js" />
+    <Content Include="contextHelp\template\packages\plugins-web\script\default\jquery-plugins.min.js" />
+    <Content Include="contextHelp\Test.html" />
+    <Content Include="contextHelp\TranslationGuidelines.html" />
+    <Content Include="contextHelp\WB_A0009.html" />
+    <Content Include="contextHelp\WB_B0007.html" />
+    <Content Include="contextHelp\WB_B0008.html" />
+    <Content Include="contextHelp\WB_B0019.html" />
+    <Content Include="contextHelp\WB_B0022.html" />
+    <Content Include="contextHelp\webframe.html" />
+    <Content Include="contextHelp\webframedesktop.html" />
+    <Content Include="contextHelp\webframemobile.html" />
+    <Content Include="contextHelp\webframetablet.html" />
+    <Content Include="contextHelp\webindex.html" />
+    <Content Include="contextHelp\webnav.html" />
+    <Content Include="contextHelp\websearch.html" />
+    <Content Include="contextHelp\webtoc.html" />
+    <Content Include="dataviews.js" />
+    <Content Include="data_source_display.aspx" />
+    <Content Include="graphics\svg\ban.svg" />
+    <Content Include="graphics\svg\check_box_blank.svg" />
+    <Content Include="graphics\svg\check_box_tick.svg" />
+    <Content Include="ImagePage.aspx" />
+    <Content Include="ImagePage.css" />
+    <Content Include="js\rgbfilter.js" />
+    <Content Include="Library\cropper.css" />
+    <Content Include="Library\cropper.js" />
+    <Content Include="Library\lineAttr.css" />
+    <Content Include="Library\lineAttr.js" />
+    <Content Include="Chart\Model.js" />
+    <Content Include="Chart\pdfkit.js" />
+    <Content Include="Chart\require.min.js" />
+    <Content Include="client_users.aspx" />
+    <Content Include="datasources.aspx" />
+    <Content Include="dataviews.aspx" />
+    <Content Include="graphics\svg\sort-asc.svg" />
+    <Content Include="graphics\svg\sort-desc.svg" />
+    <Content Include="graphics\svg\sortable.svg" />
+    <Content Include="Library\css\brands.css" />
+    <Content Include="Library\css\brands.min.css" />
+    <Content Include="Library\css\fontawesome.css" />
+    <Content Include="Library\css\fontawesome.min.css" />
+    <Content Include="Library\css\regular.css" />
+    <Content Include="Library\css\regular.min.css" />
+    <Content Include="Library\css\solid.css" />
+    <Content Include="Library\css\solid.min.css" />
+    <Content Include="Library\jquery-3.6.2.min.js" />
+    <Content Include="Library\spectrum.css" />
+    <Content Include="Library\spectrum.js" />
+    <Content Include="ModelList.aspx" />
+    <Content Include="Chart\style.css" />
+    <Content Include="Chart\ZoomSlider.css" />
+    <Content Include="Chart\ZoomSlider.js" />
+    <Content Include="graphics\16\add_black.png" />
+    <Content Include="graphics\16\add_white.png" />
+    <Content Include="graphics\16\back_black.png" />
+    <Content Include="graphics\16\back_white.png" />
+    <Content Include="graphics\16\calendar_black.png" />
+    <Content Include="graphics\16\calendar_white.png" />
+    <Content Include="graphics\16\cancel_black.png" />
+    <Content Include="graphics\16\cancel_white.png" />
+    <Content Include="graphics\16\confirm_black.png" />
+    <Content Include="graphics\16\confirm_white.png" />
+    <Content Include="graphics\16\delete_black.png" />
+    <Content Include="graphics\16\delete_white.png" />
+    <Content Include="graphics\16\details_black.png" />
+    <Content Include="graphics\16\details_white.png" />
+    <Content Include="graphics\16\edit_black.png" />
+    <Content Include="graphics\16\edit_white.png" />
+    <Content Include="graphics\16\enquire_black.png" />
+    <Content Include="graphics\16\enquire_white.png" />
+    <Content Include="graphics\16\expenses_black.png" />
+    <Content Include="graphics\16\expenses_white.png" />
+    <Content Include="graphics\16\forward_black.png" />
+    <Content Include="graphics\16\forward_white.png" />
+    <Content Include="graphics\16\home_black.png" />
+    <Content Include="graphics\16\home_white.png" />
+    <Content Include="graphics\16\logout_black.png" />
+    <Content Include="graphics\16\logout_white.png" />
+    <Content Include="graphics\16\messages_black.png" />
+    <Content Include="graphics\16\messages_white.png" />
+    <Content Include="graphics\16\next_black.png" />
+    <Content Include="graphics\16\next_white.png" />
+    <Content Include="graphics\16\payslips_black.png" />
+    <Content Include="graphics\16\payslips_white.png" />
+    <Content Include="graphics\16\refresh_black.png" />
+    <Content Include="graphics\16\refresh_white.png" />
+    <Content Include="graphics\16\reply_black.png" />
+    <Content Include="graphics\16\reply_white.png" />
+    <Content Include="graphics\16\save_black.png" />
+    <Content Include="graphics\16\save_white.png" />
+    <Content Include="graphics\16\search_black.png" />
+    <Content Include="graphics\16\search_white.png" />
+    <Content Include="graphics\16\select_black.png" />
+    <Content Include="graphics\16\select_white.png" />
+    <Content Include="graphics\16\send_black.png" />
+    <Content Include="graphics\16\send_white.png" />
+    <Content Include="graphics\16\sitemap_black.png" />
+    <Content Include="graphics\16\sitemap_white.png" />
+    <Content Include="graphics\16\timesheet_black.png" />
+    <Content Include="graphics\16\timesheet_white.png" />
+    <Content Include="graphics\16\withdraw_black.png" />
+    <Content Include="graphics\16\withdraw_white.png" />
+    <Content Include="graphics\20\add_black.png" />
+    <Content Include="graphics\20\add_white.png" />
+    <Content Include="graphics\20\back_black.png" />
+    <Content Include="graphics\20\back_white.png" />
+    <Content Include="graphics\20\calendar_black.png" />
+    <Content Include="graphics\20\calendar_white.png" />
+    <Content Include="graphics\20\cancel_black.png" />
+    <Content Include="graphics\20\cancel_white.png" />
+    <Content Include="graphics\20\confirm_black.png" />
+    <Content Include="graphics\20\confirm_white.png" />
+    <Content Include="graphics\20\delete_black.png" />
+    <Content Include="graphics\20\delete_white.png" />
+    <Content Include="graphics\20\details_black.png" />
+    <Content Include="graphics\20\details_white.png" />
+    <Content Include="graphics\20\edit_black.png" />
+    <Content Include="graphics\20\edit_white.png" />
+    <Content Include="graphics\20\enquire_black.png" />
+    <Content Include="graphics\20\enquire_white.png" />
+    <Content Include="graphics\20\expenses_black.png" />
+    <Content Include="graphics\20\expenses_white.png" />
+    <Content Include="graphics\20\forward_black.png" />
+    <Content Include="graphics\20\forward_white.png" />
+    <Content Include="graphics\20\home_black.png" />
+    <Content Include="graphics\20\home_white.png" />
+    <Content Include="graphics\20\logout_black.png" />
+    <Content Include="graphics\20\logout_white.png" />
+    <Content Include="graphics\20\messages_black.png" />
+    <Content Include="graphics\20\messages_white.png" />
+    <Content Include="graphics\20\next_black.png" />
+    <Content Include="graphics\20\next_white.png" />
+    <Content Include="graphics\20\payslips_black.png" />
+    <Content Include="graphics\20\payslips_white.png" />
+    <Content Include="graphics\20\refresh_black.png" />
+    <Content Include="graphics\20\refresh_white.png" />
+    <Content Include="graphics\20\reply_black.png" />
+    <Content Include="graphics\20\reply_white.png" />
+    <Content Include="graphics\20\save_black.png" />
+    <Content Include="graphics\20\save_white.png" />
+    <Content Include="graphics\20\search_black.png" />
+    <Content Include="graphics\20\search_white.png" />
+    <Content Include="graphics\20\select_black.png" />
+    <Content Include="graphics\20\select_white.png" />
+    <Content Include="graphics\20\send_black.png" />
+    <Content Include="graphics\20\send_white.png" />
+    <Content Include="graphics\20\sitemap_black.png" />
+    <Content Include="graphics\20\sitemap_white.png" />
+    <Content Include="graphics\20\timesheet_black.png" />
+    <Content Include="graphics\20\timesheet_white.png" />
+    <Content Include="graphics\20\withdraw_black.png" />
+    <Content Include="graphics\20\withdraw_white.png" />
+    <Content Include="graphics\24\add_black.png" />
+    <Content Include="graphics\24\add_white.png" />
+    <Content Include="graphics\24\back_black.png" />
+    <Content Include="graphics\24\back_white.png" />
+    <Content Include="graphics\24\calendar_black.png" />
+    <Content Include="graphics\24\calendar_white.png" />
+    <Content Include="graphics\24\cancel_black.png" />
+    <Content Include="graphics\24\cancel_white.png" />
+    <Content Include="graphics\24\confirm_black.png" />
+    <Content Include="graphics\24\confirm_white.png" />
+    <Content Include="graphics\24\delete_black.png" />
+    <Content Include="graphics\24\delete_white.png" />
+    <Content Include="graphics\24\details_black.png" />
+    <Content Include="graphics\24\details_white.png" />
+    <Content Include="graphics\24\edit_black.png" />
+    <Content Include="graphics\24\edit_white.png" />
+    <Content Include="graphics\24\enquire_black.png" />
+    <Content Include="graphics\24\enquire_white.png" />
+    <Content Include="graphics\24\expenses_black.png" />
+    <Content Include="graphics\24\expenses_white.png" />
+    <Content Include="graphics\24\forward_black.png" />
+    <Content Include="graphics\24\forward_white.png" />
+    <Content Include="graphics\24\home_black.png" />
+    <Content Include="graphics\24\home_white.png" />
+    <Content Include="graphics\24\logout_black.png" />
+    <Content Include="graphics\24\logout_white.png" />
+    <Content Include="graphics\24\messages_black.png" />
+    <Content Include="graphics\24\messages_white.png" />
+    <Content Include="graphics\24\next_black.png" />
+    <Content Include="graphics\24\next_white.png" />
+    <Content Include="graphics\24\payslips_black.png" />
+    <Content Include="graphics\24\payslips_white.png" />
+    <Content Include="graphics\24\refresh_black.png" />
+    <Content Include="graphics\24\refresh_white.png" />
+    <Content Include="graphics\24\reply_black.png" />
+    <Content Include="graphics\24\reply_white.png" />
+    <Content Include="graphics\24\save_black.png" />
+    <Content Include="graphics\24\save_white.png" />
+    <Content Include="graphics\24\search_black.png" />
+    <Content Include="graphics\24\search_white.png" />
+    <Content Include="graphics\24\select_black.png" />
+    <Content Include="graphics\24\select_white.png" />
+    <Content Include="graphics\24\send_black.png" />
+    <Content Include="graphics\24\send_white.png" />
+    <Content Include="graphics\24\sitemap_black.png" />
+    <Content Include="graphics\24\sitemap_white.png" />
+    <Content Include="graphics\24\timesheet_black.png" />
+    <Content Include="graphics\24\timesheet_white.png" />
+    <Content Include="graphics\24\withdraw_black.png" />
+    <Content Include="graphics\24\withdraw_white.png" />
+    <Content Include="graphics\48\add_black.png" />
+    <Content Include="graphics\48\add_white.png" />
+    <Content Include="graphics\48\back_black.png" />
+    <Content Include="graphics\48\back_white.png" />
+    <Content Include="graphics\48\calendar_black.png" />
+    <Content Include="graphics\48\calendar_white.png" />
+    <Content Include="graphics\48\cancel_black.png" />
+    <Content Include="graphics\48\cancel_white.png" />
+    <Content Include="graphics\48\confirm_black.png" />
+    <Content Include="graphics\48\confirm_white.png" />
+    <Content Include="graphics\48\delete_black.png" />
+    <Content Include="graphics\48\delete_white.png" />
+    <Content Include="graphics\48\details_black.png" />
+    <Content Include="graphics\48\details_white.png" />
+    <Content Include="graphics\48\edit_black.png" />
+    <Content Include="graphics\48\edit_white.png" />
+    <Content Include="graphics\48\enquire_black.png" />
+    <Content Include="graphics\48\enquire_white.png" />
+    <Content Include="graphics\48\expenses_black.png" />
+    <Content Include="graphics\48\expenses_white.png" />
+    <Content Include="graphics\48\forward_black.png" />
+    <Content Include="graphics\48\forward_white.png" />
+    <Content Include="graphics\48\home_black.png" />
+    <Content Include="graphics\48\home_white.png" />
+    <Content Include="graphics\48\logout_black.png" />
+    <Content Include="graphics\48\logout_white.png" />
+    <Content Include="graphics\48\messages_black.png" />
+    <Content Include="graphics\48\messages_white.png" />
+    <Content Include="graphics\48\next_black.png" />
+    <Content Include="graphics\48\next_white.png" />
+    <Content Include="graphics\48\payslips_black.png" />
+    <Content Include="graphics\48\payslips_white.png" />
+    <Content Include="graphics\48\refresh_black.png" />
+    <Content Include="graphics\48\refresh_white.png" />
+    <Content Include="graphics\48\reply_black.png" />
+    <Content Include="graphics\48\reply_white.png" />
+    <Content Include="graphics\48\save_black.png" />
+    <Content Include="graphics\48\save_white.png" />
+    <Content Include="graphics\48\search_black.png" />
+    <Content Include="graphics\48\search_white.png" />
+    <Content Include="graphics\48\select_black.png" />
+    <Content Include="graphics\48\select_white.png" />
+    <Content Include="graphics\48\send_black.png" />
+    <Content Include="graphics\48\send_white.png" />
+    <Content Include="graphics\48\sitemap_black.png" />
+    <Content Include="graphics\48\sitemap_white.png" />
+    <Content Include="graphics\48\timesheet_black.png" />
+    <Content Include="graphics\48\timesheet_white.png" />
+    <Content Include="graphics\48\withdraw_black.png" />
+    <Content Include="graphics\48\withdraw_white.png" />
+    <Content Include="graphics\change_role.png" />
+    <Content Include="graphics\email.png" />
+    <Content Include="graphics\mail_forward.png" />
+    <Content Include="graphics\mail_reply.png" />
+    <Content Include="graphics\message.png" />
+    <Content Include="graphics\mobile.png" />
+    <Content Include="graphics\phone.png" />
+    <Content Include="graphics\svg\1px.gif" />
+    <Content Include="graphics\svg\add.svg" />
+    <Content Include="graphics\svg\back.svg" />
+    <Content Include="graphics\svg\calendar.svg" />
+    <Content Include="graphics\svg\cancel.svg" />
+    <Content Include="graphics\svg\change_role.svg" />
+    <Content Include="graphics\svg\chart.svg" />
+    <Content Include="graphics\svg\confirm.svg" />
+    <Content Include="graphics\svg\delete.svg" />
+    <Content Include="graphics\svg\details.svg" />
+    <Content Include="graphics\svg\documents.svg" />
+    <Content Include="graphics\svg\down.svg" />
+    <Content Include="graphics\svg\download.svg" />
+    <Content Include="graphics\svg\edit.svg" />
+    <Content Include="graphics\svg\enquire.svg" />
+    <Content Include="graphics\svg\expenses.svg" />
+    <Content Include="graphics\svg\forward.svg" />
+    <Content Include="graphics\graphics.css" />
+    <Content Include="graphics\svg\HG.svg" />
+    <Content Include="graphics\svg\home.svg" />
+    <Content Include="graphics\svg\icons010101-28.svg" />
+    <Content Include="graphics\svg\icons010101-29.svg" />
+    <Content Include="graphics\svg\icons010101-30.svg" />
+    <Content Include="graphics\svg\icons010101-31.svg" />
+    <Content Include="graphics\svg\logout.svg" />
+    <Content Include="graphics\svg\messages.svg" />
+    <Content Include="graphics\svg\move_down.svg" />
+    <Content Include="graphics\svg\move_up.svg" />
+    <Content Include="graphics\svg\next.svg" />
+    <Content Include="graphics\svg\payslips.svg" />
+    <Content Include="graphics\svg\refresh.svg" />
+    <Content Include="graphics\svg\reply.svg" />
+    <Content Include="graphics\svg\save.svg" />
+    <Content Include="graphics\svg\search.svg" />
+    <Content Include="graphics\svg\select.svg" />
+    <Content Include="graphics\svg\send.svg" />
+    <Content Include="graphics\svg\sitemap.svg" />
+    <Content Include="graphics\svg\timesheet.svg" />
+    <Content Include="graphics\svg\up.svg" />
+    <Content Include="graphics\svg\view.svg" />
+    <Content Include="graphics\svg\withdraw.svg" />
+    <Content Include="graphics\view_document.png" />
+    <Content Include="general\Web.config" />
+    <Content Include="graphics\collapse.jpg" />
+    <Content Include="graphics\down_arrow_small.png" />
+    <Content Include="graphics\Excel-icon.png" />
+    <Content Include="graphics\expand.jpg" />
+    <Content Include="graphics\info_error.gif" />
+    <Content Include="graphics\left_arrow.png" />
+    <Content Include="graphics\mail.png" />
+    <Content Include="graphics\partday.gif" />
+    <Content Include="graphics\right_arrow.png" />
+    <Content Include="graphics\search.png" />
+    <Content Include="graphics\up_arrow.png" />
+    <Content Include="IngenWebMaster.master" />
+    <Content Include="js\Web.config" />
+    <Content Include="Downloader.ashx" />
+    <Content Include="general\DL.ashx" />
+    <Content Include="Chart\web.config" />
+    <Content Include="Library\webfonts\fa-brands-400.ttf" />
+    <Content Include="Library\webfonts\fa-brands-400.woff2" />
+    <Content Include="Library\webfonts\fa-regular-400.ttf" />
+    <Content Include="Library\webfonts\fa-regular-400.woff2" />
+    <Content Include="Library\webfonts\fa-solid-900.ttf" />
+    <Content Include="Library\webfonts\fa-solid-900.woff2" />
+    <Content Include="Library\webfonts\fa-v4compatibility.ttf" />
+    <Content Include="Library\webfonts\fa-v4compatibility.woff2" />
+    <Content Include="App_Themes\ViviChart_v2\Controls.skin" />
+    <Content Include="App_Themes\ViviChart_v2\web.config" />
+    <Content Include="Chart\gojs_23.lic" />
+    <Content Include="App_Themes\ViviChart_v2\Font\IAW Special.eot" />
+    <Content Include="App_Themes\ViviChart_v2\Font\IAW Special.ttf" />
+    <Content Include="App_Themes\ViviChart_v2\Font\IAW Special.woff" />
+    <Content Include="scripts\tinymce\icons\default\icons.js" />
+    <Content Include="scripts\tinymce\icons\default\icons.min.js" />
+    <Content Include="scripts\tinymce\models\dom\model.js" />
+    <Content Include="scripts\tinymce\models\dom\model.min.js" />
+    <Content Include="scripts\tinymce\plugins\accordion\plugin.js" />
+    <Content Include="scripts\tinymce\plugins\accordion\plugin.min.js" />
+    <Content Include="scripts\tinymce\plugins\advlist\plugin.js" />
+    <Content Include="scripts\tinymce\plugins\advlist\plugin.min.js" />
+    <Content Include="scripts\tinymce\plugins\anchor\plugin.js" />
+    <Content Include="scripts\tinymce\plugins\anchor\plugin.min.js" />
+    <Content Include="scripts\tinymce\plugins\autolink\plugin.js" />
+    <Content Include="scripts\tinymce\plugins\autolink\plugin.min.js" />
+    <Content Include="scripts\tinymce\plugins\autoresize\plugin.js" />
+    <Content Include="scripts\tinymce\plugins\autoresize\plugin.min.js" />
+    <Content Include="scripts\tinymce\plugins\autosave\plugin.js" />
+    <Content Include="scripts\tinymce\plugins\autosave\plugin.min.js" />
+    <Content Include="scripts\tinymce\plugins\charmap\plugin.js" />
+    <Content Include="scripts\tinymce\plugins\charmap\plugin.min.js" />
+    <Content Include="scripts\tinymce\plugins\codesample\plugin.js" />
+    <Content Include="scripts\tinymce\plugins\codesample\plugin.min.js" />
+    <Content Include="scripts\tinymce\plugins\code\plugin.js" />
+    <Content Include="scripts\tinymce\plugins\code\plugin.min.js" />
+    <Content Include="scripts\tinymce\plugins\directionality\plugin.js" />
+    <Content Include="scripts\tinymce\plugins\directionality\plugin.min.js" />
+    <Content Include="scripts\tinymce\plugins\emoticons\js\emojiimages.js" />
+    <Content Include="scripts\tinymce\plugins\emoticons\js\emojiimages.min.js" />
+    <Content Include="scripts\tinymce\plugins\emoticons\js\emojis.js" />
+    <Content Include="scripts\tinymce\plugins\emoticons\js\emojis.min.js" />
+    <Content Include="scripts\tinymce\plugins\emoticons\plugin.js" />
+    <Content Include="scripts\tinymce\plugins\emoticons\plugin.min.js" />
+    <Content Include="scripts\tinymce\plugins\fullscreen\plugin.js" />
+    <Content Include="scripts\tinymce\plugins\fullscreen\plugin.min.js" />
+    <Content Include="scripts\tinymce\plugins\help\js\i18n\keynav\ar.js" />
+    <Content Include="scripts\tinymce\plugins\help\js\i18n\keynav\bg_BG.js" />
+    <Content Include="scripts\tinymce\plugins\help\js\i18n\keynav\ca.js" />
+    <Content Include="scripts\tinymce\plugins\help\js\i18n\keynav\cs.js" />
+    <Content Include="scripts\tinymce\plugins\help\js\i18n\keynav\da.js" />
+    <Content Include="scripts\tinymce\plugins\help\js\i18n\keynav\de.js" />
+    <Content Include="scripts\tinymce\plugins\help\js\i18n\keynav\el.js" />
+    <Content Include="scripts\tinymce\plugins\help\js\i18n\keynav\en.js" />
+    <Content Include="scripts\tinymce\plugins\help\js\i18n\keynav\es.js" />
+    <Content Include="scripts\tinymce\plugins\help\js\i18n\keynav\eu.js" />
+    <Content Include="scripts\tinymce\plugins\help\js\i18n\keynav\fa.js" />
+    <Content Include="scripts\tinymce\plugins\help\js\i18n\keynav\fi.js" />
+    <Content Include="scripts\tinymce\plugins\help\js\i18n\keynav\fr_FR.js" />
+    <Content Include="scripts\tinymce\plugins\help\js\i18n\keynav\he_IL.js" />
+    <Content Include="scripts\tinymce\plugins\help\js\i18n\keynav\hi.js" />
+    <Content Include="scripts\tinymce\plugins\help\js\i18n\keynav\hr.js" />
+    <Content Include="scripts\tinymce\plugins\help\js\i18n\keynav\hu_HU.js" />
+    <Content Include="scripts\tinymce\plugins\help\js\i18n\keynav\id.js" />
+    <Content Include="scripts\tinymce\plugins\help\js\i18n\keynav\it.js" />
+    <Content Include="scripts\tinymce\plugins\help\js\i18n\keynav\ja.js" />
+    <Content Include="scripts\tinymce\plugins\help\js\i18n\keynav\kk.js" />
+    <Content Include="scripts\tinymce\plugins\help\js\i18n\keynav\ko_KR.js" />
+    <Content Include="scripts\tinymce\plugins\help\js\i18n\keynav\ms.js" />
+    <Content Include="scripts\tinymce\plugins\help\js\i18n\keynav\nb_NO.js" />
+    <Content Include="scripts\tinymce\plugins\help\js\i18n\keynav\nl.js" />
+    <Content Include="scripts\tinymce\plugins\help\js\i18n\keynav\pl.js" />
+    <Content Include="scripts\tinymce\plugins\help\js\i18n\keynav\pt_BR.js" />
+    <Content Include="scripts\tinymce\plugins\help\js\i18n\keynav\pt_PT.js" />
+    <Content Include="scripts\tinymce\plugins\help\js\i18n\keynav\ro.js" />
+    <Content Include="scripts\tinymce\plugins\help\js\i18n\keynav\ru.js" />
+    <Content Include="scripts\tinymce\plugins\help\js\i18n\keynav\sk.js" />
+    <Content Include="scripts\tinymce\plugins\help\js\i18n\keynav\sl_SI.js" />
+    <Content Include="scripts\tinymce\plugins\help\js\i18n\keynav\sv_SE.js" />
+    <Content Include="scripts\tinymce\plugins\help\js\i18n\keynav\th_TH.js" />
+    <Content Include="scripts\tinymce\plugins\help\js\i18n\keynav\tr.js" />
+    <Content Include="scripts\tinymce\plugins\help\js\i18n\keynav\uk.js" />
+    <Content Include="scripts\tinymce\plugins\help\js\i18n\keynav\vi.js" />
+    <Content Include="scripts\tinymce\plugins\help\js\i18n\keynav\zh_CN.js" />
+    <Content Include="scripts\tinymce\plugins\help\js\i18n\keynav\zh_TW.js" />
+    <Content Include="scripts\tinymce\plugins\help\plugin.js" />
+    <Content Include="scripts\tinymce\plugins\help\plugin.min.js" />
+    <Content Include="scripts\tinymce\plugins\image\plugin.js" />
+    <Content Include="scripts\tinymce\plugins\image\plugin.min.js" />
+    <Content Include="scripts\tinymce\plugins\importcss\plugin.js" />
+    <Content Include="scripts\tinymce\plugins\importcss\plugin.min.js" />
+    <Content Include="scripts\tinymce\plugins\insertdatetime\plugin.js" />
+    <Content Include="scripts\tinymce\plugins\insertdatetime\plugin.min.js" />
+    <Content Include="scripts\tinymce\plugins\link\plugin.js" />
+    <Content Include="scripts\tinymce\plugins\link\plugin.min.js" />
+    <Content Include="scripts\tinymce\plugins\lists\plugin.js" />
+    <Content Include="scripts\tinymce\plugins\lists\plugin.min.js" />
+    <Content Include="scripts\tinymce\plugins\media\plugin.js" />
+    <Content Include="scripts\tinymce\plugins\media\plugin.min.js" />
+    <Content Include="scripts\tinymce\plugins\nonbreaking\plugin.js" />
+    <Content Include="scripts\tinymce\plugins\nonbreaking\plugin.min.js" />
+    <Content Include="scripts\tinymce\plugins\pagebreak\plugin.js" />
+    <Content Include="scripts\tinymce\plugins\pagebreak\plugin.min.js" />
+    <Content Include="scripts\tinymce\plugins\preview\plugin.js" />
+    <Content Include="scripts\tinymce\plugins\preview\plugin.min.js" />
+    <Content Include="scripts\tinymce\plugins\quickbars\plugin.js" />
+    <Content Include="scripts\tinymce\plugins\quickbars\plugin.min.js" />
+    <Content Include="scripts\tinymce\plugins\save\plugin.js" />
+    <Content Include="scripts\tinymce\plugins\save\plugin.min.js" />
+    <Content Include="scripts\tinymce\plugins\searchreplace\plugin.js" />
+    <Content Include="scripts\tinymce\plugins\searchreplace\plugin.min.js" />
+    <Content Include="scripts\tinymce\plugins\table\plugin.js" />
+    <Content Include="scripts\tinymce\plugins\table\plugin.min.js" />
+    <Content Include="scripts\tinymce\plugins\visualblocks\plugin.js" />
+    <Content Include="scripts\tinymce\plugins\visualblocks\plugin.min.js" />
+    <Content Include="scripts\tinymce\plugins\visualchars\plugin.js" />
+    <Content Include="scripts\tinymce\plugins\visualchars\plugin.min.js" />
+    <Content Include="scripts\tinymce\plugins\wordcount\plugin.js" />
+    <Content Include="scripts\tinymce\plugins\wordcount\plugin.min.js" />
+    <Content Include="scripts\tinymce\skins\content\dark\content.css" />
+    <Content Include="scripts\tinymce\skins\content\dark\content.js" />
+    <Content Include="scripts\tinymce\skins\content\dark\content.min.css" />
+    <Content Include="scripts\tinymce\skins\content\default\content.css" />
+    <Content Include="scripts\tinymce\skins\content\default\content.js" />
+    <Content Include="scripts\tinymce\skins\content\default\content.min.css" />
+    <Content Include="scripts\tinymce\skins\content\document\content.css" />
+    <Content Include="scripts\tinymce\skins\content\document\content.js" />
+    <Content Include="scripts\tinymce\skins\content\document\content.min.css" />
+    <Content Include="scripts\tinymce\skins\content\tinymce-5-dark\content.css" />
+    <Content Include="scripts\tinymce\skins\content\tinymce-5-dark\content.js" />
+    <Content Include="scripts\tinymce\skins\content\tinymce-5-dark\content.min.css" />
+    <Content Include="scripts\tinymce\skins\content\tinymce-5\content.css" />
+    <Content Include="scripts\tinymce\skins\content\tinymce-5\content.js" />
+    <Content Include="scripts\tinymce\skins\content\tinymce-5\content.min.css" />
+    <Content Include="scripts\tinymce\skins\content\writer\content.css" />
+    <Content Include="scripts\tinymce\skins\content\writer\content.js" />
+    <Content Include="scripts\tinymce\skins\content\writer\content.min.css" />
+    <Content Include="scripts\tinymce\skins\ui\oxide-dark\content.css" />
+    <Content Include="scripts\tinymce\skins\ui\oxide-dark\content.inline.css" />
+    <Content Include="scripts\tinymce\skins\ui\oxide-dark\content.inline.js" />
+    <Content Include="scripts\tinymce\skins\ui\oxide-dark\content.inline.min.css" />
+    <Content Include="scripts\tinymce\skins\ui\oxide-dark\content.js" />
+    <Content Include="scripts\tinymce\skins\ui\oxide-dark\content.min.css" />
+    <Content Include="scripts\tinymce\skins\ui\oxide-dark\skin.css" />
+    <Content Include="scripts\tinymce\skins\ui\oxide-dark\skin.js" />
+    <Content Include="scripts\tinymce\skins\ui\oxide-dark\skin.min.css" />
+    <Content Include="scripts\tinymce\skins\ui\oxide-dark\skin.shadowdom.css" />
+    <Content Include="scripts\tinymce\skins\ui\oxide-dark\skin.shadowdom.js" />
+    <Content Include="scripts\tinymce\skins\ui\oxide-dark\skin.shadowdom.min.css" />
+    <Content Include="scripts\tinymce\skins\ui\oxide\content.css" />
+    <Content Include="scripts\tinymce\skins\ui\oxide\content.inline.css" />
+    <Content Include="scripts\tinymce\skins\ui\oxide\content.inline.js" />
+    <Content Include="scripts\tinymce\skins\ui\oxide\content.inline.min.css" />
+    <Content Include="scripts\tinymce\skins\ui\oxide\content.js" />
+    <Content Include="scripts\tinymce\skins\ui\oxide\content.min.css" />
+    <Content Include="scripts\tinymce\skins\ui\oxide\skin.css" />
+    <Content Include="scripts\tinymce\skins\ui\oxide\skin.js" />
+    <Content Include="scripts\tinymce\skins\ui\oxide\skin.min.css" />
+    <Content Include="scripts\tinymce\skins\ui\oxide\skin.shadowdom.css" />
+    <Content Include="scripts\tinymce\skins\ui\oxide\skin.shadowdom.js" />
+    <Content Include="scripts\tinymce\skins\ui\oxide\skin.shadowdom.min.css" />
+    <Content Include="scripts\tinymce\skins\ui\tinymce-5-dark\content.css" />
+    <Content Include="scripts\tinymce\skins\ui\tinymce-5-dark\content.inline.css" />
+    <Content Include="scripts\tinymce\skins\ui\tinymce-5-dark\content.inline.js" />
+    <Content Include="scripts\tinymce\skins\ui\tinymce-5-dark\content.inline.min.css" />
+    <Content Include="scripts\tinymce\skins\ui\tinymce-5-dark\content.js" />
+    <Content Include="scripts\tinymce\skins\ui\tinymce-5-dark\content.min.css" />
+    <Content Include="scripts\tinymce\skins\ui\tinymce-5-dark\skin.css" />
+    <Content Include="scripts\tinymce\skins\ui\tinymce-5-dark\skin.js" />
+    <Content Include="scripts\tinymce\skins\ui\tinymce-5-dark\skin.min.css" />
+    <Content Include="scripts\tinymce\skins\ui\tinymce-5-dark\skin.shadowdom.css" />
+    <Content Include="scripts\tinymce\skins\ui\tinymce-5-dark\skin.shadowdom.js" />
+    <Content Include="scripts\tinymce\skins\ui\tinymce-5-dark\skin.shadowdom.min.css" />
+    <Content Include="scripts\tinymce\skins\ui\tinymce-5\content.css" />
+    <Content Include="scripts\tinymce\skins\ui\tinymce-5\content.inline.css" />
+    <Content Include="scripts\tinymce\skins\ui\tinymce-5\content.inline.js" />
+    <Content Include="scripts\tinymce\skins\ui\tinymce-5\content.inline.min.css" />
+    <Content Include="scripts\tinymce\skins\ui\tinymce-5\content.js" />
+    <Content Include="scripts\tinymce\skins\ui\tinymce-5\content.min.css" />
+    <Content Include="scripts\tinymce\skins\ui\tinymce-5\skin.css" />
+    <Content Include="scripts\tinymce\skins\ui\tinymce-5\skin.js" />
+    <Content Include="scripts\tinymce\skins\ui\tinymce-5\skin.min.css" />
+    <Content Include="scripts\tinymce\skins\ui\tinymce-5\skin.shadowdom.css" />
+    <Content Include="scripts\tinymce\skins\ui\tinymce-5\skin.shadowdom.js" />
+    <Content Include="scripts\tinymce\skins\ui\tinymce-5\skin.shadowdom.min.css" />
+    <Content Include="scripts\tinymce\themes\silver\theme.js" />
+    <Content Include="scripts\tinymce\themes\silver\theme.min.js" />
+    <Content Include="scripts\tinymce\tinymce.js" />
+    <Content Include="scripts\tinymce\tinymce.min.js" />
+    <Content Include="WooTest.aspx" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="packages.config" />
+    <Content Include="build\ReleaseTrace.config" />
+    <Content Include="Translations.aspx" />
+    <Content Include="Translations.js" />
+    <Content Include="Web.config" />
+    <Content Include="scripts\tinymce\license.md" />
+    <Content Include="scripts\tinymce\langs\README.md" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <Content Include="WooHook.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="favicon.ico" />
+    <Content Include="graphics\add.png" />
+    <Content Include="graphics\eye.png" />
+    <Content Include="graphics\noeye.png" />
+    <Content Include="graphics\paperclip.png" />
+    <Content Include="general\not_licensed.aspx" />
+    <Content Include="general\sso.aspx" />
+    <Content Include="graphics\about.gif" />
+    <Content Include="graphics\activity.gif" />
+    <Content Include="graphics\cross2.png" />
+    <Content Include="graphics\home.png" />
+    <Content Include="graphics\modify.png" />
+    <Content Include="graphics\pdf.png" />
+    <Content Include="graphics\pdf_sprite.png" />
+    <Content Include="graphics\sitemap.png" />
+    <Content Include="graphics\tick2.png" />
+    <Content Include="graphics\trash.png" />
+    <Content Include="UserControls\AjaxProgress.ascx" />
+    <Content Include="ApplicationError.aspx" />
+    <EmbeddedResource Include="Code\controls\CheckBoxListValidator.js" />
+    <Content Include="graphics\doc-icon-small.gif" />
+    <Content Include="graphics\pdf-icon-small.gif" />
+    <Content Include="UserControls\ChangePassword.ascx" />
+    <Content Include="UserControls\combi.ascx" />
+    <Content Include="Default.aspx" />
+    <Content Include="errorlog\errorReport.aspx" />
+    <Content Include="general\access_denied.aspx" />
+    <Content Include="general\delete.gif" />
+    <Content Include="general\stop.gif" />
+    <Content Include="general\wrong_version.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="graphics\1px.gif" />
+    <Content Include="graphics\alert_blank.gif" />
+    <Content Include="graphics\alert_red.gif" />
+    <Content Include="graphics\check2.gif" />
+    <Content Include="graphics\delete.gif" />
+    <Content Include="graphics\folder.gif" />
+    <Content Include="graphics\html.gif" />
+    <Content Include="graphics\line.gif" />
+    <Content Include="graphics\noimage.jpg" />
+    <Content Include="graphics\noimage_small.jpg" />
+    <Content Include="graphics\printer-med.gif" />
+    <Content Include="graphics\sort_down.gif" />
+    <Content Include="graphics\sort_up.gif" />
+    <Content Include="graphics\tick.gif" />
+    <Content Include="graphics\trans.gif" />
+    <Content Include="UserControls\header_js.ascx" />
+    <Content Include="js\ig_dropCalendar.js" />
+    <Content Include="js\master.js" />
+    <Content Include="js\page_dirty.js" />
+    <Content Include="js\wz_tooltip.js" />
+    <Content Include="UserControls\Paging.ascx" />
+    <Content Include="RecoverPassword.aspx" />
+    <Content Include="secure\Login.aspx" />
+    <Content Include="UserControls\timerjs.ascx" />
+    <Content Include="webmsg.aspx" />
+    <Content Include="UserControls\wuc_help.ascx" />
+    <Content Include="UserControls\wuc_hyperlink.ascx" />
+    <Content Include="UserControls\wuc_text.ascx" />
+    <Content Include="UserControls\wuc_tree.ascx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SiteSettings\ViviChartSettings.vbproj">
+      <Project>{21886451-0188-44B8-BEB5-CDE8BEFAAB97}</Project>
+      <Name>ViviChartSettings</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Backgrounds\" />
+    <Folder Include="logos\" />
+    <Folder Include="My Project\PublishProfiles\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="scripts\tinymce\tinymce.d.ts" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'debug_reqruitment|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisRules>-Microsoft.Design#CA1012;-Microsoft.Design#CA2210;-Microsoft.Design#CA1040;-Microsoft.Design#CA1005;-Microsoft.Design#CA1020;-Microsoft.Design#CA1021;-Microsoft.Design#CA1010;-Microsoft.Design#CA1011;-Microsoft.Design#CA1009;-Microsoft.Design#CA1050;-Microsoft.Design#CA1026;-Microsoft.Design#CA1019;-Microsoft.Design#CA1031;-Microsoft.Design#CA1047;-Microsoft.Design#CA1000;-Microsoft.Design#CA1048;-Microsoft.Design#CA1051;-Microsoft.Design#CA1002;-Microsoft.Design#CA1061;-Microsoft.Design#CA1006;-Microsoft.Design#CA1046;-Microsoft.Design#CA1045;-Microsoft.Design#CA1065;-Microsoft.Design#CA1038;-Microsoft.Design#CA1008;-Microsoft.Design#CA1028;-Microsoft.Design#CA1064;-Microsoft.Design#CA1004;-Microsoft.Design#CA1035;-Microsoft.Design#CA1063;-Microsoft.Design#CA1032;-Microsoft.Design#CA1023;-Microsoft.Design#CA1033;-Microsoft.Design#CA1039;-Microsoft.Design#CA1016;-Microsoft.Design#CA1014;-Microsoft.Design#CA1017;-Microsoft.Design#CA1018;-Microsoft.Design#CA1027;-Microsoft.Design#CA1059;-Microsoft.Design#CA1060;-Microsoft.Design#CA1034;-Microsoft.Design#CA1013;-Microsoft.Design#CA1036;-Microsoft.Design#CA1044;-Microsoft.Design#CA1041;-Microsoft.Design#CA1025;-Microsoft.Design#CA1052;-Microsoft.Design#CA1053;-Microsoft.Design#CA1057;-Microsoft.Design#CA1058;-Microsoft.Design#CA1001;-Microsoft.Design#CA1049;-Microsoft.Design#CA1054;-Microsoft.Design#CA1056;-Microsoft.Design#CA1055;-Microsoft.Design#CA1030;-Microsoft.Design#CA1003;-Microsoft.Design#CA1007;-Microsoft.Design#CA1043;-Microsoft.Design#CA1024;-Microsoft.Globalization#CA1301;-Microsoft.Globalization#CA1302;-Microsoft.Globalization#CA1308;-Microsoft.Globalization#CA1306;-Microsoft.Globalization#CA1304;-Microsoft.Globalization#CA1305;-Microsoft.Globalization#CA2101;-Microsoft.Globalization#CA1300;-Microsoft.Globalization#CA1307;-Microsoft.Globalization#CA1309;-Microsoft.Interoperability#CA1403;-Microsoft.Interoperability#CA1406;-Microsoft.Interoperability#CA1413;-Microsoft.Interoperability#CA1402;-Microsoft.Interoperability#CA1407;-Microsoft.Interoperability#CA1404;-Microsoft.Interoperability#CA1410;-Microsoft.Interoperability#CA1411;-Microsoft.Interoperability#CA1405;-Microsoft.Interoperability#CA1409;-Microsoft.Interoperability#CA1415;-Microsoft.Interoperability#CA1408;-Microsoft.Interoperability#CA1414;-Microsoft.Interoperability#CA1412;-Microsoft.Interoperability#CA1400;-Microsoft.Interoperability#CA1401;-Microsoft.Maintainability#CA1506;-Microsoft.Maintainability#CA1502;-Microsoft.Maintainability#CA1501;-Microsoft.Maintainability#CA1505;-Microsoft.Maintainability#CA1504;-Microsoft.Maintainability#CA1500;-Microsoft.Mobility#CA1600;-Microsoft.Mobility#CA1601;-Microsoft.Naming#CA1702;-Microsoft.Naming#CA1700;-Microsoft.Naming#CA1712;-Microsoft.Naming#CA1713;-Microsoft.Naming#CA1714;-Microsoft.Naming#CA1709;-Microsoft.Naming#CA1704;-Microsoft.Naming#CA1708;-Microsoft.Naming#CA1715;-Microsoft.Naming#CA1710;-Microsoft.Naming#CA1720;-Microsoft.Naming#CA1707;-Microsoft.Naming#CA1722;-Microsoft.Naming#CA1711;-Microsoft.Naming#CA1716;-Microsoft.Naming#CA1717;-Microsoft.Naming#CA1725;-Microsoft.Naming#CA1719;-Microsoft.Naming#CA1721;-Microsoft.Naming#CA1701;-Microsoft.Naming#CA1703;-Microsoft.Naming#CA1724;-Microsoft.Naming#CA1726;-Microsoft.Performance#CA1809;-Microsoft.Performance#CA1811;-Microsoft.Performance#CA1812;-Microsoft.Performance#CA1813;-Microsoft.Performance#CA1823;-Microsoft.Performance#CA1800;-Microsoft.Performance#CA1805;-Microsoft.Performance#CA1810;-Microsoft.Performance#CA1824;-Microsoft.Performance#CA1822;-Microsoft.Performance#CA1815;-Microsoft.Performance#CA1814;-Microsoft.Performance#CA1819;-Microsoft.Performance#CA1821;-Microsoft.Performance#CA1804;-Microsoft.Performance#CA1820;-Microsoft.Performance#CA1802;-Microsoft.Portability#CA1903;-Microsoft.Portability#CA1901;-Microsoft.Portability#CA1900;-Microsoft.Reliability#CA2001;-Microsoft.Reliability#CA2002;-Microsoft.Reliability#CA2003;-Microsoft.Reliability#CA2004;-Microsoft.Reliability#CA2006;-Microsoft.Security#CA2116;-Microsoft.Security#CA2117;-Microsoft.Security#CA2105;-Microsoft.Security#CA2115;-Microsoft.Security#CA2102;-Microsoft.Security#CA2104;-Microsoft.Security#CA2122;-Microsoft.Security#CA2114;-Microsoft.Security#CA2123;-Microsoft.Security#CA2111;-Microsoft.Security#CA2108;-Microsoft.Security#CA2107;-Microsoft.Security#CA2103;-Microsoft.Security#CA2118;-Microsoft.Security#CA2109;-Microsoft.Security#CA2119;-Microsoft.Security#CA2106;-Microsoft.Security#CA2112;-Microsoft.Security#CA2120;-Microsoft.Security#CA2121;-Microsoft.Security#CA2126;-Microsoft.Security#CA2124;-Microsoft.Security#CA2127;-Microsoft.Security#CA2128;-Microsoft.Security#CA2129;-Microsoft.Usage#CA2243;-Microsoft.Usage#CA2236;-Microsoft.Usage#CA1816;-Microsoft.Usage#CA2227;-Microsoft.Usage#CA2213;-Microsoft.Usage#CA2216;-Microsoft.Usage#CA2214;-Microsoft.Usage#CA2222;-Microsoft.Usage#CA1806;-Microsoft.Usage#CA2217;-Microsoft.Usage#CA2212;-Microsoft.Usage#CA2219;-Microsoft.Usage#CA2201;-Microsoft.Usage#CA2228;-Microsoft.Usage#CA2221;-Microsoft.Usage#CA2220;-Microsoft.Usage#CA2240;-Microsoft.Usage#CA2229;-Microsoft.Usage#CA2238;-Microsoft.Usage#CA2207;-Microsoft.Usage#CA2208;-Microsoft.Usage#CA2235;-Microsoft.Usage#CA2237;-Microsoft.Usage#CA2232;-Microsoft.Usage#CA2223;-Microsoft.Usage#CA2211;-Microsoft.Usage#CA2233;-Microsoft.Usage#CA2225;-Microsoft.Usage#CA2226;-Microsoft.Usage#CA2231;-Microsoft.Usage#CA2224;-Microsoft.Usage#CA2218;-Microsoft.Usage#CA2234;-Microsoft.Usage#CA2239;-Microsoft.Usage#CA2200;-Microsoft.Usage#CA1801;-Microsoft.Usage#CA2242;-Microsoft.Usage#CA2205;-Microsoft.Usage#CA2230</CodeAnalysisRules>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <!-- Required Import to use MSBuild Community Tasks -->
+  <!-- <Import Project="$(MSBuildExtensionsPath)\MSBuildCommunityTasks\MSBuild.Community.Tasks.Targets" /> -->
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets. -->
+  <!-- <ItemGroup>
+    <BinFiles Include="$(OutputPath)\iWeb.*" />
+  </ItemGroup>
+  <Target Name="BeforeBuild">
+    <Attrib Directories="$(OutputPath)" Files="@(BinFiles)" Archive="false" Normal="true" ReadOnly="false" />
+  </Target>
+  <Target Name="AfterBuild">
+    <Message Text="AfterBuild, configuration:$(Configuration)" Importance="high" />
+  </Target> -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>1494</DevelopmentServerPort>
+          <DevelopmentServerVPath>/iWeb</DevelopmentServerVPath>
+          <IISUrl>http://localhost/ViviChart</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\SixLabors.ImageSharp.3.1.5\build\SixLabors.ImageSharp.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\SixLabors.ImageSharp.3.1.5\build\SixLabors.ImageSharp.props'))" />
+    <Error Condition="!Exists('..\packages\TinyMCE.7.3.0\build\TinyMCE.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\TinyMCE.7.3.0\build\TinyMCE.targets'))" />
+  </Target>
+  <Import Project="..\packages\TinyMCE.7.3.0\build\TinyMCE.targets" Condition="Exists('..\packages\TinyMCE.7.3.0\build\TinyMCE.targets')" />
+</Project>

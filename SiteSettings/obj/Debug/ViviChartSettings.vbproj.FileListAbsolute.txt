@@ -1,0 +1,31 @@
+C:\Projects\ViviChart\SiteSettings\bin\Debug\ViviChartSettings.exe.config
+C:\Projects\ViviChart\SiteSettings\bin\Debug\ViviChartSettings.exe
+C:\Projects\ViviChart\SiteSettings\bin\Debug\ViviChartSettings.pdb
+C:\Projects\ViviChart\SiteSettings\obj\Debug\ViviChartSettings.vbproj.AssemblyReference.cache
+C:\Projects\ViviChart\SiteSettings\obj\Debug\ViviChartSettings.vbproj.SuggestedBindingRedirects.cache
+C:\Projects\ViviChart\SiteSettings\obj\Debug\ViviChartSettings.Form1.resources
+C:\Projects\ViviChart\SiteSettings\obj\Debug\ViviChartSettings.Resources.resources
+C:\Projects\ViviChart\SiteSettings\obj\Debug\ViviChartSettings.vbproj.GenerateResource.cache
+C:\Projects\ViviChart\SiteSettings\obj\Debug\ViviChartSettings.vbproj.CoreCompileInputs.cache
+C:\Projects\ViviChart\SiteSettings\obj\Debug\ViviChartSettings.exe
+C:\Projects\ViviChart\SiteSettings\obj\Debug\ViviChartSettings.pdb
+C:\Projects\ViviChart - M\SiteSettings\bin\Debug\ViviChartSettings.exe.config
+C:\Projects\ViviChart - M\SiteSettings\bin\Debug\ViviChartSettings.exe
+C:\Projects\ViviChart - M\SiteSettings\bin\Debug\ViviChartSettings.pdb
+C:\Projects\ViviChart - M\SiteSettings\obj\Debug\ViviChartSettings.vbproj.AssemblyReference.cache
+C:\Projects\ViviChart - M\SiteSettings\obj\Debug\ViviChartSettings.Form1.resources
+C:\Projects\ViviChart - M\SiteSettings\obj\Debug\ViviChartSettings.Resources.resources
+C:\Projects\ViviChart - M\SiteSettings\obj\Debug\ViviChartSettings.vbproj.GenerateResource.cache
+C:\Projects\ViviChart - M\SiteSettings\obj\Debug\ViviChartSettings.vbproj.CoreCompileInputs.cache
+C:\Projects\ViviChart - M\SiteSettings\obj\Debug\ViviChartSettings.exe
+C:\Projects\ViviChart - M\SiteSettings\obj\Debug\ViviChartSettings.pdb
+D:\Rustom\release_2024-09-09_1448\SiteSettings\bin\Debug\ViviChartSettings.exe.config
+D:\Rustom\release_2024-09-09_1448\SiteSettings\bin\Debug\ViviChartSettings.exe
+D:\Rustom\release_2024-09-09_1448\SiteSettings\bin\Debug\ViviChartSettings.pdb
+D:\Rustom\release_2024-09-09_1448\SiteSettings\obj\Debug\ViviChartSettings.vbproj.AssemblyReference.cache
+D:\Rustom\release_2024-09-09_1448\SiteSettings\obj\Debug\ViviChartSettings.Form1.resources
+D:\Rustom\release_2024-09-09_1448\SiteSettings\obj\Debug\ViviChartSettings.Resources.resources
+D:\Rustom\release_2024-09-09_1448\SiteSettings\obj\Debug\ViviChartSettings.vbproj.GenerateResource.cache
+D:\Rustom\release_2024-09-09_1448\SiteSettings\obj\Debug\ViviChartSettings.vbproj.CoreCompileInputs.cache
+D:\Rustom\release_2024-09-09_1448\SiteSettings\obj\Debug\ViviChartSettings.exe
+D:\Rustom\release_2024-09-09_1448\SiteSettings\obj\Debug\ViviChartSettings.pdb

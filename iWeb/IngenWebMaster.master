@@ -1,0 +1,141 @@
+<%@ Master Language="VB" Inherits="IngenWebMaster" CodeBehind="IngenWebMaster.master.vb" %>
+
+<%@ Register TagPrefix="uc1" TagName="timerjs" Src="~/UserControls/timerjs.ascx" %>
+<%@ Register TagPrefix="js2" TagName="header" Src="~/UserControls/header_js.ascx" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Language" content="en" />
+    <title>ViviChart</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+    <script src="<%# Page.ResolveUrl("~/Library/jquery-3.6.2.min.js")%>"></script>
+    <script src="<%# Page.ResolveUrl("~/Library/spectrum.js")%>"></script>
+    <link type="text/css" rel="stylesheet" href="<%# Page.ResolveUrl("~/Library/spectrum.css")%>" />
+    <link type="text/css" rel="stylesheet" href="<%# Page.ResolveUrl("~/Library/css/fontawesome.min.css")%>" />
+    <link type="text/css" rel="stylesheet" href="<%# Page.ResolveUrl("~/Library/css/solid.min.css")%>" />
+    <link type="text/css" rel="stylesheet" href="<%# Page.ResolveUrl("~/Library/css/regular.min.css")%>" />
+
+    <uc1:timerjs ID="TSno" runat="server"></uc1:timerjs>
+    <js2:header ID="header_js" runat="server"></js2:header>
+
+    <asp:ContentPlaceHolder ID="headContent" runat="server" />
+
+</head>
+<body onunload="onUnloading();" style="height: 100%; margin-right: 0px; margin-left: 0px; margin-bottom: 0px; margin-top: 0px;">
+
+    <form id="form1" runat="server">
+
+        <asp:ScriptManager ID="ScriptManager1" runat="server" ScriptMode="Release" />
+
+        <div id="div_container" class="div_container">
+            <iaw:IAWLabel runat="server" CssClass="BannerMessage" ID="lblBannerMessage" />
+
+            <div class="BannerDiv">
+                <!-- div containing banner area, logo and logged in user details on right -->
+                <div class="BannerBar" runat="server" id="MasterBannerBar">
+                    <div class="BannerMenu">
+                        <asp:Menu ID="Menu1" CssClass="MBItem" DataSourceID="SiteMapDataSource1" runat="server" SkinID="MainMenu" RenderingMode="Table" ClientIDMode="Static" />
+                    </div>
+
+                    <div class="BannerLogo"></div>
+
+                    <div runat="server" id="divBannerLoggedInDetails1" class="BannerLoggedInDetails">
+                        <iaw:wuc_help runat="server" ID="master_helplink" CssClass="fa-regular fa-circle-question BannerIcon" />
+                        <asp:HyperLink ID="lnkMessages" CssClass="fa-solid fa-envelope BannerIcon" runat="server" ToolTip="Messages" NavigateUrl="~/messaging/MsgMail.aspx" ClientIDMode="Static"/>
+                        <asp:Label runat="server" ID="lblProcessName" CssClass="BannerLoginDetailsLabel" />
+                        <asp:Label runat="server" ID="lblInfo" CssClass="BannerLoginDetailsLabel" />
+                        <asp:HyperLink ID="lnkLogout" CssClass="fa-solid fa-right-from-bracket BannerIcon" runat="server" ToolTip="Log Out" NavigateUrl="logout.aspx" ClientIDMode="Static" />
+                    </div>
+                </div>
+                <div class="ButtonBar" runat="server" id="divButtonBar">
+                    <asp:PlaceHolder ID="phButtonBar" runat="server"></asp:PlaceHolder>
+                </div>
+            </div>
+
+                <div id="div_content" class="div_content">
+                    <table class="content">
+                        <tr id="trcontent" valign="top" class="content">
+                            <td valign="top" id="tdcontent" class="content">
+                                <a name="content"></a>
+                                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server" />
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+            <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" SiteMapProvider="IAWSiteMap" ShowStartingNode="false" StartingNodeOffset="-1" />
+        </div>
+        <asp:UpdateProgress ID="ajaxProgress" runat="server" DynamicLayout="false">
+            <ProgressTemplate>
+                <div id="AjaxProgressDivx">
+                    <iaw:ajaxProgress runat="server" ID="ajaxUpdating" />
+                </div>
+            </ProgressTemplate>
+        </asp:UpdateProgress>
+
+        <asp:HiddenField ID="hdnDivSrollPos" runat="server" ClientIDMode="Static" />
+
+    </form>
+
+    <script type="text/javascript">
+        <%-- These are cross site translations, don't use for page specific ones --%>
+        var translations = {
+            spectrum_chooseText: "<%= ctx.Translate("::LT_S0262") %>",             <%-- Choose --%>
+            spectrum_cancelText: "<%= ctx.Translate("::LT_S0138") %>",             <%-- Cancel --%>
+            spectrum_moreText: "<%= ctx.Translate("::LT_S0263") %>",               <%-- Show More --%>
+            spectrum_lessText: "<%= ctx.Translate("::LT_S0264") %>",               <%-- Show Less --%>
+            spectrum_darkenTooltip: "<%= ctx.Translate("::LT_S0265") %>",          <%-- Darken --%>
+            spectrum_lightenTooltip: "<%= ctx.Translate("::LT_S0266") %>",         <%-- Lighten --%>
+            spectrum_transparentTooltip: "<%= ctx.Translate("::LT_S0267") %>",     <%-- Transparent --%>
+            spectrum_clearTooltip: "<%= ctx.Translate("::LT_S0268") %>",           <%-- Clear Colour Selection --%>
+            spectrum_noColorSelectedTooltip: "<%= ctx.Translate("::LT_S0269") %>", <%-- No Color Selected --%>
+            spectrum_redTooltip: "<%= ctx.Translate("::LT_S0270") %>",             <%-- Red --%>
+            spectrum_greenTooltip: "<%= ctx.Translate("::LT_S0271") %>",           <%-- Green --%>
+            spectrum_blueTooltip: "<%= ctx.Translate("::LT_S0272") %>",            <%-- Blue --%>
+            spectrum_transparencyTooltip: "<%= ctx.Translate("::LT_S0273") %>"     <%-- Transparency --%>
+        };
+
+       var fieldNamesOverride = {
+            colour: "<%= ctx.Translate("::LT_S0055") %>",          <%-- Text Colour --%>
+            bg_colour: "<%= ctx.Translate("::LT_S0122") %> ",      <%-- Text Background Colour --%>
+            font: "<%= ctx.Translate("::LT_S0321") %> ",           <%-- Font --%>
+            fontSize: "<%= ctx.Translate("::LT_S0322") %> ",       <%-- Font Size --%>
+            bold: "<%= ctx.Translate("::LT_S0323") %> ",           <%-- Bold --%>
+            boldChar: "<%= ctx.Translate("::LT_S0324") %> ",       <%-- B --%>
+            italic: "<%= ctx.Translate("::LT_S0325") %> ",         <%-- Italic --%>
+            italicChar: "<%= ctx.Translate("::LT_S0326") %> ",     <%-- i --%>
+            underline: "<%= ctx.Translate("::LT_S0327") %> ",      <%-- Underline --%>
+            underlineChar: "<%= ctx.Translate("::LT_S0328") %> ",  <%-- U --%>
+            left: "<%= ctx.Translate("::LT_S0329") %> ",           <%-- Left Justified --%>
+            center: "<%= ctx.Translate("::LT_S0330") %> ",         <%-- Centred --%>
+            right: "<%= ctx.Translate("::LT_S0331") %> "           <%-- Right Justified --%>
+        };
+
+        Sys.WebForms.PageRequestManager.getInstance().add_pageLoaded(pageLoaded);
+        function pageLoaded(sender, args) {
+            restartTimers();
+
+            divs = document.querySelectorAll('.DynamicMenuItemStyle a');
+            divs.forEach(el => el.addEventListener('click', event => {
+                hideButtonsOnSubmit();
+            }));
+        }
+
+        // prevent multiple postback clicks 
+        Sys.WebForms.PageRequestManager.getInstance().add_beginRequest(BeginRequestHandler);
+        function BeginRequestHandler(sender, args) {
+            // some controls ignore disabled, so have to set the attributes too
+            var oControl = args.get_postBackElement();
+            oControl.disabled = true;
+            oControl.setAttribute("OnClick", "return false;");
+            // console.log(Date() + ' ' + oControl.id + ' pressed');
+        }
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,103 @@
+/* styles for the menu */
+.menu {
+    border-collapse: collapse;
+}
+
+/* Static menu is the menu icon in the banner */
+
+.StaticMenuStyle {
+    background: none;
+    border-collapse: collapse;
+}
+
+.StaticMenuItemStyle {
+    background-color: var(--StaticMenuItemStyle-bg-color);
+}
+
+    .StaticMenuItemStyle a {
+        width: 100%;
+        font-weight: bold;
+        color: var(--menu-button-color);
+        text-decoration: none;
+        cursor: pointer !important;
+        font-size: 30px !important;
+    }
+
+        .StaticMenuItemStyle a:hover,
+        .StaticMenuItemStyle td:hover a {
+            color: var(--menu-button-color);
+        }
+
+.StaticHoverStyle a {
+    color: var(--menu-button-color);
+}
+
+.StaticHoverStyle {
+    background: none;
+    color: var(--StaticMenuItemStyle-bg-color);
+}
+
+/* Dynamic menus are the dropdown items*/
+.DynamicMenuStyle {
+    padding: 0px 0px 0px 0px;
+    z-index: 100;
+    background-color: var(--DynamicMenuStyle-bg-color) !important;
+}
+
+.DynamicMenuItemStyle {
+    border: none;
+}
+
+.menuIcon {
+    width:30px;
+    min-width:30px;
+    display:inline-block;
+    text-align:center;
+    margin-right:5px;
+}
+.DynamicMenuItemStyle .menuIcon {
+    color: var(--menu_icon_color);
+}
+
+.DynamicMenuStyle > table > tbody > tr:first-child a {
+/*    border-top: var(--DynamicMenuItemStyle-link-border) !important;*/
+}
+
+.DynamicMenuItemStyle a {
+	color: var(--menu-item-color);
+    background-color: var(--DynamicMenuItemStyle-link-bg-color);
+    display: inline-block;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: normal;
+    font-size: 0.90em;
+    text-decoration: none;
+    width: calc(100% - 20px);
+ /*   border-bottom: var(--DynamicMenuItemStyle-link-border) !important;*/
+}
+
+.DynamicMenuItemStyle a:hover {
+    background-color: var(--DynamicMenuItemStyle-link-hover-bg-color);
+}
+
+.DynamicMenuStyle {
+    background-color: var(--ctl00-Menu-bg-color) !important;
+    padding: 60px;
+    padding-top: 8px;
+    top: 35px !important;
+    left: -60px !important;
+}
+
+table.DynamicMenuItemStyle {
+    background-color: var(--ctl00-Menu-bg-color) !important;
+}
+
+.DynamicMenuStyle > table {
+    padding: 20px 0px;
+    background-color: var(--menu-item-bg-color) !important;
+    width: 200px;
+    border-radius: 20px;
+    box-shadow: var(--ctl00-Menu-table-shadow)
+}

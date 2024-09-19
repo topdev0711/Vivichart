@@ -1,0 +1,46 @@
+﻿
+.IconPic.Icon16,.IconImg.Icon16 { width: 16px; height: 16px; }
+.IconPic.Icon20,.IconImg.Icon20 { width: 20px; height: 20px; }
+.IconPic.Icon24,.IconImg.Icon24 { width: 24px; height: 24px; }
+.IconPic.Icon32,.IconImg.Icon32 { width: 32px; height: 32px; }
+.IconBtn.Icon16 { padding-left: 24px; }
+.IconBtn.Icon20 { padding-left: 20px; }
+.IconBtn.Icon24 { padding-left: 32px; }
+
+.IconAdd, .IconAddHead { background-image: url(svg/add.svg); }
+.IconBack { background-image: url(svg/back.svg); }
+.IconCalendar { background-image: url(svg/calendar.svg); }
+.IconCancel { background-image: url(svg/cancel.svg); }
+.IconChangeRole { background-image: url(svg/change_role.svg); }
+.IconConfirm { background-image: url(svg/confirm.svg); }
+.IconDelete { background-image: url(svg/delete.svg); }
+.IconDetails { background-image: url(svg/details.svg); }
+.IconDocuments { background-image: url(svg/documents.svg); }
+.IconDownload { background-image: url(svg/download.svg); }
+.IconEdit { background-image: url(svg/edit.svg); }
+.IconEnquire { background-image: url(svg/enquire.svg); }
+.IconExpenses { background-image: url(svg/expenses.svg); }
+.IconForward { background-image: url(svg/forward.svg); }
+.IconHome { background-image: url(svg/home.svg); }
+.IconLogout { background-image: url(svg/logout.svg); }
+.IconMessages { background-image: url(svg/messages.svg); }
+.IconNext { background-image: url(svg/next.svg); }
+.IconPayslips { background-image: url(svg/payslips.svg); }
+.IconRefresh { background-image: url(svg/refresh.svg); }
+.IconReply { background-image: url(svg/reply.svg); }
+.IconSave { background-image: url(svg/save.svg); }
+.IconSearch { background-image: url(svg/search.svg); }
+.IconSelect { background-image: url(svg/select.svg); }
+.IconSend { background-image: url(svg/send.svg); }
+.IconSitemap { background-image: url(svg/sitemap.svg); }
+.IconTimesheet { background-image: url(svg/timesheet.svg); }
+.IconViewDocument { background-image: url(svg/documents.svg); }
+.IconView { background-image: url(svg/view.svg); }
+.IconWithdraw { background-image: url(svg/withdraw.svg); }
+.IconMoveDown { background-image: url(svg/move_down.svg); }
+.IconMoveUp { background-image: url(svg/move_up.svg); }
+.IconChart { background-image: url(svg/chart.svg); }
+.IconSortable { background-image: url(svg/sortable.svg); }
+.IconSort_Asc { background-image: url(svg/sort-asc.svg); }
+.IconSortDesc { background-image: url(svg/sort-desc.svg); }
+.IconBan { background-image: url(svg/ban.svg); }

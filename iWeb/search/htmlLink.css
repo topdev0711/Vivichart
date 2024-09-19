@@ -1,0 +1,227 @@
+﻿@import url("../../graphics/graphics.css");
+
+.stdlink,
+.stdlink a {
+	color: var(--stdlink-color);
+	/* default link color */
+	text-decoration: underline;
+	/* default link underline */
+	cursor: pointer;
+	font-weight: bold;
+}
+
+.stdlink:hover,
+.stdlink a:hover {
+	color: var(--stdlink-hover-color);
+	/* link color on hover */
+	text-decoration: none;
+	/* remove underline on hover */
+}
+
+a {
+	font-size: medium;
+	color: var(--default-link-a-color);
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+/* set the font awesome colours when it's on a listhedaer */
+.listheader .iaw-font,
+.listheader .fa-regular,
+.listheader .fa-solid {
+	color: var(--image-characters-color);
+}
+
+.listheader .iaw-font:hover,
+.listheader .fa-regular:hover,
+.listheader .fa-solid:hover {
+	color: var(--image-characters-color);
+}
+
+
+a.hlink,
+a.listLinkRow,
+a.listLinkAltRow {
+	background-color: var(--link-bg-color);
+	display: inline-block;
+	cursor: pointer;
+	color: var(--link-color);
+	font-size: 0.96em;
+	font-weight: normal;
+	padding: 11px 0px;
+	text-decoration: none;
+	text-align: center;
+	border-radius: 4px;
+	width: 120px;
+	margin-left: 10px;
+	transition-duration: .3s;
+	position: relative;
+}
+
+a.hlink {
+	padding-left: 16px;
+}
+
+a.hlink .iconButton  {
+	position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 8px;
+    font-size: 25px;
+	color: var(--button-icons-color);
+}
+
+a.hlink:hover .iconButton {
+	color: var(--button-icons-hover-color);
+}
+
+a.tabBodyLink {
+	margin-left: 0;
+	padding: 4px 0 5px 0;
+	font-size: 0.88em;
+}
+
+a.hlink:hover,
+a.listLinkRow:hover,
+a.listLinkAltRow:hover {
+	background-color: var(--link-bg-hover-color);
+	color: var(--link-hover-color);
+}
+
+a.hlink[disabled] {
+	opacity: 0.3;
+}
+
+
+a.SubmitButton {
+	background-color: var(--SubmitButton-bg-color);
+}
+
+a.SubmitButton:hover {
+	background-color: var(--SubmitButton-bg-hover-color);
+}
+
+a.listLinkSelectedRow {
+	background-color: var(--listLinkSelectedRow-bg-color);
+	border: var(--listLinkSelectedRow-border);
+	display: inline-block;
+	cursor: pointer;
+	color: var(--listLinkSelectedRow-color);
+	font-size: medium;
+	font-weight: bold;
+	padding: 2px 8px;
+	text-decoration: none;
+	text-shadow: var(--listLinkSelectedRow-text-shadow);
+}
+
+a.listLinkSelectedRow:hover {
+	background-color: var(--listLinkSelectedRow-bg-hover-color);
+}
+
+th.listheader a,
+tr.listheader a {
+	color: var(--listheader-link-color);
+	text-decoration: underline;
+	font-size: medium;
+	text-decoration: none;
+	position: relative;
+	top: 1px;
+	font-weight: normal;
+}
+
+/* end link style for list screens */
+
+a.ToolTip {
+	font-size: medium;
+	color: var(--link-ToolTip-color);
+	text-align: left;
+	text-decoration: none;
+}
+
+a.ToolTip:hover {
+	text-decoration: none;
+}
+
+.ActionCell {
+	width: 60px;
+	vertical-align: top;
+	text-align: center;
+}
+
+.ActionButtons {
+	opacity: 0.8;
+	padding-left: 15px;
+}
+
+.ActionButtons input {
+	margin-right: 7px;
+	border: var(--input-ActionButtons-border);
+}
+
+.listrow:hover>.ActionCell>.ActionButtons,
+.listaltrow:hover>.ActionCell>.ActionButtons {
+	display: inline-block;
+	opacity: 0.8;
+}
+
+/* IconBtn is a button with an icon to the left
+   IconPic is a clickable icon which has a hover
+   IconImg is simply an image that is static
+
+
+*/
+
+.IconBtn,
+.IconPic,
+IconImg {
+	padding: 0px;
+	margin: 0px;
+	vertical-align: middle;
+	display: inline-block;
+	background-repeat: no-repeat;
+}
+
+.IconBtn {
+	background-position: 8px 0.6em;
+	white-space: nowrap;
+}
+
+.IconPic,
+.IconImg {
+	width: 16px;
+	height: 16px;
+	background-position: center center;
+	/* 404040  rgb(64,64,64) dark grey */
+	filter: var(--list-icons-filter);
+}
+
+.IconPic:hover {
+	/* 0463B4  rgb(4,99,180) - blue */
+	filter: var(--list-icons-hover-filter);
+}
+
+/* + */
+.hlink.IconPic,
+.listheader .IconPic {
+	filter: var(--list-header-icons-filter);
+}
+
+.hlink.IconPic:hover,
+.listheader .IconPic:hover {
+	filter: var(--list-header-icons-hover-filter);
+}
+
+.BtnNext {
+	background-image: var(--BtnNext-bg-image);
+}
+
+.BtnBack {
+	background-image: var(--BtnBack-bg-image);
+}
+
+.BtnSearch {
+	background-image: var(--BtnSearch-bg-image);
+}
