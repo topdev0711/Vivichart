@@ -153,17 +153,35 @@ function generatePdf(action, diagram, options)
 
         handleBackground().then(() =>
         {
+            // Add the title box and title text here
+            const titleBoxHeight = 50; 
+            doc.rect(margin, margin, doc.page.width - margin * 2, titleBoxHeight).fill('#FFFFFF');
+            doc.font('Helvetica-Bold').fontSize(20);
+        
+            const title = "Rustom"; // Change this to the title you want
+        
+            const titleWidth = doc.widthOfString(title);
+            const titleX = (doc.page.width - titleWidth) / 2; // Center the title horizontally
+            const titleY = margin + (titleBoxHeight - doc.currentLineHeight()) / 2;
+        
+            doc.fillColor('black').text(title, titleX, titleY);
+        
+            // Move the diagram image down by the height of the title box plus additional space
             var db = diagram.documentBounds.copy().subtractMargin(diagram.padding).addMargin(padding);
+        
+            const additionalSpace = 10; // Define additional space in points
+            var imgYPosition = titleBoxHeight + margin + additionalSpace; // Add extra space
+        
             var imgdata = diagram.makeImageData({
                 scale: imgResolutionFactor,
                 position: db.position,
                 size: new go.Size(db.width * imgResolutionFactor, db.height * imgResolutionFactor),
                 maxSize: new go.Size(Infinity, Infinity)
             });
-
+        
             console.log("Rendering image to PDF...");
-
-            doc.image(imgdata, {
+        
+            doc.image(imgdata, margin, imgYPosition, {
                 scale: 1 / (imgResolutionFactor * 96 / 72 * Math.max(1, Math.max(db.width / imgWidth, db.height / imgHeight)))
             });
             doc.end();
